@@ -1,0 +1,6501 @@
+{
+  "sizes": {
+    "ratings": 32000204,
+    "users": 200948,
+    "movies": 87585,
+    "tags": 2000072,
+    "first_rating": "1995-01-09 11:46:44+00:00",
+    "last_rating": "2023-10-13 02:29:07+00:00"
+  },
+  "quality": {
+    "duplicate_pairs": 0,
+    "invalid_ratings": 0,
+    "ratings_missing_movie": 0,
+    "movies_without_rating": 3153,
+    "tag_only_movies": 3153,
+    "missing_title_year": 617,
+    "no_genres": 7080,
+    "no_imdb_id": 0,
+    "no_tmdb_id": 124
+  },
+  "year_failure_examples": [
+    {
+      "movieId": 79607,
+      "title": "Millions Game, The (Das Millionenspiel)"
+    },
+    {
+      "movieId": 98063,
+      "title": "Mona and the Time of Burning Love (Mona ja palavan rakkauden aika) (1983))"
+    },
+    {
+      "movieId": 123619,
+      "title": "Terrible Joe Moran"
+    },
+    {
+      "movieId": 125571,
+      "title": "The Court-Martial of Jackie Robinson"
+    },
+    {
+      "movieId": 125632,
+      "title": "In Our Garden"
+    },
+    {
+      "movieId": 125958,
+      "title": "Stephen Fry In America - New World"
+    },
+    {
+      "movieId": 126438,
+      "title": "Two: The Story of Roman & Nyro"
+    },
+    {
+      "movieId": 127005,
+      "title": "A Year Along the Abandoned Road"
+    },
+    {
+      "movieId": 128612,
+      "title": "Body/Cialo"
+    },
+    {
+      "movieId": 128734,
+      "title": "Polskie g\u00f3wno"
+    },
+    {
+      "movieId": 129651,
+      "title": "The Third Reich: The Rise & Fall"
+    },
+    {
+      "movieId": 129697,
+      "title": "La vendetta dei barbari"
+    }
+  ],
+  "genres": [
+    {
+      "genre": "Drama",
+      "movies": 34175
+    },
+    {
+      "genre": "Comedy",
+      "movies": 23124
+    },
+    {
+      "genre": "Thriller",
+      "movies": 11823
+    },
+    {
+      "genre": "Romance",
+      "movies": 10369
+    },
+    {
+      "genre": "Action",
+      "movies": 9668
+    },
+    {
+      "genre": "Documentary",
+      "movies": 9363
+    },
+    {
+      "genre": "Horror",
+      "movies": 8654
+    },
+    {
+      "genre": "(no genres listed)",
+      "movies": 7080
+    },
+    {
+      "genre": "Crime",
+      "movies": 6976
+    },
+    {
+      "genre": "Adventure",
+      "movies": 5402
+    },
+    {
+      "genre": "Sci-Fi",
+      "movies": 4907
+    },
+    {
+      "genre": "Animation",
+      "movies": 4617
+    },
+    {
+      "genre": "Children",
+      "movies": 4520
+    },
+    {
+      "genre": "Mystery",
+      "movies": 4013
+    },
+    {
+      "genre": "Fantasy",
+      "movies": 3851
+    },
+    {
+      "genre": "War",
+      "movies": 2325
+    },
+    {
+      "genre": "Western",
+      "movies": 1696
+    },
+    {
+      "genre": "Musical",
+      "movies": 1059
+    },
+    {
+      "genre": "Film-Noir",
+      "movies": 353
+    },
+    {
+      "genre": "IMAX",
+      "movies": 195
+    }
+  ],
+  "user_activity": {
+    "min": 20,
+    "median": 73.0,
+    "max": 33332,
+    "p90": 364.0,
+    "p99": 1290.0,
+    "users_20_to_25": 23039,
+    "users_at_20": 5404
+  },
+  "movie_activity": {
+    "min": 1,
+    "median": 5.0,
+    "max": 102929,
+    "under_5": 40548,
+    "under_20": 61082,
+    "under_100": 72241
+  },
+  "user_histogram": [
+    {
+      "log10_bin": 1.0,
+      "users": 120273
+    },
+    {
+      "log10_bin": 2.0,
+      "users": 77054
+    },
+    {
+      "log10_bin": 3.0,
+      "users": 3620
+    },
+    {
+      "log10_bin": 4.0,
+      "users": 1
+    }
+  ],
+  "movie_histogram": [
+    {
+      "log10_bin": 0.0,
+      "movies": 52471
+    },
+    {
+      "log10_bin": 1.0,
+      "movies": 19770
+    },
+    {
+      "log10_bin": 2.0,
+      "movies": 7794
+    },
+    {
+      "log10_bin": 3.0,
+      "movies": 3625
+    },
+    {
+      "log10_bin": 4.0,
+      "movies": 770
+    },
+    {
+      "log10_bin": 5.0,
+      "movies": 2
+    }
+  ],
+  "concentration": {
+    "top_1_share": 0.5487858452402365,
+    "top_10_share": 0.9570393051244298,
+    "gini": 0.9523934969474335
+  },
+  "movie_examples": [
+    {
+      "movieId": 318,
+      "title": "Shawshank Redemption, The (1994)",
+      "n": 102929
+    },
+    {
+      "movieId": 3226,
+      "title": "Hellhounds on My Trail (1999)",
+      "n": 5
+    },
+    {
+      "movieId": 3312,
+      "title": "McCullochs, The (1975)",
+      "n": 5
+    },
+    {
+      "movieId": 3383,
+      "title": "Big Fella (1937)",
+      "n": 5
+    },
+    {
+      "movieId": 3356,
+      "title": "Condo Painting (2000)",
+      "n": 1
+    },
+    {
+      "movieId": 3561,
+      "title": "Stacy's Knights (1982)",
+      "n": 1
+    },
+    {
+      "movieId": 5905,
+      "title": "Soap Girl (2002)",
+      "n": 1
+    }
+  ],
+  "rating_scale": {
+    "min": 0.5,
+    "median": 3.5,
+    "max": 5.0,
+    "mean": 3.5403956487277393,
+    "invalid_half_step": 0,
+    "pre_v3_half_stars": 0,
+    "pre_sep_1997_ratings": 2159894,
+    "pre_sep_1997_users": 33358,
+    "pre_aug_1997_ratings": 2159894,
+    "pre_aug_1997_users": 33358
+  },
+  "rating_distribution": [
+    {
+      "rating": 0.5,
+      "n": 525132
+    },
+    {
+      "rating": 1.0,
+      "n": 946675
+    },
+    {
+      "rating": 1.5,
+      "n": 531063
+    },
+    {
+      "rating": 2.0,
+      "n": 2028622
+    },
+    {
+      "rating": 2.5,
+      "n": 1685386
+    },
+    {
+      "rating": 3.0,
+      "n": 6054990
+    },
+    {
+      "rating": 3.5,
+      "n": 4290105
+    },
+    {
+      "rating": 4.0,
+      "n": 8367654
+    },
+    {
+      "rating": 4.5,
+      "n": 2974000
+    },
+    {
+      "rating": 5.0,
+      "n": 4596577
+    }
+  ],
+  "rating_by_movie_popularity": [
+    {
+      "decile": 1,
+      "ratings": 8444,
+      "mean_rating": 2.8706774040738985,
+      "median_movie_count": 1.0
+    },
+    {
+      "decile": 2,
+      "ratings": 8444,
+      "mean_rating": 2.829583135954524,
+      "median_movie_count": 1.0
+    },
+    {
+      "decile": 3,
+      "ratings": 15167,
+      "mean_rating": 2.9486384914617263,
+      "median_movie_count": 2.0
+    },
+    {
+      "decile": 4,
+      "ratings": 21648,
+      "mean_rating": 2.9052568366592757,
+      "median_movie_count": 3.0
+    },
+    {
+      "decile": 5,
+      "ratings": 33379,
+      "mean_rating": 2.935123880284011,
+      "median_movie_count": 4.0
+    },
+    {
+      "decile": 6,
+      "ratings": 54362,
+      "mean_rating": 2.951455060520216,
+      "median_movie_count": 7.0
+    },
+    {
+      "decile": 7,
+      "ratings": 97817,
+      "mean_rating": 3.0071357739452242,
+      "median_movie_count": 12.0
+    },
+    {
+      "decile": 8,
+      "ratings": 222826,
+      "mean_rating": 3.095861793507041,
+      "median_movie_count": 28.0
+    },
+    {
+      "decile": 9,
+      "ratings": 912913,
+      "mean_rating": 3.2011325285103838,
+      "median_movie_count": 133.0
+    },
+    {
+      "decile": 10,
+      "ratings": 30625204,
+      "mean_rating": 3.5582742077407876,
+      "median_movie_count": 11811.0
+    }
+  ],
+  "pre_launch_movies": [
+    {
+      "movieId": 592,
+      "title": "Batman (1989)",
+      "n": 21179
+    },
+    {
+      "movieId": 590,
+      "title": "Dances with Wolves (1990)",
+      "n": 20535
+    },
+    {
+      "movieId": 150,
+      "title": "Apollo 13 (1995)",
+      "n": 20418
+    },
+    {
+      "movieId": 457,
+      "title": "Fugitive, The (1993)",
+      "n": 19963
+    },
+    {
+      "movieId": 296,
+      "title": "Pulp Fiction (1994)",
+      "n": 19692
+    },
+    {
+      "movieId": 380,
+      "title": "True Lies (1994)",
+      "n": 19273
+    },
+    {
+      "movieId": 356,
+      "title": "Forrest Gump (1994)",
+      "n": 18364
+    },
+    {
+      "movieId": 480,
+      "title": "Jurassic Park (1993)",
+      "n": 17993
+    },
+    {
+      "movieId": 588,
+      "title": "Aladdin (1992)",
+      "n": 17405
+    },
+    {
+      "movieId": 593,
+      "title": "Silence of the Lambs, The (1991)",
+      "n": 17314
+    }
+  ],
+  "pre_launch_user_examples": [
+    {
+      "userId": 92958,
+      "n": 1347,
+      "first_date": "1997-04-25 08:29:12+00:00",
+      "last_date": "1997-05-20 10:57:43+00:00"
+    },
+    {
+      "userId": 84603,
+      "n": 1214,
+      "first_date": "1996-12-10 18:57:33+00:00",
+      "last_date": "1997-02-05 16:02:44+00:00"
+    },
+    {
+      "userId": 94126,
+      "n": 849,
+      "first_date": "1997-03-28 10:00:56+00:00",
+      "last_date": "1997-03-28 11:34:50+00:00"
+    },
+    {
+      "userId": 114730,
+      "n": 810,
+      "first_date": "1996-05-17 11:54:34+00:00",
+      "last_date": "1997-01-15 13:48:09+00:00"
+    },
+    {
+      "userId": 107682,
+      "n": 718,
+      "first_date": "1996-11-23 17:55:04+00:00",
+      "last_date": "1996-11-23 18:49:19+00:00"
+    }
+  ],
+  "pre_release": {
+    "n": 1014,
+    "movies": 100
+  },
+  "pre_release_examples": [
+    {
+      "title": "Independence Day: Resurgence (2016)",
+      "release_year": 2016,
+      "rating_year": 2015,
+      "n": 96
+    },
+    {
+      "title": "Pirates of the Caribbean: Dead Men Tell No Tales (2017)",
+      "release_year": 2017,
+      "rating_year": 2015,
+      "n": 68
+    },
+    {
+      "title": "Pirates of the Caribbean: Dead Men Tell No Tales (2017)",
+      "release_year": 2017,
+      "rating_year": 2016,
+      "n": 61
+    },
+    {
+      "title": "Dangerous Ground (1997)",
+      "release_year": 1997,
+      "rating_year": 1996,
+      "n": 61
+    },
+    {
+      "title": "Avengers: Infinity War - Part I (2018)",
+      "release_year": 2018,
+      "rating_year": 2017,
+      "n": 48
+    },
+    {
+      "title": "Avengers: Infinity War - Part II (2019)",
+      "release_year": 2019,
+      "rating_year": 2018,
+      "n": 44
+    },
+    {
+      "title": "Nightwatch (1997)",
+      "release_year": 1997,
+      "rating_year": 1996,
+      "n": 29
+    },
+    {
+      "title": "Thor: Ragnarok (2017)",
+      "release_year": 2017,
+      "rating_year": 2015,
+      "n": 26
+    }
+  ],
+  "monthly": [
+    {
+      "month_date": "1995-01-01 00:00:00+00:00",
+      "ratings": 4,
+      "half_share": 0.0
+    },
+    {
+      "month_date": "1996-01-01 00:00:00+00:00",
+      "ratings": 42,
+      "half_share": 0.0
+    },
+    {
+      "month_date": "1996-02-01 00:00:00+00:00",
+      "ratings": 449,
+      "half_share": 0.0
+    },
+    {
+      "month_date": "1996-03-01 00:00:00+00:00",
+      "ratings": 9184,
+      "half_share": 0.0
+    },
+    {
+      "month_date": "1996-04-01 00:00:00+00:00",
+      "ratings": 51197,
+      "half_share": 0.0
+    },
+    {
+      "month_date": "1996-05-01 00:00:00+00:00",
+      "ratings": 181762,
+      "half_share": 0.0
+    },
+    {
+      "month_date": "1996-06-01 00:00:00+00:00",
+      "ratings": 254261,
+      "half_share": 0.0
+    },
+    {
+      "month_date": "1996-07-01 00:00:00+00:00",
+      "ratings": 216201,
+      "half_share": 0.0
+    },
+    {
+      "month_date": "1996-08-01 00:00:00+00:00",
+      "ratings": 209688,
+      "half_share": 0.0
+    },
+    {
+      "month_date": "1996-09-01 00:00:00+00:00",
+      "ratings": 146852,
+      "half_share": 0.0
+    },
+    {
+      "month_date": "1996-10-01 00:00:00+00:00",
+      "ratings": 185866,
+      "half_share": 0.0
+    },
+    {
+      "month_date": "1996-11-01 00:00:00+00:00",
+      "ratings": 180014,
+      "half_share": 0.0
+    },
+    {
+      "month_date": "1996-12-01 00:00:00+00:00",
+      "ratings": 135852,
+      "half_share": 0.0
+    },
+    {
+      "month_date": "1997-01-01 00:00:00+00:00",
+      "ratings": 108439,
+      "half_share": 0.0
+    },
+    {
+      "month_date": "1997-02-01 00:00:00+00:00",
+      "ratings": 66509,
+      "half_share": 0.0
+    },
+    {
+      "month_date": "1997-03-01 00:00:00+00:00",
+      "ratings": 99565,
+      "half_share": 0.0
+    },
+    {
+      "month_date": "1997-04-01 00:00:00+00:00",
+      "ratings": 83630,
+      "half_share": 0.0
+    },
+    {
+      "month_date": "1997-05-01 00:00:00+00:00",
+      "ratings": 94695,
+      "half_share": 0.0
+    },
+    {
+      "month_date": "1997-06-01 00:00:00+00:00",
+      "ratings": 80303,
+      "half_share": 0.0
+    },
+    {
+      "month_date": "1997-07-01 00:00:00+00:00",
+      "ratings": 55381,
+      "half_share": 0.0
+    },
+    {
+      "month_date": "1997-09-01 00:00:00+00:00",
+      "ratings": 18167,
+      "half_share": 0.0
+    },
+    {
+      "month_date": "1997-10-01 00:00:00+00:00",
+      "ratings": 20795,
+      "half_share": 0.0
+    },
+    {
+      "month_date": "1997-11-01 00:00:00+00:00",
+      "ratings": 37920,
+      "half_share": 0.0
+    },
+    {
+      "month_date": "1997-12-01 00:00:00+00:00",
+      "ratings": 19984,
+      "half_share": 0.0
+    },
+    {
+      "month_date": "1998-01-01 00:00:00+00:00",
+      "ratings": 23495,
+      "half_share": 0.0
+    },
+    {
+      "month_date": "1998-02-01 00:00:00+00:00",
+      "ratings": 17146,
+      "half_share": 0.0
+    },
+    {
+      "month_date": "1998-03-01 00:00:00+00:00",
+      "ratings": 19739,
+      "half_share": 0.0
+    },
+    {
+      "month_date": "1998-04-01 00:00:00+00:00",
+      "ratings": 18484,
+      "half_share": 0.0
+    },
+    {
+      "month_date": "1998-05-01 00:00:00+00:00",
+      "ratings": 10015,
+      "half_share": 0.0
+    },
+    {
+      "month_date": "1998-06-01 00:00:00+00:00",
+      "ratings": 14492,
+      "half_share": 0.0
+    },
+    {
+      "month_date": "1998-07-01 00:00:00+00:00",
+      "ratings": 79681,
+      "half_share": 0.0
+    },
+    {
+      "month_date": "1998-08-01 00:00:00+00:00",
+      "ratings": 38339,
+      "half_share": 0.0
+    },
+    {
+      "month_date": "1998-09-01 00:00:00+00:00",
+      "ratings": 18837,
+      "half_share": 0.0
+    },
+    {
+      "month_date": "1998-10-01 00:00:00+00:00",
+      "ratings": 13904,
+      "half_share": 0.0
+    },
+    {
+      "month_date": "1998-11-01 00:00:00+00:00",
+      "ratings": 15396,
+      "half_share": 0.0
+    },
+    {
+      "month_date": "1998-12-01 00:00:00+00:00",
+      "ratings": 32163,
+      "half_share": 0.0
+    },
+    {
+      "month_date": "1999-01-01 00:00:00+00:00",
+      "ratings": 25805,
+      "half_share": 0.0
+    },
+    {
+      "month_date": "1999-02-01 00:00:00+00:00",
+      "ratings": 16918,
+      "half_share": 0.0
+    },
+    {
+      "month_date": "1999-03-01 00:00:00+00:00",
+      "ratings": 8529,
+      "half_share": 0.0
+    },
+    {
+      "month_date": "1999-04-01 00:00:00+00:00",
+      "ratings": 14002,
+      "half_share": 0.0
+    },
+    {
+      "month_date": "1999-05-01 00:00:00+00:00",
+      "ratings": 13219,
+      "half_share": 0.0
+    },
+    {
+      "month_date": "1999-06-01 00:00:00+00:00",
+      "ratings": 11241,
+      "half_share": 0.0
+    },
+    {
+      "month_date": "1999-07-01 00:00:00+00:00",
+      "ratings": 10210,
+      "half_share": 0.0
+    },
+    {
+      "month_date": "1999-08-01 00:00:00+00:00",
+      "ratings": 11162,
+      "half_share": 0.0
+    },
+    {
+      "month_date": "1999-09-01 00:00:00+00:00",
+      "ratings": 31307,
+      "half_share": 0.0
+    },
+    {
+      "month_date": "1999-10-01 00:00:00+00:00",
+      "ratings": 351183,
+      "half_share": 0.0
+    },
+    {
+      "month_date": "1999-11-01 00:00:00+00:00",
+      "ratings": 236372,
+      "half_share": 0.0
+    },
+    {
+      "month_date": "1999-12-01 00:00:00+00:00",
+      "ratings": 444681,
+      "half_share": 0.0
+    },
+    {
+      "month_date": "2000-01-01 00:00:00+00:00",
+      "ratings": 168455,
+      "half_share": 0.0
+    },
+    {
+      "month_date": "2000-02-01 00:00:00+00:00",
+      "ratings": 122555,
+      "half_share": 0.0
+    },
+    {
+      "month_date": "2000-03-01 00:00:00+00:00",
+      "ratings": 148181,
+      "half_share": 0.0
+    },
+    {
+      "month_date": "2000-04-01 00:00:00+00:00",
+      "ratings": 172599,
+      "half_share": 0.0
+    },
+    {
+      "month_date": "2000-05-01 00:00:00+00:00",
+      "ratings": 108832,
+      "half_share": 0.0
+    },
+    {
+      "month_date": "2000-06-01 00:00:00+00:00",
+      "ratings": 91350,
+      "half_share": 0.0
+    },
+    {
+      "month_date": "2000-07-01 00:00:00+00:00",
+      "ratings": 149077,
+      "half_share": 0.0
+    },
+    {
+      "month_date": "2000-08-01 00:00:00+00:00",
+      "ratings": 242674,
+      "half_share": 0.0
+    },
+    {
+      "month_date": "2000-09-01 00:00:00+00:00",
+      "ratings": 78345,
+      "half_share": 0.0
+    },
+    {
+      "month_date": "2000-10-01 00:00:00+00:00",
+      "ratings": 64415,
+      "half_share": 0.0
+    },
+    {
+      "month_date": "2000-11-01 00:00:00+00:00",
+      "ratings": 400851,
+      "half_share": 0.0
+    },
+    {
+      "month_date": "2000-12-01 00:00:00+00:00",
+      "ratings": 164988,
+      "half_share": 0.0
+    },
+    {
+      "month_date": "2001-01-01 00:00:00+00:00",
+      "ratings": 131690,
+      "half_share": 0.0
+    },
+    {
+      "month_date": "2001-02-01 00:00:00+00:00",
+      "ratings": 81853,
+      "half_share": 0.0
+    },
+    {
+      "month_date": "2001-03-01 00:00:00+00:00",
+      "ratings": 71335,
+      "half_share": 0.0
+    },
+    {
+      "month_date": "2001-04-01 00:00:00+00:00",
+      "ratings": 61981,
+      "half_share": 0.0
+    },
+    {
+      "month_date": "2001-05-01 00:00:00+00:00",
+      "ratings": 52269,
+      "half_share": 0.0
+    },
+    {
+      "month_date": "2001-06-01 00:00:00+00:00",
+      "ratings": 161172,
+      "half_share": 0.0
+    },
+    {
+      "month_date": "2001-07-01 00:00:00+00:00",
+      "ratings": 150684,
+      "half_share": 0.0
+    },
+    {
+      "month_date": "2001-08-01 00:00:00+00:00",
+      "ratings": 107517,
+      "half_share": 0.0
+    },
+    {
+      "month_date": "2001-09-01 00:00:00+00:00",
+      "ratings": 92568,
+      "half_share": 0.0
+    },
+    {
+      "month_date": "2001-10-01 00:00:00+00:00",
+      "ratings": 72599,
+      "half_share": 0.0
+    },
+    {
+      "month_date": "2001-11-01 00:00:00+00:00",
+      "ratings": 87680,
+      "half_share": 0.0
+    },
+    {
+      "month_date": "2001-12-01 00:00:00+00:00",
+      "ratings": 88750,
+      "half_share": 0.0
+    },
+    {
+      "month_date": "2002-01-01 00:00:00+00:00",
+      "ratings": 97046,
+      "half_share": 0.0
+    },
+    {
+      "month_date": "2002-02-01 00:00:00+00:00",
+      "ratings": 75944,
+      "half_share": 0.0
+    },
+    {
+      "month_date": "2002-03-01 00:00:00+00:00",
+      "ratings": 63565,
+      "half_share": 0.0
+    },
+    {
+      "month_date": "2002-04-01 00:00:00+00:00",
+      "ratings": 89377,
+      "half_share": 0.0
+    },
+    {
+      "month_date": "2002-05-01 00:00:00+00:00",
+      "ratings": 64646,
+      "half_share": 0.0
+    },
+    {
+      "month_date": "2002-06-01 00:00:00+00:00",
+      "ratings": 58255,
+      "half_share": 0.0
+    },
+    {
+      "month_date": "2002-07-01 00:00:00+00:00",
+      "ratings": 62866,
+      "half_share": 0.0
+    },
+    {
+      "month_date": "2002-08-01 00:00:00+00:00",
+      "ratings": 73148,
+      "half_share": 0.0
+    },
+    {
+      "month_date": "2002-09-01 00:00:00+00:00",
+      "ratings": 58174,
+      "half_share": 0.0
+    },
+    {
+      "month_date": "2002-10-01 00:00:00+00:00",
+      "ratings": 58048,
+      "half_share": 0.0
+    },
+    {
+      "month_date": "2002-11-01 00:00:00+00:00",
+      "ratings": 67904,
+      "half_share": 0.0
+    },
+    {
+      "month_date": "2002-12-01 00:00:00+00:00",
+      "ratings": 80789,
+      "half_share": 0.0
+    },
+    {
+      "month_date": "2003-01-01 00:00:00+00:00",
+      "ratings": 111774,
+      "half_share": 0.0
+    },
+    {
+      "month_date": "2003-02-01 00:00:00+00:00",
+      "ratings": 88955,
+      "half_share": 0.014546680906076106
+    },
+    {
+      "month_date": "2003-03-01 00:00:00+00:00",
+      "ratings": 95143,
+      "half_share": 0.0003258253365985937
+    },
+    {
+      "month_date": "2003-04-01 00:00:00+00:00",
+      "ratings": 68250,
+      "half_share": 4.3956043956043955e-05
+    },
+    {
+      "month_date": "2003-05-01 00:00:00+00:00",
+      "ratings": 86240,
+      "half_share": 0.412430426716141
+    },
+    {
+      "month_date": "2003-06-01 00:00:00+00:00",
+      "ratings": 87735,
+      "half_share": 0.4785547387017724
+    },
+    {
+      "month_date": "2003-07-01 00:00:00+00:00",
+      "ratings": 94996,
+      "half_share": 0.4586508905638132
+    },
+    {
+      "month_date": "2003-08-01 00:00:00+00:00",
+      "ratings": 76761,
+      "half_share": 0.4686885267258113
+    },
+    {
+      "month_date": "2003-09-01 00:00:00+00:00",
+      "ratings": 75417,
+      "half_share": 0.4460797963323919
+    },
+    {
+      "month_date": "2003-10-01 00:00:00+00:00",
+      "ratings": 73982,
+      "half_share": 0.44493255116109326
+    },
+    {
+      "month_date": "2003-11-01 00:00:00+00:00",
+      "ratings": 77456,
+      "half_share": 0.4456465606279694
+    },
+    {
+      "month_date": "2003-12-01 00:00:00+00:00",
+      "ratings": 74291,
+      "half_share": 0.4559502496937718
+    },
+    {
+      "month_date": "2004-01-01 00:00:00+00:00",
+      "ratings": 92898,
+      "half_share": 0.44351869792675835
+    },
+    {
+      "month_date": "2004-02-01 00:00:00+00:00",
+      "ratings": 127092,
+      "half_share": 0.44248261102193687
+    },
+    {
+      "month_date": "2004-03-01 00:00:00+00:00",
+      "ratings": 111746,
+      "half_share": 0.4432552395611476
+    },
+    {
+      "month_date": "2004-04-01 00:00:00+00:00",
+      "ratings": 78997,
+      "half_share": 0.43648492980746106
+    },
+    {
+      "month_date": "2004-05-01 00:00:00+00:00",
+      "ratings": 95772,
+      "half_share": 0.44656058138077936
+    },
+    {
+      "month_date": "2004-06-01 00:00:00+00:00",
+      "ratings": 85276,
+      "half_share": 0.4346592241662367
+    },
+    {
+      "month_date": "2004-07-01 00:00:00+00:00",
+      "ratings": 91035,
+      "half_share": 0.4489701763058164
+    },
+    {
+      "month_date": "2004-08-01 00:00:00+00:00",
+      "ratings": 107935,
+      "half_share": 0.4502432019270857
+    },
+    {
+      "month_date": "2004-09-01 00:00:00+00:00",
+      "ratings": 95483,
+      "half_share": 0.44601656839437387
+    },
+    {
+      "month_date": "2004-10-01 00:00:00+00:00",
+      "ratings": 85643,
+      "half_share": 0.4364629917214483
+    },
+    {
+      "month_date": "2004-11-01 00:00:00+00:00",
+      "ratings": 87837,
+      "half_share": 0.43798171613329234
+    },
+    {
+      "month_date": "2004-12-01 00:00:00+00:00",
+      "ratings": 79354,
+      "half_share": 0.4481437608690173
+    },
+    {
+      "month_date": "2005-01-01 00:00:00+00:00",
+      "ratings": 135821,
+      "half_share": 0.4461533930688185
+    },
+    {
+      "month_date": "2005-02-01 00:00:00+00:00",
+      "ratings": 139491,
+      "half_share": 0.4397703077617911
+    },
+    {
+      "month_date": "2005-03-01 00:00:00+00:00",
+      "ratings": 338383,
+      "half_share": 0.444682504735758
+    },
+    {
+      "month_date": "2005-04-01 00:00:00+00:00",
+      "ratings": 212679,
+      "half_share": 0.4366627640716761
+    },
+    {
+      "month_date": "2005-05-01 00:00:00+00:00",
+      "ratings": 157625,
+      "half_share": 0.4391308485329104
+    },
+    {
+      "month_date": "2005-06-01 00:00:00+00:00",
+      "ratings": 142620,
+      "half_share": 0.4477983452531202
+    },
+    {
+      "month_date": "2005-07-01 00:00:00+00:00",
+      "ratings": 121708,
+      "half_share": 0.442263450225129
+    },
+    {
+      "month_date": "2005-08-01 00:00:00+00:00",
+      "ratings": 98028,
+      "half_share": 0.4453523483086465
+    },
+    {
+      "month_date": "2005-09-01 00:00:00+00:00",
+      "ratings": 104895,
+      "half_share": 0.4397063730397064
+    },
+    {
+      "month_date": "2005-10-01 00:00:00+00:00",
+      "ratings": 98290,
+      "half_share": 0.44177434123512055
+    },
+    {
+      "month_date": "2005-11-01 00:00:00+00:00",
+      "ratings": 105829,
+      "half_share": 0.4440087310661539
+    },
+    {
+      "month_date": "2005-12-01 00:00:00+00:00",
+      "ratings": 97204,
+      "half_share": 0.43987901732438994
+    },
+    {
+      "month_date": "2006-01-01 00:00:00+00:00",
+      "ratings": 122758,
+      "half_share": 0.43188223985402174
+    },
+    {
+      "month_date": "2006-02-01 00:00:00+00:00",
+      "ratings": 96146,
+      "half_share": 0.4232833399205375
+    },
+    {
+      "month_date": "2006-03-01 00:00:00+00:00",
+      "ratings": 113285,
+      "half_share": 0.4366950611290109
+    },
+    {
+      "month_date": "2006-04-01 00:00:00+00:00",
+      "ratings": 102773,
+      "half_share": 0.4270966109775914
+    },
+    {
+      "month_date": "2006-05-01 00:00:00+00:00",
+      "ratings": 81946,
+      "half_share": 0.4205208307910087
+    },
+    {
+      "month_date": "2006-06-01 00:00:00+00:00",
+      "ratings": 84031,
+      "half_share": 0.43437540907522226
+    },
+    {
+      "month_date": "2006-07-01 00:00:00+00:00",
+      "ratings": 106136,
+      "half_share": 0.4341034144870732
+    },
+    {
+      "month_date": "2006-08-01 00:00:00+00:00",
+      "ratings": 79803,
+      "half_share": 0.44081049584602083
+    },
+    {
+      "month_date": "2006-09-01 00:00:00+00:00",
+      "ratings": 74761,
+      "half_share": 0.4435333930792793
+    },
+    {
+      "month_date": "2006-10-01 00:00:00+00:00",
+      "ratings": 90720,
+      "half_share": 0.43366402116402114
+    },
+    {
+      "month_date": "2006-11-01 00:00:00+00:00",
+      "ratings": 80049,
+      "half_share": 0.44570200752039374
+    },
+    {
+      "month_date": "2006-12-01 00:00:00+00:00",
+      "ratings": 109296,
+      "half_share": 0.4485617039964866
+    },
+    {
+      "month_date": "2007-01-01 00:00:00+00:00",
+      "ratings": 116243,
+      "half_share": 0.4401297282417006
+    },
+    {
+      "month_date": "2007-02-01 00:00:00+00:00",
+      "ratings": 103061,
+      "half_share": 0.43688689222887417
+    },
+    {
+      "month_date": "2007-03-01 00:00:00+00:00",
+      "ratings": 95960,
+      "half_share": 0.4245831596498541
+    },
+    {
+      "month_date": "2007-04-01 00:00:00+00:00",
+      "ratings": 79306,
+      "half_share": 0.4419463848889113
+    },
+    {
+      "month_date": "2007-05-01 00:00:00+00:00",
+      "ratings": 82287,
+      "half_share": 0.43323975840655266
+    },
+    {
+      "month_date": "2007-06-01 00:00:00+00:00",
+      "ratings": 91825,
+      "half_share": 0.43424993193574735
+    },
+    {
+      "month_date": "2007-07-01 00:00:00+00:00",
+      "ratings": 91923,
+      "half_share": 0.4397811211557499
+    },
+    {
+      "month_date": "2007-08-01 00:00:00+00:00",
+      "ratings": 58930,
+      "half_share": 0.439470558289496
+    },
+    {
+      "month_date": "2007-09-01 00:00:00+00:00",
+      "ratings": 59930,
+      "half_share": 0.42638077757383613
+    },
+    {
+      "month_date": "2007-10-01 00:00:00+00:00",
+      "ratings": 78432,
+      "half_share": 0.4329355365157079
+    },
+    {
+      "month_date": "2007-11-01 00:00:00+00:00",
+      "ratings": 80794,
+      "half_share": 0.4355768992746986
+    },
+    {
+      "month_date": "2007-12-01 00:00:00+00:00",
+      "ratings": 85122,
+      "half_share": 0.44036794248255445
+    },
+    {
+      "month_date": "2008-01-01 00:00:00+00:00",
+      "ratings": 103575,
+      "half_share": 0.43831040308954866
+    },
+    {
+      "month_date": "2008-02-01 00:00:00+00:00",
+      "ratings": 85911,
+      "half_share": 0.43891934676583905
+    },
+    {
+      "month_date": "2008-03-01 00:00:00+00:00",
+      "ratings": 80601,
+      "half_share": 0.44082579620600243
+    },
+    {
+      "month_date": "2008-04-01 00:00:00+00:00",
+      "ratings": 68857,
+      "half_share": 0.4347270430021639
+    },
+    {
+      "month_date": "2008-05-01 00:00:00+00:00",
+      "ratings": 65557,
+      "half_share": 0.44410207910673155
+    },
+    {
+      "month_date": "2008-06-01 00:00:00+00:00",
+      "ratings": 76528,
+      "half_share": 0.43973447627012335
+    },
+    {
+      "month_date": "2008-07-01 00:00:00+00:00",
+      "ratings": 94479,
+      "half_share": 0.4356311984673843
+    },
+    {
+      "month_date": "2008-08-01 00:00:00+00:00",
+      "ratings": 87228,
+      "half_share": 0.4343444765442289
+    },
+    {
+      "month_date": "2008-09-01 00:00:00+00:00",
+      "ratings": 71002,
+      "half_share": 0.43510041970648716
+    },
+    {
+      "month_date": "2008-10-01 00:00:00+00:00",
+      "ratings": 159489,
+      "half_share": 0.44003034692047727
+    },
+    {
+      "month_date": "2008-11-01 00:00:00+00:00",
+      "ratings": 132426,
+      "half_share": 0.43122196547505776
+    },
+    {
+      "month_date": "2008-12-01 00:00:00+00:00",
+      "ratings": 91418,
+      "half_share": 0.43550504277057034
+    },
+    {
+      "month_date": "2009-01-01 00:00:00+00:00",
+      "ratings": 111426,
+      "half_share": 0.4398345090014898
+    },
+    {
+      "month_date": "2009-02-01 00:00:00+00:00",
+      "ratings": 79314,
+      "half_share": 0.437135940691429
+    },
+    {
+      "month_date": "2009-03-01 00:00:00+00:00",
+      "ratings": 95285,
+      "half_share": 0.4331531720627591
+    },
+    {
+      "month_date": "2009-04-01 00:00:00+00:00",
+      "ratings": 74423,
+      "half_share": 0.43872190048775245
+    },
+    {
+      "month_date": "2009-05-01 00:00:00+00:00",
+      "ratings": 72743,
+      "half_share": 0.4338286845469667
+    },
+    {
+      "month_date": "2009-06-01 00:00:00+00:00",
+      "ratings": 68013,
+      "half_share": 0.43479922955905487
+    },
+    {
+      "month_date": "2009-07-01 00:00:00+00:00",
+      "ratings": 67334,
+      "half_share": 0.4422728487836754
+    },
+    {
+      "month_date": "2009-08-01 00:00:00+00:00",
+      "ratings": 68962,
+      "half_share": 0.4307299672283286
+    },
+    {
+      "month_date": "2009-09-01 00:00:00+00:00",
+      "ratings": 65297,
+      "half_share": 0.43599246519748225
+    },
+    {
+      "month_date": "2009-10-01 00:00:00+00:00",
+      "ratings": 63624,
+      "half_share": 0.4256412674462467
+    },
+    {
+      "month_date": "2009-11-01 00:00:00+00:00",
+      "ratings": 59193,
+      "half_share": 0.4259287415741726
+    },
+    {
+      "month_date": "2009-12-01 00:00:00+00:00",
+      "ratings": 65082,
+      "half_share": 0.42590885344642143
+    },
+    {
+      "month_date": "2010-01-01 00:00:00+00:00",
+      "ratings": 81078,
+      "half_share": 0.44414021066133846
+    },
+    {
+      "month_date": "2010-02-01 00:00:00+00:00",
+      "ratings": 60470,
+      "half_share": 0.4383330577145692
+    },
+    {
+      "month_date": "2010-03-01 00:00:00+00:00",
+      "ratings": 67014,
+      "half_share": 0.4510251589220163
+    },
+    {
+      "month_date": "2010-04-01 00:00:00+00:00",
+      "ratings": 61535,
+      "half_share": 0.43519947997074837
+    },
+    {
+      "month_date": "2010-05-01 00:00:00+00:00",
+      "ratings": 60411,
+      "half_share": 0.42960719074340764
+    },
+    {
+      "month_date": "2010-06-01 00:00:00+00:00",
+      "ratings": 64198,
+      "half_share": 0.4363998878469734
+    },
+    {
+      "month_date": "2010-07-01 00:00:00+00:00",
+      "ratings": 70616,
+      "half_share": 0.4305114988104679
+    },
+    {
+      "month_date": "2010-08-01 00:00:00+00:00",
+      "ratings": 80001,
+      "half_share": 0.42426969662879216
+    },
+    {
+      "month_date": "2010-09-01 00:00:00+00:00",
+      "ratings": 91499,
+      "half_share": 0.4377315599077585
+    },
+    {
+      "month_date": "2010-10-01 00:00:00+00:00",
+      "ratings": 84075,
+      "half_share": 0.43342253939934583
+    },
+    {
+      "month_date": "2010-11-01 00:00:00+00:00",
+      "ratings": 71889,
+      "half_share": 0.4353239021268901
+    },
+    {
+      "month_date": "2010-12-01 00:00:00+00:00",
+      "ratings": 67287,
+      "half_share": 0.4285969057916091
+    },
+    {
+      "month_date": "2011-01-01 00:00:00+00:00",
+      "ratings": 79163,
+      "half_share": 0.43640337026135945
+    },
+    {
+      "month_date": "2011-02-01 00:00:00+00:00",
+      "ratings": 63768,
+      "half_share": 0.43071760130472964
+    },
+    {
+      "month_date": "2011-03-01 00:00:00+00:00",
+      "ratings": 73849,
+      "half_share": 0.42513778114801826
+    },
+    {
+      "month_date": "2011-04-01 00:00:00+00:00",
+      "ratings": 73177,
+      "half_share": 0.42979351435560353
+    },
+    {
+      "month_date": "2011-05-01 00:00:00+00:00",
+      "ratings": 67706,
+      "half_share": 0.43415650016246715
+    },
+    {
+      "month_date": "2011-06-01 00:00:00+00:00",
+      "ratings": 58749,
+      "half_share": 0.427564724505949
+    },
+    {
+      "month_date": "2011-07-01 00:00:00+00:00",
+      "ratings": 58593,
+      "half_share": 0.4354274401379004
+    },
+    {
+      "month_date": "2011-08-01 00:00:00+00:00",
+      "ratings": 54040,
+      "half_share": 0.4426165803108808
+    },
+    {
+      "month_date": "2011-09-01 00:00:00+00:00",
+      "ratings": 49477,
+      "half_share": 0.435879297451341
+    },
+    {
+      "month_date": "2011-10-01 00:00:00+00:00",
+      "ratings": 49156,
+      "half_share": 0.4283709008055985
+    },
+    {
+      "month_date": "2011-11-01 00:00:00+00:00",
+      "ratings": 51649,
+      "half_share": 0.43145075412883116
+    },
+    {
+      "month_date": "2011-12-01 00:00:00+00:00",
+      "ratings": 49974,
+      "half_share": 0.4402089086324889
+    },
+    {
+      "month_date": "2012-01-01 00:00:00+00:00",
+      "ratings": 50158,
+      "half_share": 0.4347063280035089
+    },
+    {
+      "month_date": "2012-02-01 00:00:00+00:00",
+      "ratings": 61225,
+      "half_share": 0.4382523478971009
+    },
+    {
+      "month_date": "2012-03-01 00:00:00+00:00",
+      "ratings": 58785,
+      "half_share": 0.41939270221995406
+    },
+    {
+      "month_date": "2012-04-01 00:00:00+00:00",
+      "ratings": 59268,
+      "half_share": 0.4339103732199501
+    },
+    {
+      "month_date": "2012-05-01 00:00:00+00:00",
+      "ratings": 86398,
+      "half_share": 0.4227644158429593
+    },
+    {
+      "month_date": "2012-06-01 00:00:00+00:00",
+      "ratings": 52253,
+      "half_share": 0.4239947945572503
+    },
+    {
+      "month_date": "2012-07-01 00:00:00+00:00",
+      "ratings": 56253,
+      "half_share": 0.42966597337030915
+    },
+    {
+      "month_date": "2012-08-01 00:00:00+00:00",
+      "ratings": 48157,
+      "half_share": 0.4188799136158814
+    },
+    {
+      "month_date": "2012-09-01 00:00:00+00:00",
+      "ratings": 49524,
+      "half_share": 0.42971084726597203
+    },
+    {
+      "month_date": "2012-10-01 00:00:00+00:00",
+      "ratings": 54531,
+      "half_share": 0.43164438576222697
+    },
+    {
+      "month_date": "2012-11-01 00:00:00+00:00",
+      "ratings": 57948,
+      "half_share": 0.4190481121005039
+    },
+    {
+      "month_date": "2012-12-01 00:00:00+00:00",
+      "ratings": 60993,
+      "half_share": 0.4183430885511452
+    },
+    {
+      "month_date": "2013-01-01 00:00:00+00:00",
+      "ratings": 61253,
+      "half_share": 0.42321192431391114
+    },
+    {
+      "month_date": "2013-02-01 00:00:00+00:00",
+      "ratings": 50221,
+      "half_share": 0.4328269050795484
+    },
+    {
+      "month_date": "2013-03-01 00:00:00+00:00",
+      "ratings": 46814,
+      "half_share": 0.4182295894390567
+    },
+    {
+      "month_date": "2013-04-01 00:00:00+00:00",
+      "ratings": 53180,
+      "half_share": 0.41494922903347126
+    },
+    {
+      "month_date": "2013-05-01 00:00:00+00:00",
+      "ratings": 47704,
+      "half_share": 0.4355190340432668
+    },
+    {
+      "month_date": "2013-06-01 00:00:00+00:00",
+      "ratings": 44342,
+      "half_share": 0.4281268323485634
+    },
+    {
+      "month_date": "2013-07-01 00:00:00+00:00",
+      "ratings": 45651,
+      "half_share": 0.41571926135243475
+    },
+    {
+      "month_date": "2013-08-01 00:00:00+00:00",
+      "ratings": 39408,
+      "half_share": 0.4212342671538774
+    },
+    {
+      "month_date": "2013-09-01 00:00:00+00:00",
+      "ratings": 61398,
+      "half_share": 0.4034333365907684
+    },
+    {
+      "month_date": "2013-10-01 00:00:00+00:00",
+      "ratings": 35281,
+      "half_share": 0.4045803690371588
+    },
+    {
+      "month_date": "2013-11-01 00:00:00+00:00",
+      "ratings": 37660,
+      "half_share": 0.4194105151354222
+    },
+    {
+      "month_date": "2013-12-01 00:00:00+00:00",
+      "ratings": 40389,
+      "half_share": 0.4185545569338186
+    },
+    {
+      "month_date": "2014-01-01 00:00:00+00:00",
+      "ratings": 43948,
+      "half_share": 0.4168335305360881
+    },
+    {
+      "month_date": "2014-02-01 00:00:00+00:00",
+      "ratings": 39208,
+      "half_share": 0.4197102632115895
+    },
+    {
+      "month_date": "2014-03-01 00:00:00+00:00",
+      "ratings": 41582,
+      "half_share": 0.4274205184935789
+    },
+    {
+      "month_date": "2014-04-01 00:00:00+00:00",
+      "ratings": 36063,
+      "half_share": 0.4145245819815323
+    },
+    {
+      "month_date": "2014-05-01 00:00:00+00:00",
+      "ratings": 38083,
+      "half_share": 0.41884830501798703
+    },
+    {
+      "month_date": "2014-06-01 00:00:00+00:00",
+      "ratings": 35724,
+      "half_share": 0.42596013884223494
+    },
+    {
+      "month_date": "2014-07-01 00:00:00+00:00",
+      "ratings": 39277,
+      "half_share": 0.4334088652391985
+    },
+    {
+      "month_date": "2014-08-01 00:00:00+00:00",
+      "ratings": 35139,
+      "half_share": 0.4242579470104442
+    },
+    {
+      "month_date": "2014-09-01 00:00:00+00:00",
+      "ratings": 30392,
+      "half_share": 0.43346933403527244
+    },
+    {
+      "month_date": "2014-10-01 00:00:00+00:00",
+      "ratings": 35649,
+      "half_share": 0.420572807091363
+    },
+    {
+      "month_date": "2014-11-01 00:00:00+00:00",
+      "ratings": 70822,
+      "half_share": 0.38019259552116574
+    },
+    {
+      "month_date": "2014-12-01 00:00:00+00:00",
+      "ratings": 72650,
+      "half_share": 0.4119614590502409
+    },
+    {
+      "month_date": "2015-01-01 00:00:00+00:00",
+      "ratings": 98821,
+      "half_share": 0.4128272330779895
+    },
+    {
+      "month_date": "2015-02-01 00:00:00+00:00",
+      "ratings": 81606,
+      "half_share": 0.38968948361640077
+    },
+    {
+      "month_date": "2015-03-01 00:00:00+00:00",
+      "ratings": 83917,
+      "half_share": 0.4006816258922507
+    },
+    {
+      "month_date": "2015-04-01 00:00:00+00:00",
+      "ratings": 91620,
+      "half_share": 0.38648766644837373
+    },
+    {
+      "month_date": "2015-05-01 00:00:00+00:00",
+      "ratings": 101784,
+      "half_share": 0.38223099897822843
+    },
+    {
+      "month_date": "2015-06-01 00:00:00+00:00",
+      "ratings": 110504,
+      "half_share": 0.40659161659306453
+    },
+    {
+      "month_date": "2015-07-01 00:00:00+00:00",
+      "ratings": 168193,
+      "half_share": 0.3958666531900852
+    },
+    {
+      "month_date": "2015-08-01 00:00:00+00:00",
+      "ratings": 205569,
+      "half_share": 0.37251725697940835
+    },
+    {
+      "month_date": "2015-09-01 00:00:00+00:00",
+      "ratings": 162541,
+      "half_share": 0.39418977365710806
+    },
+    {
+      "month_date": "2015-10-01 00:00:00+00:00",
+      "ratings": 181336,
+      "half_share": 0.3958618255613888
+    },
+    {
+      "month_date": "2015-11-01 00:00:00+00:00",
+      "ratings": 284051,
+      "half_share": 0.37719634854304335
+    },
+    {
+      "month_date": "2015-12-01 00:00:00+00:00",
+      "ratings": 173924,
+      "half_share": 0.3986971320806789
+    },
+    {
+      "month_date": "2016-01-01 00:00:00+00:00",
+      "ratings": 183871,
+      "half_share": 0.40581168319093275
+    },
+    {
+      "month_date": "2016-02-01 00:00:00+00:00",
+      "ratings": 174466,
+      "half_share": 0.40783877660976925
+    },
+    {
+      "month_date": "2016-03-01 00:00:00+00:00",
+      "ratings": 174715,
+      "half_share": 0.3994333629053029
+    },
+    {
+      "month_date": "2016-04-01 00:00:00+00:00",
+      "ratings": 173847,
+      "half_share": 0.39214366655737515
+    },
+    {
+      "month_date": "2016-05-01 00:00:00+00:00",
+      "ratings": 203985,
+      "half_share": 0.3960683383582126
+    },
+    {
+      "month_date": "2016-06-01 00:00:00+00:00",
+      "ratings": 162299,
+      "half_share": 0.40883184739277506
+    },
+    {
+      "month_date": "2016-07-01 00:00:00+00:00",
+      "ratings": 152747,
+      "half_share": 0.38368020321184704
+    },
+    {
+      "month_date": "2016-08-01 00:00:00+00:00",
+      "ratings": 155499,
+      "half_share": 0.38324362214548
+    },
+    {
+      "month_date": "2016-09-01 00:00:00+00:00",
+      "ratings": 131986,
+      "half_share": 0.39370842362068703
+    },
+    {
+      "month_date": "2016-10-01 00:00:00+00:00",
+      "ratings": 130691,
+      "half_share": 0.3967985553710661
+    },
+    {
+      "month_date": "2016-11-01 00:00:00+00:00",
+      "ratings": 129535,
+      "half_share": 0.39838653645732813
+    },
+    {
+      "month_date": "2016-12-01 00:00:00+00:00",
+      "ratings": 145098,
+      "half_share": 0.3905015920274573
+    },
+    {
+      "month_date": "2017-01-01 00:00:00+00:00",
+      "ratings": 185817,
+      "half_share": 0.39670751330610227
+    },
+    {
+      "month_date": "2017-02-01 00:00:00+00:00",
+      "ratings": 173512,
+      "half_share": 0.4041737747245147
+    },
+    {
+      "month_date": "2017-03-01 00:00:00+00:00",
+      "ratings": 168709,
+      "half_share": 0.3964044597502208
+    },
+    {
+      "month_date": "2017-04-01 00:00:00+00:00",
+      "ratings": 136782,
+      "half_share": 0.3949642496819757
+    },
+    {
+      "month_date": "2017-05-01 00:00:00+00:00",
+      "ratings": 186865,
+      "half_share": 0.40010167768174887
+    },
+    {
+      "month_date": "2017-06-01 00:00:00+00:00",
+      "ratings": 137942,
+      "half_share": 0.40543126821417697
+    },
+    {
+      "month_date": "2017-07-01 00:00:00+00:00",
+      "ratings": 174571,
+      "half_share": 0.39864582318941866
+    },
+    {
+      "month_date": "2017-08-01 00:00:00+00:00",
+      "ratings": 132831,
+      "half_share": 0.4012015267520383
+    },
+    {
+      "month_date": "2017-09-01 00:00:00+00:00",
+      "ratings": 141499,
+      "half_share": 0.4062926239761412
+    },
+    {
+      "month_date": "2017-10-01 00:00:00+00:00",
+      "ratings": 139522,
+      "half_share": 0.4002666246183398
+    },
+    {
+      "month_date": "2017-11-01 00:00:00+00:00",
+      "ratings": 124124,
+      "half_share": 0.4110889110889111
+    },
+    {
+      "month_date": "2017-12-01 00:00:00+00:00",
+      "ratings": 125779,
+      "half_share": 0.3884591227470404
+    },
+    {
+      "month_date": "2018-01-01 00:00:00+00:00",
+      "ratings": 118595,
+      "half_share": 0.3970656435768793
+    },
+    {
+      "month_date": "2018-02-01 00:00:00+00:00",
+      "ratings": 101207,
+      "half_share": 0.38660369342041556
+    },
+    {
+      "month_date": "2018-03-01 00:00:00+00:00",
+      "ratings": 135039,
+      "half_share": 0.4025651848725183
+    },
+    {
+      "month_date": "2018-04-01 00:00:00+00:00",
+      "ratings": 107254,
+      "half_share": 0.3975982247748336
+    },
+    {
+      "month_date": "2018-05-01 00:00:00+00:00",
+      "ratings": 98879,
+      "half_share": 0.40280544908423427
+    },
+    {
+      "month_date": "2018-06-01 00:00:00+00:00",
+      "ratings": 93635,
+      "half_share": 0.3995087307096705
+    },
+    {
+      "month_date": "2018-07-01 00:00:00+00:00",
+      "ratings": 116764,
+      "half_share": 0.3910194923092734
+    },
+    {
+      "month_date": "2018-08-01 00:00:00+00:00",
+      "ratings": 119233,
+      "half_share": 0.4015750673051924
+    },
+    {
+      "month_date": "2018-09-01 00:00:00+00:00",
+      "ratings": 113146,
+      "half_share": 0.39786647340604175
+    },
+    {
+      "month_date": "2018-10-01 00:00:00+00:00",
+      "ratings": 119753,
+      "half_share": 0.37594882800430884
+    },
+    {
+      "month_date": "2018-11-01 00:00:00+00:00",
+      "ratings": 117814,
+      "half_share": 0.3944522722257117
+    },
+    {
+      "month_date": "2018-12-01 00:00:00+00:00",
+      "ratings": 149738,
+      "half_share": 0.4007399591286113
+    },
+    {
+      "month_date": "2019-01-01 00:00:00+00:00",
+      "ratings": 155644,
+      "half_share": 0.4020071445092647
+    },
+    {
+      "month_date": "2019-02-01 00:00:00+00:00",
+      "ratings": 117818,
+      "half_share": 0.3945492199833642
+    },
+    {
+      "month_date": "2019-03-01 00:00:00+00:00",
+      "ratings": 130726,
+      "half_share": 0.3825099827119318
+    },
+    {
+      "month_date": "2019-04-01 00:00:00+00:00",
+      "ratings": 120561,
+      "half_share": 0.3895455412612702
+    },
+    {
+      "month_date": "2019-05-01 00:00:00+00:00",
+      "ratings": 131306,
+      "half_share": 0.3759081839367584
+    },
+    {
+      "month_date": "2019-06-01 00:00:00+00:00",
+      "ratings": 89814,
+      "half_share": 0.4012403411494867
+    },
+    {
+      "month_date": "2019-07-01 00:00:00+00:00",
+      "ratings": 102046,
+      "half_share": 0.4119906708739196
+    },
+    {
+      "month_date": "2019-08-01 00:00:00+00:00",
+      "ratings": 109857,
+      "half_share": 0.41776127147109426
+    },
+    {
+      "month_date": "2019-09-01 00:00:00+00:00",
+      "ratings": 134965,
+      "half_share": 0.41693772459526546
+    },
+    {
+      "month_date": "2019-10-01 00:00:00+00:00",
+      "ratings": 97809,
+      "half_share": 0.39635411874162907
+    },
+    {
+      "month_date": "2019-11-01 00:00:00+00:00",
+      "ratings": 101087,
+      "half_share": 0.3942643465529692
+    },
+    {
+      "month_date": "2019-12-01 00:00:00+00:00",
+      "ratings": 93834,
+      "half_share": 0.4123878338342179
+    },
+    {
+      "month_date": "2020-01-01 00:00:00+00:00",
+      "ratings": 125929,
+      "half_share": 0.4292101104590682
+    },
+    {
+      "month_date": "2020-02-01 00:00:00+00:00",
+      "ratings": 101901,
+      "half_share": 0.40952493106053917
+    },
+    {
+      "month_date": "2020-03-01 00:00:00+00:00",
+      "ratings": 147415,
+      "half_share": 0.3943289353186582
+    },
+    {
+      "month_date": "2020-04-01 00:00:00+00:00",
+      "ratings": 196780,
+      "half_share": 0.39936477284276856
+    },
+    {
+      "month_date": "2020-05-01 00:00:00+00:00",
+      "ratings": 179170,
+      "half_share": 0.4039682982642183
+    },
+    {
+      "month_date": "2020-06-01 00:00:00+00:00",
+      "ratings": 127165,
+      "half_share": 0.4096960641685998
+    },
+    {
+      "month_date": "2020-07-01 00:00:00+00:00",
+      "ratings": 137284,
+      "half_share": 0.4159625302293057
+    },
+    {
+      "month_date": "2020-08-01 00:00:00+00:00",
+      "ratings": 140801,
+      "half_share": 0.4049971235999744
+    },
+    {
+      "month_date": "2020-09-01 00:00:00+00:00",
+      "ratings": 124030,
+      "half_share": 0.4061194872208337
+    },
+    {
+      "month_date": "2020-10-01 00:00:00+00:00",
+      "ratings": 137357,
+      "half_share": 0.41874822542717155
+    },
+    {
+      "month_date": "2020-11-01 00:00:00+00:00",
+      "ratings": 137105,
+      "half_share": 0.39977389591918605
+    },
+    {
+      "month_date": "2020-12-01 00:00:00+00:00",
+      "ratings": 133222,
+      "half_share": 0.39082133581540585
+    },
+    {
+      "month_date": "2021-01-01 00:00:00+00:00",
+      "ratings": 151055,
+      "half_share": 0.40883122041640463
+    },
+    {
+      "month_date": "2021-02-01 00:00:00+00:00",
+      "ratings": 131295,
+      "half_share": 0.40549906698655697
+    },
+    {
+      "month_date": "2021-03-01 00:00:00+00:00",
+      "ratings": 123259,
+      "half_share": 0.4128704597635872
+    },
+    {
+      "month_date": "2021-04-01 00:00:00+00:00",
+      "ratings": 117140,
+      "half_share": 0.4102356155028171
+    },
+    {
+      "month_date": "2021-05-01 00:00:00+00:00",
+      "ratings": 104979,
+      "half_share": 0.40314729612589184
+    },
+    {
+      "month_date": "2021-06-01 00:00:00+00:00",
+      "ratings": 92078,
+      "half_share": 0.4107278611611894
+    },
+    {
+      "month_date": "2021-07-01 00:00:00+00:00",
+      "ratings": 99408,
+      "half_share": 0.39985715435377434
+    },
+    {
+      "month_date": "2021-08-01 00:00:00+00:00",
+      "ratings": 100589,
+      "half_share": 0.40847408762389525
+    },
+    {
+      "month_date": "2021-09-01 00:00:00+00:00",
+      "ratings": 87140,
+      "half_share": 0.40662152857470735
+    },
+    {
+      "month_date": "2021-10-01 00:00:00+00:00",
+      "ratings": 72193,
+      "half_share": 0.4164115634479797
+    },
+    {
+      "month_date": "2021-11-01 00:00:00+00:00",
+      "ratings": 73419,
+      "half_share": 0.4149334640896771
+    },
+    {
+      "month_date": "2021-12-01 00:00:00+00:00",
+      "ratings": 87357,
+      "half_share": 0.39849124855478096
+    },
+    {
+      "month_date": "2022-01-01 00:00:00+00:00",
+      "ratings": 105045,
+      "half_share": 0.4132038650102337
+    },
+    {
+      "month_date": "2022-02-01 00:00:00+00:00",
+      "ratings": 89586,
+      "half_share": 0.4279686558167571
+    },
+    {
+      "month_date": "2022-03-01 00:00:00+00:00",
+      "ratings": 73954,
+      "half_share": 0.41374367850285315
+    },
+    {
+      "month_date": "2022-04-01 00:00:00+00:00",
+      "ratings": 78431,
+      "half_share": 0.4190307403960169
+    },
+    {
+      "month_date": "2022-05-01 00:00:00+00:00",
+      "ratings": 64867,
+      "half_share": 0.4128447438605146
+    },
+    {
+      "month_date": "2022-06-01 00:00:00+00:00",
+      "ratings": 70348,
+      "half_share": 0.40910900096662306
+    },
+    {
+      "month_date": "2022-07-01 00:00:00+00:00",
+      "ratings": 62898,
+      "half_share": 0.42495786829469934
+    },
+    {
+      "month_date": "2022-08-01 00:00:00+00:00",
+      "ratings": 80105,
+      "half_share": 0.4283253230135447
+    },
+    {
+      "month_date": "2022-09-01 00:00:00+00:00",
+      "ratings": 68369,
+      "half_share": 0.42138981117172986
+    },
+    {
+      "month_date": "2022-10-01 00:00:00+00:00",
+      "ratings": 63799,
+      "half_share": 0.40146397278954216
+    },
+    {
+      "month_date": "2022-11-01 00:00:00+00:00",
+      "ratings": 74303,
+      "half_share": 0.39215105715785364
+    },
+    {
+      "month_date": "2022-12-01 00:00:00+00:00",
+      "ratings": 81400,
+      "half_share": 0.42115479115479115
+    },
+    {
+      "month_date": "2023-01-01 00:00:00+00:00",
+      "ratings": 100992,
+      "half_share": 0.42298399873257286
+    },
+    {
+      "month_date": "2023-02-01 00:00:00+00:00",
+      "ratings": 76015,
+      "half_share": 0.41476024468854833
+    },
+    {
+      "month_date": "2023-03-01 00:00:00+00:00",
+      "ratings": 80679,
+      "half_share": 0.40009172151365285
+    },
+    {
+      "month_date": "2023-04-01 00:00:00+00:00",
+      "ratings": 76535,
+      "half_share": 0.41226889658326255
+    },
+    {
+      "month_date": "2023-05-01 00:00:00+00:00",
+      "ratings": 77421,
+      "half_share": 0.42257268699706796
+    },
+    {
+      "month_date": "2023-06-01 00:00:00+00:00",
+      "ratings": 67301,
+      "half_share": 0.4204395179863598
+    },
+    {
+      "month_date": "2023-07-01 00:00:00+00:00",
+      "ratings": 90409,
+      "half_share": 0.40941720403942083
+    },
+    {
+      "month_date": "2023-08-01 00:00:00+00:00",
+      "ratings": 96315,
+      "half_share": 0.40667601100555467
+    },
+    {
+      "month_date": "2023-09-01 00:00:00+00:00",
+      "ratings": 94583,
+      "half_share": 0.40579173847308714
+    },
+    {
+      "month_date": "2023-10-01 00:00:00+00:00",
+      "ratings": 33804,
+      "half_share": 0.41424091823452847
+    }
+  ],
+  "cohorts": [
+    {
+      "era": "pre-v3",
+      "users": 70115,
+      "median_total_ratings": 60.0,
+      "first_date": "1995-01-09 11:46:44+00:00",
+      "last_date": "2003-02-17 23:19:22+00:00"
+    },
+    {
+      "era": "v3",
+      "users": 62900,
+      "median_total_ratings": 81.0,
+      "first_date": "2003-02-18 00:38:03+00:00",
+      "last_date": "2014-10-31 20:46:13+00:00"
+    },
+    {
+      "era": "v4+",
+      "users": 67933,
+      "median_total_ratings": 82.0,
+      "first_date": "2014-11-01 02:09:00+00:00",
+      "last_date": "2023-10-13 00:57:40+00:00"
+    }
+  ],
+  "new_users_monthly": [
+    {
+      "month_date": "1995-01-01 00:00:00+00:00",
+      "users": 2
+    },
+    {
+      "month_date": "1996-01-01 00:00:00+00:00",
+      "users": 6
+    },
+    {
+      "month_date": "1996-02-01 00:00:00+00:00",
+      "users": 20
+    },
+    {
+      "month_date": "1996-03-01 00:00:00+00:00",
+      "users": 226
+    },
+    {
+      "month_date": "1996-04-01 00:00:00+00:00",
+      "users": 1215
+    },
+    {
+      "month_date": "1996-05-01 00:00:00+00:00",
+      "users": 3351
+    },
+    {
+      "month_date": "1996-06-01 00:00:00+00:00",
+      "users": 3980
+    },
+    {
+      "month_date": "1996-07-01 00:00:00+00:00",
+      "users": 3418
+    },
+    {
+      "month_date": "1996-08-01 00:00:00+00:00",
+      "users": 3244
+    },
+    {
+      "month_date": "1996-09-01 00:00:00+00:00",
+      "users": 2351
+    },
+    {
+      "month_date": "1996-10-01 00:00:00+00:00",
+      "users": 2956
+    },
+    {
+      "month_date": "1996-11-01 00:00:00+00:00",
+      "users": 2671
+    },
+    {
+      "month_date": "1996-12-01 00:00:00+00:00",
+      "users": 1866
+    },
+    {
+      "month_date": "1997-01-01 00:00:00+00:00",
+      "users": 1411
+    },
+    {
+      "month_date": "1997-02-01 00:00:00+00:00",
+      "users": 913
+    },
+    {
+      "month_date": "1997-03-01 00:00:00+00:00",
+      "users": 1522
+    },
+    {
+      "month_date": "1997-04-01 00:00:00+00:00",
+      "users": 1180
+    },
+    {
+      "month_date": "1997-05-01 00:00:00+00:00",
+      "users": 1300
+    },
+    {
+      "month_date": "1997-06-01 00:00:00+00:00",
+      "users": 1050
+    },
+    {
+      "month_date": "1997-07-01 00:00:00+00:00",
+      "users": 676
+    },
+    {
+      "month_date": "1997-09-01 00:00:00+00:00",
+      "users": 239
+    },
+    {
+      "month_date": "1997-10-01 00:00:00+00:00",
+      "users": 212
+    },
+    {
+      "month_date": "1997-11-01 00:00:00+00:00",
+      "users": 399
+    },
+    {
+      "month_date": "1997-12-01 00:00:00+00:00",
+      "users": 190
+    },
+    {
+      "month_date": "1998-01-01 00:00:00+00:00",
+      "users": 237
+    },
+    {
+      "month_date": "1998-02-01 00:00:00+00:00",
+      "users": 147
+    },
+    {
+      "month_date": "1998-03-01 00:00:00+00:00",
+      "users": 240
+    },
+    {
+      "month_date": "1998-04-01 00:00:00+00:00",
+      "users": 186
+    },
+    {
+      "month_date": "1998-05-01 00:00:00+00:00",
+      "users": 80
+    },
+    {
+      "month_date": "1998-06-01 00:00:00+00:00",
+      "users": 158
+    },
+    {
+      "month_date": "1998-07-01 00:00:00+00:00",
+      "users": 655
+    },
+    {
+      "month_date": "1998-08-01 00:00:00+00:00",
+      "users": 273
+    },
+    {
+      "month_date": "1998-09-01 00:00:00+00:00",
+      "users": 107
+    },
+    {
+      "month_date": "1998-10-01 00:00:00+00:00",
+      "users": 100
+    },
+    {
+      "month_date": "1998-11-01 00:00:00+00:00",
+      "users": 113
+    },
+    {
+      "month_date": "1998-12-01 00:00:00+00:00",
+      "users": 278
+    },
+    {
+      "month_date": "1999-01-01 00:00:00+00:00",
+      "users": 152
+    },
+    {
+      "month_date": "1999-02-01 00:00:00+00:00",
+      "users": 109
+    },
+    {
+      "month_date": "1999-03-01 00:00:00+00:00",
+      "users": 70
+    },
+    {
+      "month_date": "1999-04-01 00:00:00+00:00",
+      "users": 96
+    },
+    {
+      "month_date": "1999-05-01 00:00:00+00:00",
+      "users": 85
+    },
+    {
+      "month_date": "1999-06-01 00:00:00+00:00",
+      "users": 68
+    },
+    {
+      "month_date": "1999-07-01 00:00:00+00:00",
+      "users": 78
+    },
+    {
+      "month_date": "1999-08-01 00:00:00+00:00",
+      "users": 75
+    },
+    {
+      "month_date": "1999-09-01 00:00:00+00:00",
+      "users": 469
+    },
+    {
+      "month_date": "1999-10-01 00:00:00+00:00",
+      "users": 2971
+    },
+    {
+      "month_date": "1999-11-01 00:00:00+00:00",
+      "users": 1489
+    },
+    {
+      "month_date": "1999-12-01 00:00:00+00:00",
+      "users": 3151
+    },
+    {
+      "month_date": "2000-01-01 00:00:00+00:00",
+      "users": 1028
+    },
+    {
+      "month_date": "2000-02-01 00:00:00+00:00",
+      "users": 768
+    },
+    {
+      "month_date": "2000-03-01 00:00:00+00:00",
+      "users": 918
+    },
+    {
+      "month_date": "2000-04-01 00:00:00+00:00",
+      "users": 1211
+    },
+    {
+      "month_date": "2000-05-01 00:00:00+00:00",
+      "users": 593
+    },
+    {
+      "month_date": "2000-06-01 00:00:00+00:00",
+      "users": 530
+    },
+    {
+      "month_date": "2000-07-01 00:00:00+00:00",
+      "users": 937
+    },
+    {
+      "month_date": "2000-08-01 00:00:00+00:00",
+      "users": 1385
+    },
+    {
+      "month_date": "2000-09-01 00:00:00+00:00",
+      "users": 406
+    },
+    {
+      "month_date": "2000-10-01 00:00:00+00:00",
+      "users": 350
+    },
+    {
+      "month_date": "2000-11-01 00:00:00+00:00",
+      "users": 2848
+    },
+    {
+      "month_date": "2000-12-01 00:00:00+00:00",
+      "users": 869
+    },
+    {
+      "month_date": "2001-01-01 00:00:00+00:00",
+      "users": 693
+    },
+    {
+      "month_date": "2001-02-01 00:00:00+00:00",
+      "users": 524
+    },
+    {
+      "month_date": "2001-03-01 00:00:00+00:00",
+      "users": 378
+    },
+    {
+      "month_date": "2001-04-01 00:00:00+00:00",
+      "users": 337
+    },
+    {
+      "month_date": "2001-05-01 00:00:00+00:00",
+      "users": 257
+    },
+    {
+      "month_date": "2001-06-01 00:00:00+00:00",
+      "users": 1065
+    },
+    {
+      "month_date": "2001-07-01 00:00:00+00:00",
+      "users": 873
+    },
+    {
+      "month_date": "2001-08-01 00:00:00+00:00",
+      "users": 554
+    },
+    {
+      "month_date": "2001-09-01 00:00:00+00:00",
+      "users": 506
+    },
+    {
+      "month_date": "2001-10-01 00:00:00+00:00",
+      "users": 546
+    },
+    {
+      "month_date": "2001-11-01 00:00:00+00:00",
+      "users": 646
+    },
+    {
+      "month_date": "2001-12-01 00:00:00+00:00",
+      "users": 492
+    },
+    {
+      "month_date": "2002-01-01 00:00:00+00:00",
+      "users": 559
+    },
+    {
+      "month_date": "2002-02-01 00:00:00+00:00",
+      "users": 471
+    },
+    {
+      "month_date": "2002-03-01 00:00:00+00:00",
+      "users": 387
+    },
+    {
+      "month_date": "2002-04-01 00:00:00+00:00",
+      "users": 481
+    },
+    {
+      "month_date": "2002-05-01 00:00:00+00:00",
+      "users": 299
+    },
+    {
+      "month_date": "2002-06-01 00:00:00+00:00",
+      "users": 279
+    },
+    {
+      "month_date": "2002-07-01 00:00:00+00:00",
+      "users": 286
+    },
+    {
+      "month_date": "2002-08-01 00:00:00+00:00",
+      "users": 318
+    },
+    {
+      "month_date": "2002-09-01 00:00:00+00:00",
+      "users": 299
+    },
+    {
+      "month_date": "2002-10-01 00:00:00+00:00",
+      "users": 344
+    },
+    {
+      "month_date": "2002-11-01 00:00:00+00:00",
+      "users": 385
+    },
+    {
+      "month_date": "2002-12-01 00:00:00+00:00",
+      "users": 379
+    },
+    {
+      "month_date": "2003-01-01 00:00:00+00:00",
+      "users": 750
+    },
+    {
+      "month_date": "2003-02-01 00:00:00+00:00",
+      "users": 604
+    },
+    {
+      "month_date": "2003-03-01 00:00:00+00:00",
+      "users": 531
+    },
+    {
+      "month_date": "2003-04-01 00:00:00+00:00",
+      "users": 370
+    },
+    {
+      "month_date": "2003-05-01 00:00:00+00:00",
+      "users": 353
+    },
+    {
+      "month_date": "2003-06-01 00:00:00+00:00",
+      "users": 311
+    },
+    {
+      "month_date": "2003-07-01 00:00:00+00:00",
+      "users": 357
+    },
+    {
+      "month_date": "2003-08-01 00:00:00+00:00",
+      "users": 290
+    },
+    {
+      "month_date": "2003-09-01 00:00:00+00:00",
+      "users": 400
+    },
+    {
+      "month_date": "2003-10-01 00:00:00+00:00",
+      "users": 382
+    },
+    {
+      "month_date": "2003-11-01 00:00:00+00:00",
+      "users": 397
+    },
+    {
+      "month_date": "2003-12-01 00:00:00+00:00",
+      "users": 347
+    },
+    {
+      "month_date": "2004-01-01 00:00:00+00:00",
+      "users": 430
+    },
+    {
+      "month_date": "2004-02-01 00:00:00+00:00",
+      "users": 506
+    },
+    {
+      "month_date": "2004-03-01 00:00:00+00:00",
+      "users": 501
+    },
+    {
+      "month_date": "2004-04-01 00:00:00+00:00",
+      "users": 330
+    },
+    {
+      "month_date": "2004-05-01 00:00:00+00:00",
+      "users": 423
+    },
+    {
+      "month_date": "2004-06-01 00:00:00+00:00",
+      "users": 348
+    },
+    {
+      "month_date": "2004-07-01 00:00:00+00:00",
+      "users": 342
+    },
+    {
+      "month_date": "2004-08-01 00:00:00+00:00",
+      "users": 427
+    },
+    {
+      "month_date": "2004-09-01 00:00:00+00:00",
+      "users": 465
+    },
+    {
+      "month_date": "2004-10-01 00:00:00+00:00",
+      "users": 419
+    },
+    {
+      "month_date": "2004-11-01 00:00:00+00:00",
+      "users": 417
+    },
+    {
+      "month_date": "2004-12-01 00:00:00+00:00",
+      "users": 347
+    },
+    {
+      "month_date": "2005-01-01 00:00:00+00:00",
+      "users": 652
+    },
+    {
+      "month_date": "2005-02-01 00:00:00+00:00",
+      "users": 630
+    },
+    {
+      "month_date": "2005-03-01 00:00:00+00:00",
+      "users": 2097
+    },
+    {
+      "month_date": "2005-04-01 00:00:00+00:00",
+      "users": 1041
+    },
+    {
+      "month_date": "2005-05-01 00:00:00+00:00",
+      "users": 761
+    },
+    {
+      "month_date": "2005-06-01 00:00:00+00:00",
+      "users": 600
+    },
+    {
+      "month_date": "2005-07-01 00:00:00+00:00",
+      "users": 485
+    },
+    {
+      "month_date": "2005-08-01 00:00:00+00:00",
+      "users": 394
+    },
+    {
+      "month_date": "2005-09-01 00:00:00+00:00",
+      "users": 536
+    },
+    {
+      "month_date": "2005-10-01 00:00:00+00:00",
+      "users": 472
+    },
+    {
+      "month_date": "2005-11-01 00:00:00+00:00",
+      "users": 517
+    },
+    {
+      "month_date": "2005-12-01 00:00:00+00:00",
+      "users": 464
+    },
+    {
+      "month_date": "2006-01-01 00:00:00+00:00",
+      "users": 617
+    },
+    {
+      "month_date": "2006-02-01 00:00:00+00:00",
+      "users": 568
+    },
+    {
+      "month_date": "2006-03-01 00:00:00+00:00",
+      "users": 580
+    },
+    {
+      "month_date": "2006-04-01 00:00:00+00:00",
+      "users": 483
+    },
+    {
+      "month_date": "2006-05-01 00:00:00+00:00",
+      "users": 395
+    },
+    {
+      "month_date": "2006-06-01 00:00:00+00:00",
+      "users": 422
+    },
+    {
+      "month_date": "2006-07-01 00:00:00+00:00",
+      "users": 485
+    },
+    {
+      "month_date": "2006-08-01 00:00:00+00:00",
+      "users": 411
+    },
+    {
+      "month_date": "2006-09-01 00:00:00+00:00",
+      "users": 413
+    },
+    {
+      "month_date": "2006-10-01 00:00:00+00:00",
+      "users": 539
+    },
+    {
+      "month_date": "2006-11-01 00:00:00+00:00",
+      "users": 457
+    },
+    {
+      "month_date": "2006-12-01 00:00:00+00:00",
+      "users": 561
+    },
+    {
+      "month_date": "2007-01-01 00:00:00+00:00",
+      "users": 596
+    },
+    {
+      "month_date": "2007-02-01 00:00:00+00:00",
+      "users": 531
+    },
+    {
+      "month_date": "2007-03-01 00:00:00+00:00",
+      "users": 460
+    },
+    {
+      "month_date": "2007-04-01 00:00:00+00:00",
+      "users": 413
+    },
+    {
+      "month_date": "2007-05-01 00:00:00+00:00",
+      "users": 418
+    },
+    {
+      "month_date": "2007-06-01 00:00:00+00:00",
+      "users": 471
+    },
+    {
+      "month_date": "2007-07-01 00:00:00+00:00",
+      "users": 459
+    },
+    {
+      "month_date": "2007-08-01 00:00:00+00:00",
+      "users": 253
+    },
+    {
+      "month_date": "2007-09-01 00:00:00+00:00",
+      "users": 357
+    },
+    {
+      "month_date": "2007-10-01 00:00:00+00:00",
+      "users": 414
+    },
+    {
+      "month_date": "2007-11-01 00:00:00+00:00",
+      "users": 426
+    },
+    {
+      "month_date": "2007-12-01 00:00:00+00:00",
+      "users": 399
+    },
+    {
+      "month_date": "2008-01-01 00:00:00+00:00",
+      "users": 593
+    },
+    {
+      "month_date": "2008-02-01 00:00:00+00:00",
+      "users": 481
+    },
+    {
+      "month_date": "2008-03-01 00:00:00+00:00",
+      "users": 407
+    },
+    {
+      "month_date": "2008-04-01 00:00:00+00:00",
+      "users": 394
+    },
+    {
+      "month_date": "2008-05-01 00:00:00+00:00",
+      "users": 374
+    },
+    {
+      "month_date": "2008-06-01 00:00:00+00:00",
+      "users": 456
+    },
+    {
+      "month_date": "2008-07-01 00:00:00+00:00",
+      "users": 521
+    },
+    {
+      "month_date": "2008-08-01 00:00:00+00:00",
+      "users": 460
+    },
+    {
+      "month_date": "2008-09-01 00:00:00+00:00",
+      "users": 355
+    },
+    {
+      "month_date": "2008-10-01 00:00:00+00:00",
+      "users": 1261
+    },
+    {
+      "month_date": "2008-11-01 00:00:00+00:00",
+      "users": 763
+    },
+    {
+      "month_date": "2008-12-01 00:00:00+00:00",
+      "users": 517
+    },
+    {
+      "month_date": "2009-01-01 00:00:00+00:00",
+      "users": 657
+    },
+    {
+      "month_date": "2009-02-01 00:00:00+00:00",
+      "users": 464
+    },
+    {
+      "month_date": "2009-03-01 00:00:00+00:00",
+      "users": 570
+    },
+    {
+      "month_date": "2009-04-01 00:00:00+00:00",
+      "users": 487
+    },
+    {
+      "month_date": "2009-05-01 00:00:00+00:00",
+      "users": 445
+    },
+    {
+      "month_date": "2009-06-01 00:00:00+00:00",
+      "users": 433
+    },
+    {
+      "month_date": "2009-07-01 00:00:00+00:00",
+      "users": 427
+    },
+    {
+      "month_date": "2009-08-01 00:00:00+00:00",
+      "users": 398
+    },
+    {
+      "month_date": "2009-09-01 00:00:00+00:00",
+      "users": 387
+    },
+    {
+      "month_date": "2009-10-01 00:00:00+00:00",
+      "users": 408
+    },
+    {
+      "month_date": "2009-11-01 00:00:00+00:00",
+      "users": 363
+    },
+    {
+      "month_date": "2009-12-01 00:00:00+00:00",
+      "users": 376
+    },
+    {
+      "month_date": "2010-01-01 00:00:00+00:00",
+      "users": 460
+    },
+    {
+      "month_date": "2010-02-01 00:00:00+00:00",
+      "users": 354
+    },
+    {
+      "month_date": "2010-03-01 00:00:00+00:00",
+      "users": 385
+    },
+    {
+      "month_date": "2010-04-01 00:00:00+00:00",
+      "users": 396
+    },
+    {
+      "month_date": "2010-05-01 00:00:00+00:00",
+      "users": 410
+    },
+    {
+      "month_date": "2010-06-01 00:00:00+00:00",
+      "users": 390
+    },
+    {
+      "month_date": "2010-07-01 00:00:00+00:00",
+      "users": 466
+    },
+    {
+      "month_date": "2010-08-01 00:00:00+00:00",
+      "users": 462
+    },
+    {
+      "month_date": "2010-09-01 00:00:00+00:00",
+      "users": 633
+    },
+    {
+      "month_date": "2010-10-01 00:00:00+00:00",
+      "users": 543
+    },
+    {
+      "month_date": "2010-11-01 00:00:00+00:00",
+      "users": 473
+    },
+    {
+      "month_date": "2010-12-01 00:00:00+00:00",
+      "users": 475
+    },
+    {
+      "month_date": "2011-01-01 00:00:00+00:00",
+      "users": 484
+    },
+    {
+      "month_date": "2011-02-01 00:00:00+00:00",
+      "users": 456
+    },
+    {
+      "month_date": "2011-03-01 00:00:00+00:00",
+      "users": 584
+    },
+    {
+      "month_date": "2011-04-01 00:00:00+00:00",
+      "users": 518
+    },
+    {
+      "month_date": "2011-05-01 00:00:00+00:00",
+      "users": 462
+    },
+    {
+      "month_date": "2011-06-01 00:00:00+00:00",
+      "users": 348
+    },
+    {
+      "month_date": "2011-07-01 00:00:00+00:00",
+      "users": 385
+    },
+    {
+      "month_date": "2011-08-01 00:00:00+00:00",
+      "users": 355
+    },
+    {
+      "month_date": "2011-09-01 00:00:00+00:00",
+      "users": 317
+    },
+    {
+      "month_date": "2011-10-01 00:00:00+00:00",
+      "users": 373
+    },
+    {
+      "month_date": "2011-11-01 00:00:00+00:00",
+      "users": 350
+    },
+    {
+      "month_date": "2011-12-01 00:00:00+00:00",
+      "users": 366
+    },
+    {
+      "month_date": "2012-01-01 00:00:00+00:00",
+      "users": 290
+    },
+    {
+      "month_date": "2012-02-01 00:00:00+00:00",
+      "users": 363
+    },
+    {
+      "month_date": "2012-03-01 00:00:00+00:00",
+      "users": 356
+    },
+    {
+      "month_date": "2012-04-01 00:00:00+00:00",
+      "users": 388
+    },
+    {
+      "month_date": "2012-05-01 00:00:00+00:00",
+      "users": 700
+    },
+    {
+      "month_date": "2012-06-01 00:00:00+00:00",
+      "users": 354
+    },
+    {
+      "month_date": "2012-07-01 00:00:00+00:00",
+      "users": 359
+    },
+    {
+      "month_date": "2012-08-01 00:00:00+00:00",
+      "users": 304
+    },
+    {
+      "month_date": "2012-09-01 00:00:00+00:00",
+      "users": 307
+    },
+    {
+      "month_date": "2012-10-01 00:00:00+00:00",
+      "users": 431
+    },
+    {
+      "month_date": "2012-11-01 00:00:00+00:00",
+      "users": 379
+    },
+    {
+      "month_date": "2012-12-01 00:00:00+00:00",
+      "users": 375
+    },
+    {
+      "month_date": "2013-01-01 00:00:00+00:00",
+      "users": 348
+    },
+    {
+      "month_date": "2013-02-01 00:00:00+00:00",
+      "users": 326
+    },
+    {
+      "month_date": "2013-03-01 00:00:00+00:00",
+      "users": 325
+    },
+    {
+      "month_date": "2013-04-01 00:00:00+00:00",
+      "users": 337
+    },
+    {
+      "month_date": "2013-05-01 00:00:00+00:00",
+      "users": 337
+    },
+    {
+      "month_date": "2013-06-01 00:00:00+00:00",
+      "users": 327
+    },
+    {
+      "month_date": "2013-07-01 00:00:00+00:00",
+      "users": 331
+    },
+    {
+      "month_date": "2013-08-01 00:00:00+00:00",
+      "users": 263
+    },
+    {
+      "month_date": "2013-09-01 00:00:00+00:00",
+      "users": 673
+    },
+    {
+      "month_date": "2013-10-01 00:00:00+00:00",
+      "users": 328
+    },
+    {
+      "month_date": "2013-11-01 00:00:00+00:00",
+      "users": 326
+    },
+    {
+      "month_date": "2013-12-01 00:00:00+00:00",
+      "users": 317
+    },
+    {
+      "month_date": "2014-01-01 00:00:00+00:00",
+      "users": 350
+    },
+    {
+      "month_date": "2014-02-01 00:00:00+00:00",
+      "users": 358
+    },
+    {
+      "month_date": "2014-03-01 00:00:00+00:00",
+      "users": 361
+    },
+    {
+      "month_date": "2014-04-01 00:00:00+00:00",
+      "users": 279
+    },
+    {
+      "month_date": "2014-05-01 00:00:00+00:00",
+      "users": 277
+    },
+    {
+      "month_date": "2014-06-01 00:00:00+00:00",
+      "users": 261
+    },
+    {
+      "month_date": "2014-07-01 00:00:00+00:00",
+      "users": 294
+    },
+    {
+      "month_date": "2014-08-01 00:00:00+00:00",
+      "users": 252
+    },
+    {
+      "month_date": "2014-09-01 00:00:00+00:00",
+      "users": 220
+    },
+    {
+      "month_date": "2014-10-01 00:00:00+00:00",
+      "users": 267
+    },
+    {
+      "month_date": "2014-11-01 00:00:00+00:00",
+      "users": 435
+    },
+    {
+      "month_date": "2014-12-01 00:00:00+00:00",
+      "users": 406
+    },
+    {
+      "month_date": "2015-01-01 00:00:00+00:00",
+      "users": 514
+    },
+    {
+      "month_date": "2015-02-01 00:00:00+00:00",
+      "users": 570
+    },
+    {
+      "month_date": "2015-03-01 00:00:00+00:00",
+      "users": 534
+    },
+    {
+      "month_date": "2015-04-01 00:00:00+00:00",
+      "users": 714
+    },
+    {
+      "month_date": "2015-05-01 00:00:00+00:00",
+      "users": 748
+    },
+    {
+      "month_date": "2015-06-01 00:00:00+00:00",
+      "users": 746
+    },
+    {
+      "month_date": "2015-07-01 00:00:00+00:00",
+      "users": 1137
+    },
+    {
+      "month_date": "2015-08-01 00:00:00+00:00",
+      "users": 1627
+    },
+    {
+      "month_date": "2015-09-01 00:00:00+00:00",
+      "users": 1147
+    },
+    {
+      "month_date": "2015-10-01 00:00:00+00:00",
+      "users": 1195
+    },
+    {
+      "month_date": "2015-11-01 00:00:00+00:00",
+      "users": 2204
+    },
+    {
+      "month_date": "2015-12-01 00:00:00+00:00",
+      "users": 1021
+    },
+    {
+      "month_date": "2016-01-01 00:00:00+00:00",
+      "users": 1108
+    },
+    {
+      "month_date": "2016-02-01 00:00:00+00:00",
+      "users": 1057
+    },
+    {
+      "month_date": "2016-03-01 00:00:00+00:00",
+      "users": 862
+    },
+    {
+      "month_date": "2016-04-01 00:00:00+00:00",
+      "users": 1000
+    },
+    {
+      "month_date": "2016-05-01 00:00:00+00:00",
+      "users": 1016
+    },
+    {
+      "month_date": "2016-06-01 00:00:00+00:00",
+      "users": 808
+    },
+    {
+      "month_date": "2016-07-01 00:00:00+00:00",
+      "users": 874
+    },
+    {
+      "month_date": "2016-08-01 00:00:00+00:00",
+      "users": 850
+    },
+    {
+      "month_date": "2016-09-01 00:00:00+00:00",
+      "users": 766
+    },
+    {
+      "month_date": "2016-10-01 00:00:00+00:00",
+      "users": 671
+    },
+    {
+      "month_date": "2016-11-01 00:00:00+00:00",
+      "users": 681
+    },
+    {
+      "month_date": "2016-12-01 00:00:00+00:00",
+      "users": 798
+    },
+    {
+      "month_date": "2017-01-01 00:00:00+00:00",
+      "users": 975
+    },
+    {
+      "month_date": "2017-02-01 00:00:00+00:00",
+      "users": 952
+    },
+    {
+      "month_date": "2017-03-01 00:00:00+00:00",
+      "users": 864
+    },
+    {
+      "month_date": "2017-04-01 00:00:00+00:00",
+      "users": 752
+    },
+    {
+      "month_date": "2017-05-01 00:00:00+00:00",
+      "users": 917
+    },
+    {
+      "month_date": "2017-06-01 00:00:00+00:00",
+      "users": 652
+    },
+    {
+      "month_date": "2017-07-01 00:00:00+00:00",
+      "users": 834
+    },
+    {
+      "month_date": "2017-08-01 00:00:00+00:00",
+      "users": 661
+    },
+    {
+      "month_date": "2017-09-01 00:00:00+00:00",
+      "users": 686
+    },
+    {
+      "month_date": "2017-10-01 00:00:00+00:00",
+      "users": 744
+    },
+    {
+      "month_date": "2017-11-01 00:00:00+00:00",
+      "users": 544
+    },
+    {
+      "month_date": "2017-12-01 00:00:00+00:00",
+      "users": 582
+    },
+    {
+      "month_date": "2018-01-01 00:00:00+00:00",
+      "users": 582
+    },
+    {
+      "month_date": "2018-02-01 00:00:00+00:00",
+      "users": 609
+    },
+    {
+      "month_date": "2018-03-01 00:00:00+00:00",
+      "users": 572
+    },
+    {
+      "month_date": "2018-04-01 00:00:00+00:00",
+      "users": 479
+    },
+    {
+      "month_date": "2018-05-01 00:00:00+00:00",
+      "users": 419
+    },
+    {
+      "month_date": "2018-06-01 00:00:00+00:00",
+      "users": 510
+    },
+    {
+      "month_date": "2018-07-01 00:00:00+00:00",
+      "users": 538
+    },
+    {
+      "month_date": "2018-08-01 00:00:00+00:00",
+      "users": 547
+    },
+    {
+      "month_date": "2018-09-01 00:00:00+00:00",
+      "users": 526
+    },
+    {
+      "month_date": "2018-10-01 00:00:00+00:00",
+      "users": 654
+    },
+    {
+      "month_date": "2018-11-01 00:00:00+00:00",
+      "users": 671
+    },
+    {
+      "month_date": "2018-12-01 00:00:00+00:00",
+      "users": 795
+    },
+    {
+      "month_date": "2019-01-01 00:00:00+00:00",
+      "users": 765
+    },
+    {
+      "month_date": "2019-02-01 00:00:00+00:00",
+      "users": 636
+    },
+    {
+      "month_date": "2019-03-01 00:00:00+00:00",
+      "users": 675
+    },
+    {
+      "month_date": "2019-04-01 00:00:00+00:00",
+      "users": 536
+    },
+    {
+      "month_date": "2019-05-01 00:00:00+00:00",
+      "users": 609
+    },
+    {
+      "month_date": "2019-06-01 00:00:00+00:00",
+      "users": 453
+    },
+    {
+      "month_date": "2019-07-01 00:00:00+00:00",
+      "users": 547
+    },
+    {
+      "month_date": "2019-08-01 00:00:00+00:00",
+      "users": 525
+    },
+    {
+      "month_date": "2019-09-01 00:00:00+00:00",
+      "users": 702
+    },
+    {
+      "month_date": "2019-10-01 00:00:00+00:00",
+      "users": 463
+    },
+    {
+      "month_date": "2019-11-01 00:00:00+00:00",
+      "users": 503
+    },
+    {
+      "month_date": "2019-12-01 00:00:00+00:00",
+      "users": 436
+    },
+    {
+      "month_date": "2020-01-01 00:00:00+00:00",
+      "users": 580
+    },
+    {
+      "month_date": "2020-02-01 00:00:00+00:00",
+      "users": 503
+    },
+    {
+      "month_date": "2020-03-01 00:00:00+00:00",
+      "users": 788
+    },
+    {
+      "month_date": "2020-04-01 00:00:00+00:00",
+      "users": 1015
+    },
+    {
+      "month_date": "2020-05-01 00:00:00+00:00",
+      "users": 931
+    },
+    {
+      "month_date": "2020-06-01 00:00:00+00:00",
+      "users": 671
+    },
+    {
+      "month_date": "2020-07-01 00:00:00+00:00",
+      "users": 652
+    },
+    {
+      "month_date": "2020-08-01 00:00:00+00:00",
+      "users": 692
+    },
+    {
+      "month_date": "2020-09-01 00:00:00+00:00",
+      "users": 643
+    },
+    {
+      "month_date": "2020-10-01 00:00:00+00:00",
+      "users": 710
+    },
+    {
+      "month_date": "2020-11-01 00:00:00+00:00",
+      "users": 648
+    },
+    {
+      "month_date": "2020-12-01 00:00:00+00:00",
+      "users": 698
+    },
+    {
+      "month_date": "2021-01-01 00:00:00+00:00",
+      "users": 729
+    },
+    {
+      "month_date": "2021-02-01 00:00:00+00:00",
+      "users": 586
+    },
+    {
+      "month_date": "2021-03-01 00:00:00+00:00",
+      "users": 567
+    },
+    {
+      "month_date": "2021-04-01 00:00:00+00:00",
+      "users": 561
+    },
+    {
+      "month_date": "2021-05-01 00:00:00+00:00",
+      "users": 486
+    },
+    {
+      "month_date": "2021-06-01 00:00:00+00:00",
+      "users": 450
+    },
+    {
+      "month_date": "2021-07-01 00:00:00+00:00",
+      "users": 454
+    },
+    {
+      "month_date": "2021-08-01 00:00:00+00:00",
+      "users": 457
+    },
+    {
+      "month_date": "2021-09-01 00:00:00+00:00",
+      "users": 391
+    },
+    {
+      "month_date": "2021-10-01 00:00:00+00:00",
+      "users": 295
+    },
+    {
+      "month_date": "2021-11-01 00:00:00+00:00",
+      "users": 344
+    },
+    {
+      "month_date": "2021-12-01 00:00:00+00:00",
+      "users": 348
+    },
+    {
+      "month_date": "2022-01-01 00:00:00+00:00",
+      "users": 432
+    },
+    {
+      "month_date": "2022-02-01 00:00:00+00:00",
+      "users": 347
+    },
+    {
+      "month_date": "2022-03-01 00:00:00+00:00",
+      "users": 308
+    },
+    {
+      "month_date": "2022-04-01 00:00:00+00:00",
+      "users": 375
+    },
+    {
+      "month_date": "2022-05-01 00:00:00+00:00",
+      "users": 284
+    },
+    {
+      "month_date": "2022-06-01 00:00:00+00:00",
+      "users": 306
+    },
+    {
+      "month_date": "2022-07-01 00:00:00+00:00",
+      "users": 303
+    },
+    {
+      "month_date": "2022-08-01 00:00:00+00:00",
+      "users": 335
+    },
+    {
+      "month_date": "2022-09-01 00:00:00+00:00",
+      "users": 278
+    },
+    {
+      "month_date": "2022-10-01 00:00:00+00:00",
+      "users": 262
+    },
+    {
+      "month_date": "2022-11-01 00:00:00+00:00",
+      "users": 335
+    },
+    {
+      "month_date": "2022-12-01 00:00:00+00:00",
+      "users": 346
+    },
+    {
+      "month_date": "2023-01-01 00:00:00+00:00",
+      "users": 466
+    },
+    {
+      "month_date": "2023-02-01 00:00:00+00:00",
+      "users": 355
+    },
+    {
+      "month_date": "2023-03-01 00:00:00+00:00",
+      "users": 329
+    },
+    {
+      "month_date": "2023-04-01 00:00:00+00:00",
+      "users": 305
+    },
+    {
+      "month_date": "2023-05-01 00:00:00+00:00",
+      "users": 337
+    },
+    {
+      "month_date": "2023-06-01 00:00:00+00:00",
+      "users": 305
+    },
+    {
+      "month_date": "2023-07-01 00:00:00+00:00",
+      "users": 370
+    },
+    {
+      "month_date": "2023-08-01 00:00:00+00:00",
+      "users": 413
+    },
+    {
+      "month_date": "2023-09-01 00:00:00+00:00",
+      "users": 421
+    },
+    {
+      "month_date": "2023-10-01 00:00:00+00:00",
+      "users": 118
+    }
+  ],
+  "cohorts_yearly": [
+    {
+      "cohort_year": 1995,
+      "users": 2
+    },
+    {
+      "cohort_year": 1996,
+      "users": 25304
+    },
+    {
+      "cohort_year": 1997,
+      "users": 9092
+    },
+    {
+      "cohort_year": 1998,
+      "users": 2574
+    },
+    {
+      "cohort_year": 1999,
+      "users": 8813
+    },
+    {
+      "cohort_year": 2000,
+      "users": 11843
+    },
+    {
+      "cohort_year": 2001,
+      "users": 6871
+    },
+    {
+      "cohort_year": 2002,
+      "users": 4487
+    },
+    {
+      "cohort_year": 2003,
+      "users": 5092
+    },
+    {
+      "cohort_year": 2004,
+      "users": 4955
+    },
+    {
+      "cohort_year": 2005,
+      "users": 8649
+    },
+    {
+      "cohort_year": 2006,
+      "users": 5931
+    },
+    {
+      "cohort_year": 2007,
+      "users": 5197
+    },
+    {
+      "cohort_year": 2008,
+      "users": 6582
+    },
+    {
+      "cohort_year": 2009,
+      "users": 5415
+    },
+    {
+      "cohort_year": 2010,
+      "users": 5447
+    },
+    {
+      "cohort_year": 2011,
+      "users": 4998
+    },
+    {
+      "cohort_year": 2012,
+      "users": 4606
+    },
+    {
+      "cohort_year": 2013,
+      "users": 4238
+    },
+    {
+      "cohort_year": 2014,
+      "users": 3760
+    },
+    {
+      "cohort_year": 2015,
+      "users": 12157
+    },
+    {
+      "cohort_year": 2016,
+      "users": 10491
+    },
+    {
+      "cohort_year": 2017,
+      "users": 9163
+    },
+    {
+      "cohort_year": 2018,
+      "users": 6902
+    },
+    {
+      "cohort_year": 2019,
+      "users": 6850
+    },
+    {
+      "cohort_year": 2020,
+      "users": 8531
+    },
+    {
+      "cohort_year": 2021,
+      "users": 5668
+    },
+    {
+      "cohort_year": 2022,
+      "users": 3911
+    },
+    {
+      "cohort_year": 2023,
+      "users": 3419
+    }
+  ],
+  "rating_by_era": [
+    {
+      "era": "pre-v3",
+      "ratings": 8983558,
+      "mean_rating": 3.543442086086604,
+      "half_share": 0.056915422597594405
+    },
+    {
+      "era": "v3",
+      "ratings": 11047393,
+      "mean_rating": 3.494227099551903,
+      "half_share": 0.42843248176289195
+    },
+    {
+      "era": "v4+",
+      "ratings": 11969253,
+      "mean_rating": 3.580721829507656,
+      "half_share": 0.3977960028081953
+    }
+  ],
+  "user_rating_variance": {
+    "nearly_constant": 861,
+    "median_user_mean": 3.725
+  },
+  "first20_global": [
+    {
+      "era": "pre-v3",
+      "users": 70115,
+      "mean_log_count": 4.287702351322473,
+      "top1_share": 0.778106681879769
+    },
+    {
+      "era": "v3",
+      "users": 62900,
+      "mean_log_count": 4.0743216240033355,
+      "top1_share": 0.6351565977742448
+    },
+    {
+      "era": "v4+",
+      "users": 67933,
+      "mean_log_count": 4.389007803200058,
+      "top1_share": 0.8502178617166914
+    }
+  ],
+  "first20_global_stable": [
+    {
+      "era": "pre-v3",
+      "users": 35717,
+      "mean_log_count": 4.096308798729398,
+      "top1_share": 0.6303692919338131
+    },
+    {
+      "era": "v3",
+      "users": 62900,
+      "mean_log_count": 4.074321624003322,
+      "top1_share": 0.6351565977742448
+    },
+    {
+      "era": "v4+",
+      "users": 67933,
+      "mean_log_count": 4.3890078032000766,
+      "top1_share": 0.8502178617166914
+    }
+  ],
+  "first20_prior": [
+    {
+      "era": "pre-v3",
+      "users": 70115,
+      "mean_log_prior_count": 1.8199759201274253,
+      "prior_top1_share": 0.04822577194608857,
+      "no_prior_ratings_share": 0.44740141196605576
+    },
+    {
+      "era": "v3",
+      "users": 62900,
+      "mean_log_prior_count": 3.676395588997571,
+      "prior_top1_share": 0.08580683624801272,
+      "no_prior_ratings_share": 0.019337837837837837
+    },
+    {
+      "era": "v4+",
+      "users": 67933,
+      "mean_log_prior_count": 4.039912227256819,
+      "prior_top1_share": 0.6605294922938778,
+      "no_prior_ratings_share": 0.02446969808487775
+    }
+  ],
+  "first20_prior_stable": [
+    {
+      "era": "pre-v3",
+      "users": 35717,
+      "mean_log_prior_count": 2.7314401624918947,
+      "prior_top1_share": 0.08582607721813142,
+      "no_prior_ratings_share": 0.16936612817425875
+    },
+    {
+      "era": "v3",
+      "users": 62900,
+      "mean_log_prior_count": 3.6763955889965727,
+      "prior_top1_share": 0.08580683624801272,
+      "no_prior_ratings_share": 0.019337837837837837
+    },
+    {
+      "era": "v4+",
+      "users": 67933,
+      "mean_log_prior_count": 4.039912227256075,
+      "prior_top1_share": 0.6605294922938778,
+      "no_prior_ratings_share": 0.02446969808487775
+    }
+  ],
+  "first20_yearly": [
+    {
+      "cohort_year": 1995,
+      "users": 2,
+      "mean_log_prior_count": 2.200912316835904,
+      "prior_top1_share": 0.025
+    },
+    {
+      "cohort_year": 1996,
+      "users": 25304,
+      "mean_log_prior_count": 0.0089782722169066,
+      "prior_top1_share": 0.0055880493202655705
+    },
+    {
+      "cohort_year": 1997,
+      "users": 9092,
+      "mean_log_prior_count": 3.2794957469448454,
+      "prior_top1_share": 0.019187197536295643
+    },
+    {
+      "cohort_year": 1998,
+      "users": 2574,
+      "mean_log_prior_count": 2.260890006825272,
+      "prior_top1_share": 0.05182595182595182
+    },
+    {
+      "cohort_year": 1999,
+      "users": 8813,
+      "mean_log_prior_count": 2.1381410421416316,
+      "prior_top1_share": 0.05927039600590037
+    },
+    {
+      "cohort_year": 2000,
+      "users": 11843,
+      "mean_log_prior_count": 2.807282626391497,
+      "prior_top1_share": 0.07355399814236258
+    },
+    {
+      "cohort_year": 2001,
+      "users": 6871,
+      "mean_log_prior_count": 3.0918660897796704,
+      "prior_top1_share": 0.12281327317712123
+    },
+    {
+      "cohort_year": 2002,
+      "users": 4487,
+      "mean_log_prior_count": 3.244334652758585,
+      "prior_top1_share": 0.11813015377757967
+    },
+    {
+      "cohort_year": 2003,
+      "users": 5092,
+      "mean_log_prior_count": 3.4336985300796425,
+      "prior_top1_share": 0.07965435978004713
+    },
+    {
+      "cohort_year": 2004,
+      "users": 4955,
+      "mean_log_prior_count": 3.7370962240831456,
+      "prior_top1_share": 0.05760847628657921
+    },
+    {
+      "cohort_year": 2005,
+      "users": 8649,
+      "mean_log_prior_count": 3.823693799831821,
+      "prior_top1_share": 0.05097121054457163
+    },
+    {
+      "cohort_year": 2006,
+      "users": 5931,
+      "mean_log_prior_count": 3.917199319313688,
+      "prior_top1_share": 0.10261338728713539
+    },
+    {
+      "cohort_year": 2007,
+      "users": 5197,
+      "mean_log_prior_count": 3.589981034247431,
+      "prior_top1_share": 0.10511833750240523
+    },
+    {
+      "cohort_year": 2008,
+      "users": 6582,
+      "mean_log_prior_count": 3.5612845060741507,
+      "prior_top1_share": 0.093854451534488
+    },
+    {
+      "cohort_year": 2009,
+      "users": 5415,
+      "mean_log_prior_count": 3.5322964769794947,
+      "prior_top1_share": 0.07088642659279779
+    },
+    {
+      "cohort_year": 2010,
+      "users": 5447,
+      "mean_log_prior_count": 3.5833364963448164,
+      "prior_top1_share": 0.07946576096934092
+    },
+    {
+      "cohort_year": 2011,
+      "users": 4998,
+      "mean_log_prior_count": 3.6221213710736166,
+      "prior_top1_share": 0.08031212484993998
+    },
+    {
+      "cohort_year": 2012,
+      "users": 4606,
+      "mean_log_prior_count": 3.698619686375562,
+      "prior_top1_share": 0.09295484151107251
+    },
+    {
+      "cohort_year": 2013,
+      "users": 4238,
+      "mean_log_prior_count": 3.754057482393361,
+      "prior_top1_share": 0.13081642284096273
+    },
+    {
+      "cohort_year": 2014,
+      "users": 3760,
+      "mean_log_prior_count": 3.763532645536412,
+      "prior_top1_share": 0.24840425531914895
+    },
+    {
+      "cohort_year": 2015,
+      "users": 12157,
+      "mean_log_prior_count": 3.8938308945218663,
+      "prior_top1_share": 0.5569630665460229
+    },
+    {
+      "cohort_year": 2016,
+      "users": 10491,
+      "mean_log_prior_count": 3.9921696127977158,
+      "prior_top1_share": 0.5967495948908589
+    },
+    {
+      "cohort_year": 2017,
+      "users": 9163,
+      "mean_log_prior_count": 4.06328068261262,
+      "prior_top1_share": 0.6545290843610171
+    },
+    {
+      "cohort_year": 2018,
+      "users": 6902,
+      "mean_log_prior_count": 4.0440344586347035,
+      "prior_top1_share": 0.6798319327731093
+    },
+    {
+      "cohort_year": 2019,
+      "users": 6850,
+      "mean_log_prior_count": 4.097803923395637,
+      "prior_top1_share": 0.7127664233576643
+    },
+    {
+      "cohort_year": 2020,
+      "users": 8531,
+      "mean_log_prior_count": 4.07624576869999,
+      "prior_top1_share": 0.7056089555737897
+    },
+    {
+      "cohort_year": 2021,
+      "users": 5668,
+      "mean_log_prior_count": 4.174912245872862,
+      "prior_top1_share": 0.7407110091743119
+    },
+    {
+      "cohort_year": 2022,
+      "users": 3911,
+      "mean_log_prior_count": 4.128175654034653,
+      "prior_top1_share": 0.7469445154691895
+    },
+    {
+      "cohort_year": 2023,
+      "users": 3419,
+      "mean_log_prior_count": 4.174160002109698,
+      "prior_top1_share": 0.7755776542848786
+    }
+  ],
+  "first20_monthly": [
+    {
+      "cohort_month": "1995-01-01 00:00:00+00:00",
+      "users": 2,
+      "prior_top1_share": 0.025,
+      "no_prior_ratings_share": 0.375
+    },
+    {
+      "cohort_month": "1996-01-01 00:00:00+00:00",
+      "users": 6,
+      "prior_top1_share": 0.025,
+      "no_prior_ratings_share": 0.9166666666666666
+    },
+    {
+      "cohort_month": "1996-02-01 00:00:00+00:00",
+      "users": 20,
+      "prior_top1_share": 0.0275,
+      "no_prior_ratings_share": 0.9575
+    },
+    {
+      "cohort_month": "1996-03-01 00:00:00+00:00",
+      "users": 226,
+      "prior_top1_share": 0.010398230088495575,
+      "no_prior_ratings_share": 0.9778761061946902
+    },
+    {
+      "cohort_month": "1996-04-01 00:00:00+00:00",
+      "users": 1215,
+      "prior_top1_share": 0.015267489711934156,
+      "no_prior_ratings_share": 0.9781069958847737
+    },
+    {
+      "cohort_month": "1996-05-01 00:00:00+00:00",
+      "users": 3351,
+      "prior_top1_share": 0.009728439271859146,
+      "no_prior_ratings_share": 0.9796180244703073
+    },
+    {
+      "cohort_month": "1996-06-01 00:00:00+00:00",
+      "users": 3980,
+      "prior_top1_share": 0.006432160804020101,
+      "no_prior_ratings_share": 0.9850628140703518
+    },
+    {
+      "cohort_month": "1996-07-01 00:00:00+00:00",
+      "users": 3418,
+      "prior_top1_share": 0.004461673493270918,
+      "no_prior_ratings_share": 0.9842598010532475
+    },
+    {
+      "cohort_month": "1996-08-01 00:00:00+00:00",
+      "users": 3244,
+      "prior_top1_share": 0.0030517879161528977,
+      "no_prior_ratings_share": 0.9902897657213316
+    },
+    {
+      "cohort_month": "1996-09-01 00:00:00+00:00",
+      "users": 2351,
+      "prior_top1_share": 0.0038281582305401958,
+      "no_prior_ratings_share": 0.9879200340280732
+    },
+    {
+      "cohort_month": "1996-10-01 00:00:00+00:00",
+      "users": 2956,
+      "prior_top1_share": 0.0054296346414073075,
+      "no_prior_ratings_share": 0.9881258457374831
+    },
+    {
+      "cohort_month": "1996-11-01 00:00:00+00:00",
+      "users": 2671,
+      "prior_top1_share": 0.0029015350056158743,
+      "no_prior_ratings_share": 0.9891988019468364
+    },
+    {
+      "cohort_month": "1996-12-01 00:00:00+00:00",
+      "users": 1866,
+      "prior_top1_share": 0.0019560557341907823,
+      "no_prior_ratings_share": 0.9886923901393355
+    },
+    {
+      "cohort_month": "1997-01-01 00:00:00+00:00",
+      "users": 1411,
+      "prior_top1_share": 0.034479092841956056,
+      "no_prior_ratings_share": 0.001559177888022679
+    },
+    {
+      "cohort_month": "1997-02-01 00:00:00+00:00",
+      "users": 913,
+      "prior_top1_share": 0.021467688937568456,
+      "no_prior_ratings_share": 0.003231106243154436
+    },
+    {
+      "cohort_month": "1997-03-01 00:00:00+00:00",
+      "users": 1522,
+      "prior_top1_share": 0.01721419185282523,
+      "no_prior_ratings_share": 0.002759526938239159
+    },
+    {
+      "cohort_month": "1997-04-01 00:00:00+00:00",
+      "users": 1180,
+      "prior_top1_share": 0.014533898305084746,
+      "no_prior_ratings_share": 0.0044491525423728815
+    },
+    {
+      "cohort_month": "1997-05-01 00:00:00+00:00",
+      "users": 1300,
+      "prior_top1_share": 0.015346153846153846,
+      "no_prior_ratings_share": 0.005615384615384615
+    },
+    {
+      "cohort_month": "1997-06-01 00:00:00+00:00",
+      "users": 1050,
+      "prior_top1_share": 0.013285714285714286,
+      "no_prior_ratings_share": 0.006857142857142857
+    },
+    {
+      "cohort_month": "1997-07-01 00:00:00+00:00",
+      "users": 676,
+      "prior_top1_share": 0.009245562130177515,
+      "no_prior_ratings_share": 0.010428994082840237
+    },
+    {
+      "cohort_month": "1997-09-01 00:00:00+00:00",
+      "users": 239,
+      "prior_top1_share": 0.027196652719665274,
+      "no_prior_ratings_share": 0.2485355648535565
+    },
+    {
+      "cohort_month": "1997-10-01 00:00:00+00:00",
+      "users": 212,
+      "prior_top1_share": 0.023349056603773583,
+      "no_prior_ratings_share": 0.30471698113207546
+    },
+    {
+      "cohort_month": "1997-11-01 00:00:00+00:00",
+      "users": 399,
+      "prior_top1_share": 0.019423558897243107,
+      "no_prior_ratings_share": 0.3526315789473684
+    },
+    {
+      "cohort_month": "1997-12-01 00:00:00+00:00",
+      "users": 190,
+      "prior_top1_share": 0.018421052631578946,
+      "no_prior_ratings_share": 0.39026315789473687
+    },
+    {
+      "cohort_month": "1998-01-01 00:00:00+00:00",
+      "users": 237,
+      "prior_top1_share": 0.02679324894514768,
+      "no_prior_ratings_share": 0.010337552742616034
+    },
+    {
+      "cohort_month": "1998-02-01 00:00:00+00:00",
+      "users": 147,
+      "prior_top1_share": 0.02142857142857143,
+      "no_prior_ratings_share": 0.019387755102040816
+    },
+    {
+      "cohort_month": "1998-03-01 00:00:00+00:00",
+      "users": 240,
+      "prior_top1_share": 0.02,
+      "no_prior_ratings_share": 0.041875
+    },
+    {
+      "cohort_month": "1998-04-01 00:00:00+00:00",
+      "users": 186,
+      "prior_top1_share": 0.030376344086021505,
+      "no_prior_ratings_share": 0.051075268817204304
+    },
+    {
+      "cohort_month": "1998-05-01 00:00:00+00:00",
+      "users": 80,
+      "prior_top1_share": 0.0225,
+      "no_prior_ratings_share": 0.0675
+    },
+    {
+      "cohort_month": "1998-06-01 00:00:00+00:00",
+      "users": 158,
+      "prior_top1_share": 0.029746835443037974,
+      "no_prior_ratings_share": 0.08607594936708861
+    },
+    {
+      "cohort_month": "1998-07-01 00:00:00+00:00",
+      "users": 655,
+      "prior_top1_share": 0.07534351145038168,
+      "no_prior_ratings_share": 0.3374809160305344
+    },
+    {
+      "cohort_month": "1998-08-01 00:00:00+00:00",
+      "users": 273,
+      "prior_top1_share": 0.06813186813186813,
+      "no_prior_ratings_share": 0.3783882783882784
+    },
+    {
+      "cohort_month": "1998-09-01 00:00:00+00:00",
+      "users": 107,
+      "prior_top1_share": 0.06401869158878505,
+      "no_prior_ratings_share": 0.352803738317757
+    },
+    {
+      "cohort_month": "1998-10-01 00:00:00+00:00",
+      "users": 100,
+      "prior_top1_share": 0.0635,
+      "no_prior_ratings_share": 0.3965
+    },
+    {
+      "cohort_month": "1998-11-01 00:00:00+00:00",
+      "users": 113,
+      "prior_top1_share": 0.059734513274336286,
+      "no_prior_ratings_share": 0.4190265486725664
+    },
+    {
+      "cohort_month": "1998-12-01 00:00:00+00:00",
+      "users": 278,
+      "prior_top1_share": 0.0685251798561151,
+      "no_prior_ratings_share": 0.40881294964028775
+    },
+    {
+      "cohort_month": "1999-01-01 00:00:00+00:00",
+      "users": 152,
+      "prior_top1_share": 0.09605263157894736,
+      "no_prior_ratings_share": 0.008552631578947369
+    },
+    {
+      "cohort_month": "1999-02-01 00:00:00+00:00",
+      "users": 109,
+      "prior_top1_share": 0.07385321100917432,
+      "no_prior_ratings_share": 0.0481651376146789
+    },
+    {
+      "cohort_month": "1999-03-01 00:00:00+00:00",
+      "users": 70,
+      "prior_top1_share": 0.11071428571428571,
+      "no_prior_ratings_share": 0.12214285714285714
+    },
+    {
+      "cohort_month": "1999-04-01 00:00:00+00:00",
+      "users": 96,
+      "prior_top1_share": 0.0859375,
+      "no_prior_ratings_share": 0.2390625
+    },
+    {
+      "cohort_month": "1999-05-01 00:00:00+00:00",
+      "users": 85,
+      "prior_top1_share": 0.09411764705882353,
+      "no_prior_ratings_share": 0.19058823529411764
+    },
+    {
+      "cohort_month": "1999-06-01 00:00:00+00:00",
+      "users": 68,
+      "prior_top1_share": 0.10441176470588236,
+      "no_prior_ratings_share": 0.21764705882352942
+    },
+    {
+      "cohort_month": "1999-07-01 00:00:00+00:00",
+      "users": 78,
+      "prior_top1_share": 0.06538461538461539,
+      "no_prior_ratings_share": 0.37051282051282053
+    },
+    {
+      "cohort_month": "1999-08-01 00:00:00+00:00",
+      "users": 75,
+      "prior_top1_share": 0.07,
+      "no_prior_ratings_share": 0.412
+    },
+    {
+      "cohort_month": "1999-09-01 00:00:00+00:00",
+      "users": 469,
+      "prior_top1_share": 0.047547974413646055,
+      "no_prior_ratings_share": 0.36695095948827294
+    },
+    {
+      "cohort_month": "1999-10-01 00:00:00+00:00",
+      "users": 2971,
+      "prior_top1_share": 0.05304611242006058,
+      "no_prior_ratings_share": 0.32165937394816563
+    },
+    {
+      "cohort_month": "1999-11-01 00:00:00+00:00",
+      "users": 1489,
+      "prior_top1_share": 0.06124916051040967,
+      "no_prior_ratings_share": 0.3229684351914036
+    },
+    {
+      "cohort_month": "1999-12-01 00:00:00+00:00",
+      "users": 3151,
+      "prior_top1_share": 0.059393843224373216,
+      "no_prior_ratings_share": 0.27300856870834656
+    },
+    {
+      "cohort_month": "2000-01-01 00:00:00+00:00",
+      "users": 1028,
+      "prior_top1_share": 0.07222762645914396,
+      "no_prior_ratings_share": 0.016050583657587547
+    },
+    {
+      "cohort_month": "2000-02-01 00:00:00+00:00",
+      "users": 768,
+      "prior_top1_share": 0.07604166666666666,
+      "no_prior_ratings_share": 0.047200520833333336
+    },
+    {
+      "cohort_month": "2000-03-01 00:00:00+00:00",
+      "users": 918,
+      "prior_top1_share": 0.07434640522875817,
+      "no_prior_ratings_share": 0.11917211328976035
+    },
+    {
+      "cohort_month": "2000-04-01 00:00:00+00:00",
+      "users": 1211,
+      "prior_top1_share": 0.07580511973575557,
+      "no_prior_ratings_share": 0.14223781998348473
+    },
+    {
+      "cohort_month": "2000-05-01 00:00:00+00:00",
+      "users": 593,
+      "prior_top1_share": 0.07613827993254638,
+      "no_prior_ratings_share": 0.1387858347386172
+    },
+    {
+      "cohort_month": "2000-06-01 00:00:00+00:00",
+      "users": 530,
+      "prior_top1_share": 0.07113207547169811,
+      "no_prior_ratings_share": 0.17537735849056604
+    },
+    {
+      "cohort_month": "2000-07-01 00:00:00+00:00",
+      "users": 937,
+      "prior_top1_share": 0.06467449306296691,
+      "no_prior_ratings_share": 0.15645677694770543
+    },
+    {
+      "cohort_month": "2000-08-01 00:00:00+00:00",
+      "users": 1385,
+      "prior_top1_share": 0.06909747292418772,
+      "no_prior_ratings_share": 0.18736462093862816
+    },
+    {
+      "cohort_month": "2000-09-01 00:00:00+00:00",
+      "users": 406,
+      "prior_top1_share": 0.07241379310344828,
+      "no_prior_ratings_share": 0.18571428571428572
+    },
+    {
+      "cohort_month": "2000-10-01 00:00:00+00:00",
+      "users": 350,
+      "prior_top1_share": 0.07442857142857143,
+      "no_prior_ratings_share": 0.1692857142857143
+    },
+    {
+      "cohort_month": "2000-11-01 00:00:00+00:00",
+      "users": 2848,
+      "prior_top1_share": 0.07717696629213483,
+      "no_prior_ratings_share": 0.21099016853932584
+    },
+    {
+      "cohort_month": "2000-12-01 00:00:00+00:00",
+      "users": 869,
+      "prior_top1_share": 0.07364787111622555,
+      "no_prior_ratings_share": 0.21927502876869964
+    },
+    {
+      "cohort_month": "2001-01-01 00:00:00+00:00",
+      "users": 693,
+      "prior_top1_share": 0.11089466089466089,
+      "no_prior_ratings_share": 0.01645021645021645
+    },
+    {
+      "cohort_month": "2001-02-01 00:00:00+00:00",
+      "users": 524,
+      "prior_top1_share": 0.11564885496183207,
+      "no_prior_ratings_share": 0.029293893129770994
+    },
+    {
+      "cohort_month": "2001-03-01 00:00:00+00:00",
+      "users": 378,
+      "prior_top1_share": 0.12367724867724868,
+      "no_prior_ratings_share": 0.04510582010582011
+    },
+    {
+      "cohort_month": "2001-04-01 00:00:00+00:00",
+      "users": 337,
+      "prior_top1_share": 0.10445103857566766,
+      "no_prior_ratings_share": 0.057863501483679525
+    },
+    {
+      "cohort_month": "2001-05-01 00:00:00+00:00",
+      "users": 257,
+      "prior_top1_share": 0.09591439688715954,
+      "no_prior_ratings_share": 0.09319066147859922
+    },
+    {
+      "cohort_month": "2001-06-01 00:00:00+00:00",
+      "users": 1065,
+      "prior_top1_share": 0.10262910798122066,
+      "no_prior_ratings_share": 0.11568075117370892
+    },
+    {
+      "cohort_month": "2001-07-01 00:00:00+00:00",
+      "users": 873,
+      "prior_top1_share": 0.09742268041237113,
+      "no_prior_ratings_share": 0.13470790378006872
+    },
+    {
+      "cohort_month": "2001-08-01 00:00:00+00:00",
+      "users": 554,
+      "prior_top1_share": 0.10469314079422383,
+      "no_prior_ratings_share": 0.13411552346570396
+    },
+    {
+      "cohort_month": "2001-09-01 00:00:00+00:00",
+      "users": 506,
+      "prior_top1_share": 0.14980237154150197,
+      "no_prior_ratings_share": 0.12875494071146246
+    },
+    {
+      "cohort_month": "2001-10-01 00:00:00+00:00",
+      "users": 546,
+      "prior_top1_share": 0.257051282051282,
+      "no_prior_ratings_share": 0.11153846153846154
+    },
+    {
+      "cohort_month": "2001-11-01 00:00:00+00:00",
+      "users": 646,
+      "prior_top1_share": 0.11873065015479876,
+      "no_prior_ratings_share": 0.14891640866873065
+    },
+    {
+      "cohort_month": "2001-12-01 00:00:00+00:00",
+      "users": 492,
+      "prior_top1_share": 0.11097560975609756,
+      "no_prior_ratings_share": 0.16534552845528455
+    },
+    {
+      "cohort_month": "2002-01-01 00:00:00+00:00",
+      "users": 559,
+      "prior_top1_share": 0.11592128801431127,
+      "no_prior_ratings_share": 0.006350626118067979
+    },
+    {
+      "cohort_month": "2002-02-01 00:00:00+00:00",
+      "users": 471,
+      "prior_top1_share": 0.12611464968152866,
+      "no_prior_ratings_share": 0.01634819532908705
+    },
+    {
+      "cohort_month": "2002-03-01 00:00:00+00:00",
+      "users": 387,
+      "prior_top1_share": 0.12248062015503876,
+      "no_prior_ratings_share": 0.028423772609819122
+    },
+    {
+      "cohort_month": "2002-04-01 00:00:00+00:00",
+      "users": 481,
+      "prior_top1_share": 0.12370062370062371,
+      "no_prior_ratings_share": 0.046881496881496884
+    },
+    {
+      "cohort_month": "2002-05-01 00:00:00+00:00",
+      "users": 299,
+      "prior_top1_share": 0.12575250836120402,
+      "no_prior_ratings_share": 0.0548494983277592
+    },
+    {
+      "cohort_month": "2002-06-01 00:00:00+00:00",
+      "users": 279,
+      "prior_top1_share": 0.12275985663082438,
+      "no_prior_ratings_share": 0.07706093189964158
+    },
+    {
+      "cohort_month": "2002-07-01 00:00:00+00:00",
+      "users": 286,
+      "prior_top1_share": 0.106993006993007,
+      "no_prior_ratings_share": 0.08811188811188811
+    },
+    {
+      "cohort_month": "2002-08-01 00:00:00+00:00",
+      "users": 318,
+      "prior_top1_share": 0.11320754716981132,
+      "no_prior_ratings_share": 0.0959119496855346
+    },
+    {
+      "cohort_month": "2002-09-01 00:00:00+00:00",
+      "users": 299,
+      "prior_top1_share": 0.11321070234113713,
+      "no_prior_ratings_share": 0.08662207357859532
+    },
+    {
+      "cohort_month": "2002-10-01 00:00:00+00:00",
+      "users": 344,
+      "prior_top1_share": 0.10348837209302325,
+      "no_prior_ratings_share": 0.08415697674418604
+    },
+    {
+      "cohort_month": "2002-11-01 00:00:00+00:00",
+      "users": 385,
+      "prior_top1_share": 0.12974025974025974,
+      "no_prior_ratings_share": 0.09922077922077922
+    },
+    {
+      "cohort_month": "2002-12-01 00:00:00+00:00",
+      "users": 379,
+      "prior_top1_share": 0.10844327176781003,
+      "no_prior_ratings_share": 0.13403693931398417
+    },
+    {
+      "cohort_month": "2003-01-01 00:00:00+00:00",
+      "users": 750,
+      "prior_top1_share": 0.143,
+      "no_prior_ratings_share": 0.013866666666666666
+    },
+    {
+      "cohort_month": "2003-02-01 00:00:00+00:00",
+      "users": 604,
+      "prior_top1_share": 0.15579470198675496,
+      "no_prior_ratings_share": 0.012417218543046357
+    },
+    {
+      "cohort_month": "2003-03-01 00:00:00+00:00",
+      "users": 531,
+      "prior_top1_share": 0.14717514124293785,
+      "no_prior_ratings_share": 0.02664783427495292
+    },
+    {
+      "cohort_month": "2003-04-01 00:00:00+00:00",
+      "users": 370,
+      "prior_top1_share": 0.14310810810810812,
+      "no_prior_ratings_share": 0.04027027027027027
+    },
+    {
+      "cohort_month": "2003-05-01 00:00:00+00:00",
+      "users": 353,
+      "prior_top1_share": 0.05708215297450425,
+      "no_prior_ratings_share": 0.05127478753541077
+    },
+    {
+      "cohort_month": "2003-06-01 00:00:00+00:00",
+      "users": 311,
+      "prior_top1_share": 0.019614147909967846,
+      "no_prior_ratings_share": 0.06012861736334405
+    },
+    {
+      "cohort_month": "2003-07-01 00:00:00+00:00",
+      "users": 357,
+      "prior_top1_share": 0.020448179271708684,
+      "no_prior_ratings_share": 0.07436974789915966
+    },
+    {
+      "cohort_month": "2003-08-01 00:00:00+00:00",
+      "users": 290,
+      "prior_top1_share": 0.018448275862068965,
+      "no_prior_ratings_share": 0.0746551724137931
+    },
+    {
+      "cohort_month": "2003-09-01 00:00:00+00:00",
+      "users": 400,
+      "prior_top1_share": 0.012125,
+      "no_prior_ratings_share": 0.070875
+    },
+    {
+      "cohort_month": "2003-10-01 00:00:00+00:00",
+      "users": 382,
+      "prior_top1_share": 0.020026178010471206,
+      "no_prior_ratings_share": 0.07172774869109948
+    },
+    {
+      "cohort_month": "2003-11-01 00:00:00+00:00",
+      "users": 397,
+      "prior_top1_share": 0.029219143576826197,
+      "no_prior_ratings_share": 0.07178841309823678
+    },
+    {
+      "cohort_month": "2003-12-01 00:00:00+00:00",
+      "users": 347,
+      "prior_top1_share": 0.0292507204610951,
+      "no_prior_ratings_share": 0.08112391930835734
+    },
+    {
+      "cohort_month": "2004-01-01 00:00:00+00:00",
+      "users": 430,
+      "prior_top1_share": 0.018604651162790697,
+      "no_prior_ratings_share": 0.010813953488372092
+    },
+    {
+      "cohort_month": "2004-02-01 00:00:00+00:00",
+      "users": 506,
+      "prior_top1_share": 0.04555335968379447,
+      "no_prior_ratings_share": 0.0067193675889328066
+    },
+    {
+      "cohort_month": "2004-03-01 00:00:00+00:00",
+      "users": 501,
+      "prior_top1_share": 0.059880239520958084,
+      "no_prior_ratings_share": 0.008183632734530938
+    },
+    {
+      "cohort_month": "2004-04-01 00:00:00+00:00",
+      "users": 330,
+      "prior_top1_share": 0.061969696969696966,
+      "no_prior_ratings_share": 0.019696969696969695
+    },
+    {
+      "cohort_month": "2004-05-01 00:00:00+00:00",
+      "users": 423,
+      "prior_top1_share": 0.07706855791962175,
+      "no_prior_ratings_share": 0.01702127659574468
+    },
+    {
+      "cohort_month": "2004-06-01 00:00:00+00:00",
+      "users": 348,
+      "prior_top1_share": 0.05445402298850575,
+      "no_prior_ratings_share": 0.029166666666666667
+    },
+    {
+      "cohort_month": "2004-07-01 00:00:00+00:00",
+      "users": 342,
+      "prior_top1_share": 0.0641812865497076,
+      "no_prior_ratings_share": 0.03128654970760234
+    },
+    {
+      "cohort_month": "2004-08-01 00:00:00+00:00",
+      "users": 427,
+      "prior_top1_share": 0.06077283372365339,
+      "no_prior_ratings_share": 0.025644028103044496
+    },
+    {
+      "cohort_month": "2004-09-01 00:00:00+00:00",
+      "users": 465,
+      "prior_top1_share": 0.05806451612903226,
+      "no_prior_ratings_share": 0.02903225806451613
+    },
+    {
+      "cohort_month": "2004-10-01 00:00:00+00:00",
+      "users": 419,
+      "prior_top1_share": 0.0711217183770883,
+      "no_prior_ratings_share": 0.02136038186157518
+    },
+    {
+      "cohort_month": "2004-11-01 00:00:00+00:00",
+      "users": 417,
+      "prior_top1_share": 0.06354916067146282,
+      "no_prior_ratings_share": 0.027458033573141485
+    },
+    {
+      "cohort_month": "2004-12-01 00:00:00+00:00",
+      "users": 347,
+      "prior_top1_share": 0.06109510086455332,
+      "no_prior_ratings_share": 0.025072046109510086
+    },
+    {
+      "cohort_month": "2005-01-01 00:00:00+00:00",
+      "users": 652,
+      "prior_top1_share": 0.05345092024539877,
+      "no_prior_ratings_share": 0.0016104294478527608
+    },
+    {
+      "cohort_month": "2005-02-01 00:00:00+00:00",
+      "users": 630,
+      "prior_top1_share": 0.04634920634920635,
+      "no_prior_ratings_share": 0.002619047619047619
+    },
+    {
+      "cohort_month": "2005-03-01 00:00:00+00:00",
+      "users": 2097,
+      "prior_top1_share": 0.04201239866475918,
+      "no_prior_ratings_share": 0.0026943252265140675
+    },
+    {
+      "cohort_month": "2005-04-01 00:00:00+00:00",
+      "users": 1041,
+      "prior_top1_share": 0.04380403458213256,
+      "no_prior_ratings_share": 0.005763688760806916
+    },
+    {
+      "cohort_month": "2005-05-01 00:00:00+00:00",
+      "users": 761,
+      "prior_top1_share": 0.05985545335085414,
+      "no_prior_ratings_share": 0.010512483574244415
+    },
+    {
+      "cohort_month": "2005-06-01 00:00:00+00:00",
+      "users": 600,
+      "prior_top1_share": 0.05591666666666667,
+      "no_prior_ratings_share": 0.01425
+    },
+    {
+      "cohort_month": "2005-07-01 00:00:00+00:00",
+      "users": 485,
+      "prior_top1_share": 0.06288659793814433,
+      "no_prior_ratings_share": 0.015154639175257731
+    },
+    {
+      "cohort_month": "2005-08-01 00:00:00+00:00",
+      "users": 394,
+      "prior_top1_share": 0.05634517766497462,
+      "no_prior_ratings_share": 0.02017766497461929
+    },
+    {
+      "cohort_month": "2005-09-01 00:00:00+00:00",
+      "users": 536,
+      "prior_top1_share": 0.04953358208955224,
+      "no_prior_ratings_share": 0.018563432835820896
+    },
+    {
+      "cohort_month": "2005-10-01 00:00:00+00:00",
+      "users": 472,
+      "prior_top1_share": 0.05455508474576271,
+      "no_prior_ratings_share": 0.019597457627118644
+    },
+    {
+      "cohort_month": "2005-11-01 00:00:00+00:00",
+      "users": 517,
+      "prior_top1_share": 0.05928433268858801,
+      "no_prior_ratings_share": 0.017891682785299807
+    },
+    {
+      "cohort_month": "2005-12-01 00:00:00+00:00",
+      "users": 464,
+      "prior_top1_share": 0.06109913793103448,
+      "no_prior_ratings_share": 0.019288793103448276
+    },
+    {
+      "cohort_month": "2006-01-01 00:00:00+00:00",
+      "users": 617,
+      "prior_top1_share": 0.05761750405186386,
+      "no_prior_ratings_share": 0.0004051863857374392
+    },
+    {
+      "cohort_month": "2006-02-01 00:00:00+00:00",
+      "users": 568,
+      "prior_top1_share": 0.06628521126760563,
+      "no_prior_ratings_share": 0.0018485915492957746
+    },
+    {
+      "cohort_month": "2006-03-01 00:00:00+00:00",
+      "users": 580,
+      "prior_top1_share": 0.0675,
+      "no_prior_ratings_share": 0.0023275862068965515
+    },
+    {
+      "cohort_month": "2006-04-01 00:00:00+00:00",
+      "users": 483,
+      "prior_top1_share": 0.09285714285714286,
+      "no_prior_ratings_share": 0.008281573498964804
+    },
+    {
+      "cohort_month": "2006-05-01 00:00:00+00:00",
+      "users": 395,
+      "prior_top1_share": 0.09924050632911392,
+      "no_prior_ratings_share": 0.009620253164556962
+    },
+    {
+      "cohort_month": "2006-06-01 00:00:00+00:00",
+      "users": 422,
+      "prior_top1_share": 0.10225118483412322,
+      "no_prior_ratings_share": 0.01386255924170616
+    },
+    {
+      "cohort_month": "2006-07-01 00:00:00+00:00",
+      "users": 485,
+      "prior_top1_share": 0.08927835051546391,
+      "no_prior_ratings_share": 0.017731958762886597
+    },
+    {
+      "cohort_month": "2006-08-01 00:00:00+00:00",
+      "users": 411,
+      "prior_top1_share": 0.08722627737226277,
+      "no_prior_ratings_share": 0.02068126520681265
+    },
+    {
+      "cohort_month": "2006-09-01 00:00:00+00:00",
+      "users": 413,
+      "prior_top1_share": 0.07808716707021791,
+      "no_prior_ratings_share": 0.02046004842615012
+    },
+    {
+      "cohort_month": "2006-10-01 00:00:00+00:00",
+      "users": 539,
+      "prior_top1_share": 0.09137291280148423,
+      "no_prior_ratings_share": 0.019666048237476808
+    },
+    {
+      "cohort_month": "2006-11-01 00:00:00+00:00",
+      "users": 457,
+      "prior_top1_share": 0.10568927789934354,
+      "no_prior_ratings_share": 0.025820568927789934
+    },
+    {
+      "cohort_month": "2006-12-01 00:00:00+00:00",
+      "users": 561,
+      "prior_top1_share": 0.28538324420677363,
+      "no_prior_ratings_share": 0.011942959001782532
+    },
+    {
+      "cohort_month": "2007-01-01 00:00:00+00:00",
+      "users": 596,
+      "prior_top1_share": 0.16333892617449663,
+      "no_prior_ratings_share": 0.0016778523489932886
+    },
+    {
+      "cohort_month": "2007-02-01 00:00:00+00:00",
+      "users": 531,
+      "prior_top1_share": 0.09566854990583804,
+      "no_prior_ratings_share": 0.00480225988700565
+    },
+    {
+      "cohort_month": "2007-03-01 00:00:00+00:00",
+      "users": 460,
+      "prior_top1_share": 0.0933695652173913,
+      "no_prior_ratings_share": 0.008695652173913044
+    },
+    {
+      "cohort_month": "2007-04-01 00:00:00+00:00",
+      "users": 413,
+      "prior_top1_share": 0.09116222760290557,
+      "no_prior_ratings_share": 0.016828087167070217
+    },
+    {
+      "cohort_month": "2007-05-01 00:00:00+00:00",
+      "users": 418,
+      "prior_top1_share": 0.09354066985645933,
+      "no_prior_ratings_share": 0.019377990430622008
+    },
+    {
+      "cohort_month": "2007-06-01 00:00:00+00:00",
+      "users": 471,
+      "prior_top1_share": 0.08641188959660297,
+      "no_prior_ratings_share": 0.02176220806794055
+    },
+    {
+      "cohort_month": "2007-07-01 00:00:00+00:00",
+      "users": 459,
+      "prior_top1_share": 0.09891067538126362,
+      "no_prior_ratings_share": 0.028540305010893247
+    },
+    {
+      "cohort_month": "2007-08-01 00:00:00+00:00",
+      "users": 253,
+      "prior_top1_share": 0.1318181818181818,
+      "no_prior_ratings_share": 0.06205533596837945
+    },
+    {
+      "cohort_month": "2007-09-01 00:00:00+00:00",
+      "users": 357,
+      "prior_top1_share": 0.09719887955182073,
+      "no_prior_ratings_share": 0.05378151260504202
+    },
+    {
+      "cohort_month": "2007-10-01 00:00:00+00:00",
+      "users": 414,
+      "prior_top1_share": 0.09577294685990338,
+      "no_prior_ratings_share": 0.035748792270531404
+    },
+    {
+      "cohort_month": "2007-11-01 00:00:00+00:00",
+      "users": 426,
+      "prior_top1_share": 0.10504694835680752,
+      "no_prior_ratings_share": 0.029342723004694836
+    },
+    {
+      "cohort_month": "2007-12-01 00:00:00+00:00",
+      "users": 399,
+      "prior_top1_share": 0.1,
+      "no_prior_ratings_share": 0.04097744360902256
+    },
+    {
+      "cohort_month": "2008-01-01 00:00:00+00:00",
+      "users": 593,
+      "prior_top1_share": 0.10640809443507589,
+      "no_prior_ratings_share": 0.0037942664418212477
+    },
+    {
+      "cohort_month": "2008-02-01 00:00:00+00:00",
+      "users": 481,
+      "prior_top1_share": 0.10415800415800416,
+      "no_prior_ratings_share": 0.010602910602910603
+    },
+    {
+      "cohort_month": "2008-03-01 00:00:00+00:00",
+      "users": 407,
+      "prior_top1_share": 0.09705159705159705,
+      "no_prior_ratings_share": 0.010565110565110565
+    },
+    {
+      "cohort_month": "2008-04-01 00:00:00+00:00",
+      "users": 394,
+      "prior_top1_share": 0.09530456852791878,
+      "no_prior_ratings_share": 0.018908629441624365
+    },
+    {
+      "cohort_month": "2008-05-01 00:00:00+00:00",
+      "users": 374,
+      "prior_top1_share": 0.09358288770053476,
+      "no_prior_ratings_share": 0.019786096256684493
+    },
+    {
+      "cohort_month": "2008-06-01 00:00:00+00:00",
+      "users": 456,
+      "prior_top1_share": 0.10142543859649122,
+      "no_prior_ratings_share": 0.023464912280701754
+    },
+    {
+      "cohort_month": "2008-07-01 00:00:00+00:00",
+      "users": 521,
+      "prior_top1_share": 0.09232245681381958,
+      "no_prior_ratings_share": 0.03790786948176583
+    },
+    {
+      "cohort_month": "2008-08-01 00:00:00+00:00",
+      "users": 460,
+      "prior_top1_share": 0.09456521739130434,
+      "no_prior_ratings_share": 0.04054347826086956
+    },
+    {
+      "cohort_month": "2008-09-01 00:00:00+00:00",
+      "users": 355,
+      "prior_top1_share": 0.08971830985915492,
+      "no_prior_ratings_share": 0.04676056338028169
+    },
+    {
+      "cohort_month": "2008-10-01 00:00:00+00:00",
+      "users": 1261,
+      "prior_top1_share": 0.0908802537668517,
+      "no_prior_ratings_share": 0.038183980967486125
+    },
+    {
+      "cohort_month": "2008-11-01 00:00:00+00:00",
+      "users": 763,
+      "prior_top1_share": 0.09318479685452162,
+      "no_prior_ratings_share": 0.045019659239842726
+    },
+    {
+      "cohort_month": "2008-12-01 00:00:00+00:00",
+      "users": 517,
+      "prior_top1_share": 0.07176015473887815,
+      "no_prior_ratings_share": 0.049806576402321084
+    },
+    {
+      "cohort_month": "2009-01-01 00:00:00+00:00",
+      "users": 657,
+      "prior_top1_share": 0.07382039573820395,
+      "no_prior_ratings_share": 0.00289193302891933
+    },
+    {
+      "cohort_month": "2009-02-01 00:00:00+00:00",
+      "users": 464,
+      "prior_top1_share": 0.07920258620689655,
+      "no_prior_ratings_share": 0.004849137931034483
+    },
+    {
+      "cohort_month": "2009-03-01 00:00:00+00:00",
+      "users": 570,
+      "prior_top1_share": 0.07552631578947368,
+      "no_prior_ratings_share": 0.008947368421052631
+    },
+    {
+      "cohort_month": "2009-04-01 00:00:00+00:00",
+      "users": 487,
+      "prior_top1_share": 0.0740246406570842,
+      "no_prior_ratings_share": 0.012525667351129364
+    },
+    {
+      "cohort_month": "2009-05-01 00:00:00+00:00",
+      "users": 445,
+      "prior_top1_share": 0.06280898876404495,
+      "no_prior_ratings_share": 0.020674157303370785
+    },
+    {
+      "cohort_month": "2009-06-01 00:00:00+00:00",
+      "users": 433,
+      "prior_top1_share": 0.062009237875288684,
+      "no_prior_ratings_share": 0.030138568129330252
+    },
+    {
+      "cohort_month": "2009-07-01 00:00:00+00:00",
+      "users": 427,
+      "prior_top1_share": 0.057962529274004686,
+      "no_prior_ratings_share": 0.03747072599531616
+    },
+    {
+      "cohort_month": "2009-08-01 00:00:00+00:00",
+      "users": 398,
+      "prior_top1_share": 0.07273869346733669,
+      "no_prior_ratings_share": 0.04723618090452261
+    },
+    {
+      "cohort_month": "2009-09-01 00:00:00+00:00",
+      "users": 387,
+      "prior_top1_share": 0.0624031007751938,
+      "no_prior_ratings_share": 0.05710594315245478
+    },
+    {
+      "cohort_month": "2009-10-01 00:00:00+00:00",
+      "users": 408,
+      "prior_top1_share": 0.07561274509803921,
+      "no_prior_ratings_share": 0.05
+    },
+    {
+      "cohort_month": "2009-11-01 00:00:00+00:00",
+      "users": 363,
+      "prior_top1_share": 0.08181818181818182,
+      "no_prior_ratings_share": 0.043801652892561986
+    },
+    {
+      "cohort_month": "2009-12-01 00:00:00+00:00",
+      "users": 376,
+      "prior_top1_share": 0.0699468085106383,
+      "no_prior_ratings_share": 0.052526595744680854
+    },
+    {
+      "cohort_month": "2010-01-01 00:00:00+00:00",
+      "users": 460,
+      "prior_top1_share": 0.0783695652173913,
+      "no_prior_ratings_share": 0.0018478260869565217
+    },
+    {
+      "cohort_month": "2010-02-01 00:00:00+00:00",
+      "users": 354,
+      "prior_top1_share": 0.06963276836158191,
+      "no_prior_ratings_share": 0.0031073446327683617
+    },
+    {
+      "cohort_month": "2010-03-01 00:00:00+00:00",
+      "users": 385,
+      "prior_top1_share": 0.07454545454545454,
+      "no_prior_ratings_share": 0.009870129870129871
+    },
+    {
+      "cohort_month": "2010-04-01 00:00:00+00:00",
+      "users": 396,
+      "prior_top1_share": 0.07904040404040404,
+      "no_prior_ratings_share": 0.0172979797979798
+    },
+    {
+      "cohort_month": "2010-05-01 00:00:00+00:00",
+      "users": 410,
+      "prior_top1_share": 0.07853658536585366,
+      "no_prior_ratings_share": 0.018048780487804877
+    },
+    {
+      "cohort_month": "2010-06-01 00:00:00+00:00",
+      "users": 390,
+      "prior_top1_share": 0.08076923076923077,
+      "no_prior_ratings_share": 0.014871794871794871
+    },
+    {
+      "cohort_month": "2010-07-01 00:00:00+00:00",
+      "users": 466,
+      "prior_top1_share": 0.0844420600858369,
+      "no_prior_ratings_share": 0.02242489270386266
+    },
+    {
+      "cohort_month": "2010-08-01 00:00:00+00:00",
+      "users": 462,
+      "prior_top1_share": 0.083008658008658,
+      "no_prior_ratings_share": 0.02867965367965368
+    },
+    {
+      "cohort_month": "2010-09-01 00:00:00+00:00",
+      "users": 633,
+      "prior_top1_share": 0.08388625592417062,
+      "no_prior_ratings_share": 0.024960505529225907
+    },
+    {
+      "cohort_month": "2010-10-01 00:00:00+00:00",
+      "users": 543,
+      "prior_top1_share": 0.08047882136279927,
+      "no_prior_ratings_share": 0.024769797421731122
+    },
+    {
+      "cohort_month": "2010-11-01 00:00:00+00:00",
+      "users": 473,
+      "prior_top1_share": 0.07727272727272727,
+      "no_prior_ratings_share": 0.02547568710359408
+    },
+    {
+      "cohort_month": "2010-12-01 00:00:00+00:00",
+      "users": 475,
+      "prior_top1_share": 0.07873684210526316,
+      "no_prior_ratings_share": 0.031157894736842107
+    },
+    {
+      "cohort_month": "2011-01-01 00:00:00+00:00",
+      "users": 484,
+      "prior_top1_share": 0.07933884297520662,
+      "no_prior_ratings_share": 0.0006198347107438017
+    },
+    {
+      "cohort_month": "2011-02-01 00:00:00+00:00",
+      "users": 456,
+      "prior_top1_share": 0.07510964912280702,
+      "no_prior_ratings_share": 0.001973684210526316
+    },
+    {
+      "cohort_month": "2011-03-01 00:00:00+00:00",
+      "users": 584,
+      "prior_top1_share": 0.06883561643835616,
+      "no_prior_ratings_share": 0.004195205479452055
+    },
+    {
+      "cohort_month": "2011-04-01 00:00:00+00:00",
+      "users": 518,
+      "prior_top1_share": 0.0861003861003861,
+      "no_prior_ratings_share": 0.009073359073359074
+    },
+    {
+      "cohort_month": "2011-05-01 00:00:00+00:00",
+      "users": 462,
+      "prior_top1_share": 0.07402597402597402,
+      "no_prior_ratings_share": 0.01038961038961039
+    },
+    {
+      "cohort_month": "2011-06-01 00:00:00+00:00",
+      "users": 348,
+      "prior_top1_share": 0.07988505747126437,
+      "no_prior_ratings_share": 0.01206896551724138
+    },
+    {
+      "cohort_month": "2011-07-01 00:00:00+00:00",
+      "users": 385,
+      "prior_top1_share": 0.09233766233766234,
+      "no_prior_ratings_share": 0.013766233766233767
+    },
+    {
+      "cohort_month": "2011-08-01 00:00:00+00:00",
+      "users": 355,
+      "prior_top1_share": 0.0867605633802817,
+      "no_prior_ratings_share": 0.02464788732394366
+    },
+    {
+      "cohort_month": "2011-09-01 00:00:00+00:00",
+      "users": 317,
+      "prior_top1_share": 0.07365930599369085,
+      "no_prior_ratings_share": 0.024921135646687697
+    },
+    {
+      "cohort_month": "2011-10-01 00:00:00+00:00",
+      "users": 373,
+      "prior_top1_share": 0.08190348525469168,
+      "no_prior_ratings_share": 0.02359249329758713
+    },
+    {
+      "cohort_month": "2011-11-01 00:00:00+00:00",
+      "users": 350,
+      "prior_top1_share": 0.09285714285714286,
+      "no_prior_ratings_share": 0.020142857142857143
+    },
+    {
+      "cohort_month": "2011-12-01 00:00:00+00:00",
+      "users": 366,
+      "prior_top1_share": 0.07978142076502732,
+      "no_prior_ratings_share": 0.027185792349726776
+    },
+    {
+      "cohort_month": "2012-01-01 00:00:00+00:00",
+      "users": 290,
+      "prior_top1_share": 0.08896551724137931,
+      "no_prior_ratings_share": 0.0003448275862068965
+    },
+    {
+      "cohort_month": "2012-02-01 00:00:00+00:00",
+      "users": 363,
+      "prior_top1_share": 0.0859504132231405,
+      "no_prior_ratings_share": 0.001790633608815427
+    },
+    {
+      "cohort_month": "2012-03-01 00:00:00+00:00",
+      "users": 356,
+      "prior_top1_share": 0.09859550561797753,
+      "no_prior_ratings_share": 0.002949438202247191
+    },
+    {
+      "cohort_month": "2012-04-01 00:00:00+00:00",
+      "users": 388,
+      "prior_top1_share": 0.09471649484536082,
+      "no_prior_ratings_share": 0.0059278350515463915
+    },
+    {
+      "cohort_month": "2012-05-01 00:00:00+00:00",
+      "users": 700,
+      "prior_top1_share": 0.07607142857142857,
+      "no_prior_ratings_share": 0.012428571428571428
+    },
+    {
+      "cohort_month": "2012-06-01 00:00:00+00:00",
+      "users": 354,
+      "prior_top1_share": 0.09364406779661016,
+      "no_prior_ratings_share": 0.011299435028248588
+    },
+    {
+      "cohort_month": "2012-07-01 00:00:00+00:00",
+      "users": 359,
+      "prior_top1_share": 0.09749303621169916,
+      "no_prior_ratings_share": 0.013231197771587743
+    },
+    {
+      "cohort_month": "2012-08-01 00:00:00+00:00",
+      "users": 304,
+      "prior_top1_share": 0.10230263157894737,
+      "no_prior_ratings_share": 0.009703947368421053
+    },
+    {
+      "cohort_month": "2012-09-01 00:00:00+00:00",
+      "users": 307,
+      "prior_top1_share": 0.09592833876221499,
+      "no_prior_ratings_share": 0.009120521172638436
+    },
+    {
+      "cohort_month": "2012-10-01 00:00:00+00:00",
+      "users": 431,
+      "prior_top1_share": 0.1037122969837587,
+      "no_prior_ratings_share": 0.014733178654292344
+    },
+    {
+      "cohort_month": "2012-11-01 00:00:00+00:00",
+      "users": 379,
+      "prior_top1_share": 0.09591029023746701,
+      "no_prior_ratings_share": 0.013588390501319261
+    },
+    {
+      "cohort_month": "2012-12-01 00:00:00+00:00",
+      "users": 375,
+      "prior_top1_share": 0.0968,
+      "no_prior_ratings_share": 0.013866666666666666
+    },
+    {
+      "cohort_month": "2013-01-01 00:00:00+00:00",
+      "users": 348,
+      "prior_top1_share": 0.09971264367816092,
+      "no_prior_ratings_share": 0.0004310344827586207
+    },
+    {
+      "cohort_month": "2013-02-01 00:00:00+00:00",
+      "users": 326,
+      "prior_top1_share": 0.10506134969325154,
+      "no_prior_ratings_share": 0.001687116564417178
+    },
+    {
+      "cohort_month": "2013-03-01 00:00:00+00:00",
+      "users": 325,
+      "prior_top1_share": 0.09507692307692307,
+      "no_prior_ratings_share": 0.002307692307692308
+    },
+    {
+      "cohort_month": "2013-04-01 00:00:00+00:00",
+      "users": 337,
+      "prior_top1_share": 0.12299703264094955,
+      "no_prior_ratings_share": 0.0013353115727002967
+    },
+    {
+      "cohort_month": "2013-05-01 00:00:00+00:00",
+      "users": 337,
+      "prior_top1_share": 0.13501483679525222,
+      "no_prior_ratings_share": 0.0035608308605341245
+    },
+    {
+      "cohort_month": "2013-06-01 00:00:00+00:00",
+      "users": 327,
+      "prior_top1_share": 0.14587155963302753,
+      "no_prior_ratings_share": 0.004892966360856269
+    },
+    {
+      "cohort_month": "2013-07-01 00:00:00+00:00",
+      "users": 331,
+      "prior_top1_share": 0.13549848942598186,
+      "no_prior_ratings_share": 0.00906344410876133
+    },
+    {
+      "cohort_month": "2013-08-01 00:00:00+00:00",
+      "users": 263,
+      "prior_top1_share": 0.14695817490494298,
+      "no_prior_ratings_share": 0.005513307984790874
+    },
+    {
+      "cohort_month": "2013-09-01 00:00:00+00:00",
+      "users": 673,
+      "prior_top1_share": 0.15230312035661217,
+      "no_prior_ratings_share": 0.007355126300148588
+    },
+    {
+      "cohort_month": "2013-10-01 00:00:00+00:00",
+      "users": 328,
+      "prior_top1_share": 0.13612804878048781,
+      "no_prior_ratings_share": 0.012042682926829269
+    },
+    {
+      "cohort_month": "2013-11-01 00:00:00+00:00",
+      "users": 326,
+      "prior_top1_share": 0.1361963190184049,
+      "no_prior_ratings_share": 0.01303680981595092
+    },
+    {
+      "cohort_month": "2013-12-01 00:00:00+00:00",
+      "users": 317,
+      "prior_top1_share": 0.1414826498422713,
+      "no_prior_ratings_share": 0.01167192429022082
+    },
+    {
+      "cohort_month": "2014-01-01 00:00:00+00:00",
+      "users": 350,
+      "prior_top1_share": 0.16014285714285714,
+      "no_prior_ratings_share": 0.0
+    },
+    {
+      "cohort_month": "2014-02-01 00:00:00+00:00",
+      "users": 358,
+      "prior_top1_share": 0.16564245810055866,
+      "no_prior_ratings_share": 0.00027932960893854746
+    },
+    {
+      "cohort_month": "2014-03-01 00:00:00+00:00",
+      "users": 361,
+      "prior_top1_share": 0.13850415512465375,
+      "no_prior_ratings_share": 0.0016620498614958448
+    },
+    {
+      "cohort_month": "2014-04-01 00:00:00+00:00",
+      "users": 279,
+      "prior_top1_share": 0.15663082437275985,
+      "no_prior_ratings_share": 0.0035842293906810036
+    },
+    {
+      "cohort_month": "2014-05-01 00:00:00+00:00",
+      "users": 277,
+      "prior_top1_share": 0.1588447653429603,
+      "no_prior_ratings_share": 0.005415162454873646
+    },
+    {
+      "cohort_month": "2014-06-01 00:00:00+00:00",
+      "users": 261,
+      "prior_top1_share": 0.15229885057471265,
+      "no_prior_ratings_share": 0.007854406130268199
+    },
+    {
+      "cohort_month": "2014-07-01 00:00:00+00:00",
+      "users": 294,
+      "prior_top1_share": 0.15833333333333333,
+      "no_prior_ratings_share": 0.008843537414965987
+    },
+    {
+      "cohort_month": "2014-08-01 00:00:00+00:00",
+      "users": 252,
+      "prior_top1_share": 0.16726190476190475,
+      "no_prior_ratings_share": 0.009325396825396825
+    },
+    {
+      "cohort_month": "2014-09-01 00:00:00+00:00",
+      "users": 220,
+      "prior_top1_share": 0.14863636363636365,
+      "no_prior_ratings_share": 0.010454545454545454
+    },
+    {
+      "cohort_month": "2014-10-01 00:00:00+00:00",
+      "users": 267,
+      "prior_top1_share": 0.1593632958801498,
+      "no_prior_ratings_share": 0.012546816479400749
+    },
+    {
+      "cohort_month": "2014-11-01 00:00:00+00:00",
+      "users": 435,
+      "prior_top1_share": 0.570919540229885,
+      "no_prior_ratings_share": 0.0703448275862069
+    },
+    {
+      "cohort_month": "2014-12-01 00:00:00+00:00",
+      "users": 406,
+      "prior_top1_share": 0.5637931034482758,
+      "no_prior_ratings_share": 0.09334975369458128
+    },
+    {
+      "cohort_month": "2015-01-01 00:00:00+00:00",
+      "users": 514,
+      "prior_top1_share": 0.5482490272373541,
+      "no_prior_ratings_share": 0.00632295719844358
+    },
+    {
+      "cohort_month": "2015-02-01 00:00:00+00:00",
+      "users": 570,
+      "prior_top1_share": 0.5228947368421053,
+      "no_prior_ratings_share": 0.011403508771929825
+    },
+    {
+      "cohort_month": "2015-03-01 00:00:00+00:00",
+      "users": 534,
+      "prior_top1_share": 0.5430711610486891,
+      "no_prior_ratings_share": 0.010767790262172285
+    },
+    {
+      "cohort_month": "2015-04-01 00:00:00+00:00",
+      "users": 714,
+      "prior_top1_share": 0.5410364145658263,
+      "no_prior_ratings_share": 0.01603641456582633
+    },
+    {
+      "cohort_month": "2015-05-01 00:00:00+00:00",
+      "users": 748,
+      "prior_top1_share": 0.5876336898395722,
+      "no_prior_ratings_share": 0.017847593582887702
+    },
+    {
+      "cohort_month": "2015-06-01 00:00:00+00:00",
+      "users": 746,
+      "prior_top1_share": 0.5699731903485254,
+      "no_prior_ratings_share": 0.027412868632707775
+    },
+    {
+      "cohort_month": "2015-07-01 00:00:00+00:00",
+      "users": 1137,
+      "prior_top1_share": 0.5783201407211961,
+      "no_prior_ratings_share": 0.032321899736147755
+    },
+    {
+      "cohort_month": "2015-08-01 00:00:00+00:00",
+      "users": 1627,
+      "prior_top1_share": 0.5858635525507068,
+      "no_prior_ratings_share": 0.030792870313460355
+    },
+    {
+      "cohort_month": "2015-09-01 00:00:00+00:00",
+      "users": 1147,
+      "prior_top1_share": 0.587227550130776,
+      "no_prior_ratings_share": 0.028421970357454227
+    },
+    {
+      "cohort_month": "2015-10-01 00:00:00+00:00",
+      "users": 1195,
+      "prior_top1_share": 0.5349790794979079,
+      "no_prior_ratings_share": 0.04606694560669456
+    },
+    {
+      "cohort_month": "2015-11-01 00:00:00+00:00",
+      "users": 2204,
+      "prior_top1_share": 0.5407214156079855,
+      "no_prior_ratings_share": 0.06810344827586207
+    },
+    {
+      "cohort_month": "2015-12-01 00:00:00+00:00",
+      "users": 1021,
+      "prior_top1_share": 0.5237512242899118,
+      "no_prior_ratings_share": 0.07561214495592557
+    },
+    {
+      "cohort_month": "2016-01-01 00:00:00+00:00",
+      "users": 1108,
+      "prior_top1_share": 0.5952617328519856,
+      "no_prior_ratings_share": 0.004061371841155234
+    },
+    {
+      "cohort_month": "2016-02-01 00:00:00+00:00",
+      "users": 1057,
+      "prior_top1_share": 0.5584673604541154,
+      "no_prior_ratings_share": 0.005629139072847682
+    },
+    {
+      "cohort_month": "2016-03-01 00:00:00+00:00",
+      "users": 862,
+      "prior_top1_share": 0.6154872389791183,
+      "no_prior_ratings_share": 0.008236658932714616
+    },
+    {
+      "cohort_month": "2016-04-01 00:00:00+00:00",
+      "users": 1000,
+      "prior_top1_share": 0.6044,
+      "no_prior_ratings_share": 0.01135
+    },
+    {
+      "cohort_month": "2016-05-01 00:00:00+00:00",
+      "users": 1016,
+      "prior_top1_share": 0.5988188976377953,
+      "no_prior_ratings_share": 0.01437007874015748
+    },
+    {
+      "cohort_month": "2016-06-01 00:00:00+00:00",
+      "users": 808,
+      "prior_top1_share": 0.6115717821782178,
+      "no_prior_ratings_share": 0.017698019801980196
+    },
+    {
+      "cohort_month": "2016-07-01 00:00:00+00:00",
+      "users": 874,
+      "prior_top1_share": 0.5875286041189931,
+      "no_prior_ratings_share": 0.020823798627002288
+    },
+    {
+      "cohort_month": "2016-08-01 00:00:00+00:00",
+      "users": 850,
+      "prior_top1_share": 0.5728235294117647,
+      "no_prior_ratings_share": 0.02211764705882353
+    },
+    {
+      "cohort_month": "2016-09-01 00:00:00+00:00",
+      "users": 766,
+      "prior_top1_share": 0.5870104438642297,
+      "no_prior_ratings_share": 0.028133159268929505
+    },
+    {
+      "cohort_month": "2016-10-01 00:00:00+00:00",
+      "users": 671,
+      "prior_top1_share": 0.6032786885245902,
+      "no_prior_ratings_share": 0.02317436661698957
+    },
+    {
+      "cohort_month": "2016-11-01 00:00:00+00:00",
+      "users": 681,
+      "prior_top1_share": 0.6329662261380323,
+      "no_prior_ratings_share": 0.027900146842878122
+    },
+    {
+      "cohort_month": "2016-12-01 00:00:00+00:00",
+      "users": 798,
+      "prior_top1_share": 0.6105889724310777,
+      "no_prior_ratings_share": 0.039724310776942356
+    },
+    {
+      "cohort_month": "2017-01-01 00:00:00+00:00",
+      "users": 975,
+      "prior_top1_share": 0.6701025641025641,
+      "no_prior_ratings_share": 0.006666666666666667
+    },
+    {
+      "cohort_month": "2017-02-01 00:00:00+00:00",
+      "users": 952,
+      "prior_top1_share": 0.6640231092436975,
+      "no_prior_ratings_share": 0.011134453781512605
+    },
+    {
+      "cohort_month": "2017-03-01 00:00:00+00:00",
+      "users": 864,
+      "prior_top1_share": 0.6786458333333333,
+      "no_prior_ratings_share": 0.012037037037037037
+    },
+    {
+      "cohort_month": "2017-04-01 00:00:00+00:00",
+      "users": 752,
+      "prior_top1_share": 0.6356382978723404,
+      "no_prior_ratings_share": 0.014827127659574469
+    },
+    {
+      "cohort_month": "2017-05-01 00:00:00+00:00",
+      "users": 917,
+      "prior_top1_share": 0.6477644492911668,
+      "no_prior_ratings_share": 0.018047982551799346
+    },
+    {
+      "cohort_month": "2017-06-01 00:00:00+00:00",
+      "users": 652,
+      "prior_top1_share": 0.6442484662576687,
+      "no_prior_ratings_share": 0.026303680981595093
+    },
+    {
+      "cohort_month": "2017-07-01 00:00:00+00:00",
+      "users": 834,
+      "prior_top1_share": 0.6461630695443645,
+      "no_prior_ratings_share": 0.030995203836930454
+    },
+    {
+      "cohort_month": "2017-08-01 00:00:00+00:00",
+      "users": 661,
+      "prior_top1_share": 0.6462178517397882,
+      "no_prior_ratings_share": 0.034493192133131616
+    },
+    {
+      "cohort_month": "2017-09-01 00:00:00+00:00",
+      "users": 686,
+      "prior_top1_share": 0.64533527696793,
+      "no_prior_ratings_share": 0.037317784256559766
+    },
+    {
+      "cohort_month": "2017-10-01 00:00:00+00:00",
+      "users": 744,
+      "prior_top1_share": 0.6530913978494624,
+      "no_prior_ratings_share": 0.03474462365591398
+    },
+    {
+      "cohort_month": "2017-11-01 00:00:00+00:00",
+      "users": 544,
+      "prior_top1_share": 0.6571691176470589,
+      "no_prior_ratings_share": 0.04007352941176471
+    },
+    {
+      "cohort_month": "2017-12-01 00:00:00+00:00",
+      "users": 582,
+      "prior_top1_share": 0.6553264604810997,
+      "no_prior_ratings_share": 0.04914089347079038
+    },
+    {
+      "cohort_month": "2018-01-01 00:00:00+00:00",
+      "users": 582,
+      "prior_top1_share": 0.6995704467353951,
+      "no_prior_ratings_share": 0.005154639175257732
+    },
+    {
+      "cohort_month": "2018-02-01 00:00:00+00:00",
+      "users": 609,
+      "prior_top1_share": 0.7040229885057471,
+      "no_prior_ratings_share": 0.008292282430213465
+    },
+    {
+      "cohort_month": "2018-03-01 00:00:00+00:00",
+      "users": 572,
+      "prior_top1_share": 0.6687062937062938,
+      "no_prior_ratings_share": 0.011451048951048952
+    },
+    {
+      "cohort_month": "2018-04-01 00:00:00+00:00",
+      "users": 479,
+      "prior_top1_share": 0.683089770354906,
+      "no_prior_ratings_share": 0.01430062630480167
+    },
+    {
+      "cohort_month": "2018-05-01 00:00:00+00:00",
+      "users": 419,
+      "prior_top1_share": 0.6830548926014319,
+      "no_prior_ratings_share": 0.02100238663484487
+    },
+    {
+      "cohort_month": "2018-06-01 00:00:00+00:00",
+      "users": 510,
+      "prior_top1_share": 0.6775490196078431,
+      "no_prior_ratings_share": 0.02666666666666667
+    },
+    {
+      "cohort_month": "2018-07-01 00:00:00+00:00",
+      "users": 538,
+      "prior_top1_share": 0.6836431226765799,
+      "no_prior_ratings_share": 0.02908921933085502
+    },
+    {
+      "cohort_month": "2018-08-01 00:00:00+00:00",
+      "users": 547,
+      "prior_top1_share": 0.663528336380256,
+      "no_prior_ratings_share": 0.031627056672760515
+    },
+    {
+      "cohort_month": "2018-09-01 00:00:00+00:00",
+      "users": 526,
+      "prior_top1_share": 0.6788022813688213,
+      "no_prior_ratings_share": 0.030608365019011406
+    },
+    {
+      "cohort_month": "2018-10-01 00:00:00+00:00",
+      "users": 654,
+      "prior_top1_share": 0.6738532110091743,
+      "no_prior_ratings_share": 0.03662079510703364
+    },
+    {
+      "cohort_month": "2018-11-01 00:00:00+00:00",
+      "users": 671,
+      "prior_top1_share": 0.6708643815201192,
+      "no_prior_ratings_share": 0.04918032786885246
+    },
+    {
+      "cohort_month": "2018-12-01 00:00:00+00:00",
+      "users": 795,
+      "prior_top1_share": 0.6744654088050315,
+      "no_prior_ratings_share": 0.06339622641509433
+    },
+    {
+      "cohort_month": "2019-01-01 00:00:00+00:00",
+      "users": 765,
+      "prior_top1_share": 0.7188235294117648,
+      "no_prior_ratings_share": 0.0025490196078431374
+    },
+    {
+      "cohort_month": "2019-02-01 00:00:00+00:00",
+      "users": 636,
+      "prior_top1_share": 0.7474842767295597,
+      "no_prior_ratings_share": 0.006446540880503145
+    },
+    {
+      "cohort_month": "2019-03-01 00:00:00+00:00",
+      "users": 675,
+      "prior_top1_share": 0.7015555555555556,
+      "no_prior_ratings_share": 0.008962962962962963
+    },
+    {
+      "cohort_month": "2019-04-01 00:00:00+00:00",
+      "users": 536,
+      "prior_top1_share": 0.7210820895522388,
+      "no_prior_ratings_share": 0.011007462686567163
+    },
+    {
+      "cohort_month": "2019-05-01 00:00:00+00:00",
+      "users": 609,
+      "prior_top1_share": 0.7328407224958949,
+      "no_prior_ratings_share": 0.010919540229885057
+    },
+    {
+      "cohort_month": "2019-06-01 00:00:00+00:00",
+      "users": 453,
+      "prior_top1_share": 0.7024282560706402,
+      "no_prior_ratings_share": 0.011589403973509934
+    },
+    {
+      "cohort_month": "2019-07-01 00:00:00+00:00",
+      "users": 547,
+      "prior_top1_share": 0.7003656307129799,
+      "no_prior_ratings_share": 0.018738574040219377
+    },
+    {
+      "cohort_month": "2019-08-01 00:00:00+00:00",
+      "users": 525,
+      "prior_top1_share": 0.6776190476190476,
+      "no_prior_ratings_share": 0.021142857142857144
+    },
+    {
+      "cohort_month": "2019-09-01 00:00:00+00:00",
+      "users": 702,
+      "prior_top1_share": 0.7235042735042735,
+      "no_prior_ratings_share": 0.022863247863247862
+    },
+    {
+      "cohort_month": "2019-10-01 00:00:00+00:00",
+      "users": 463,
+      "prior_top1_share": 0.7017278617710583,
+      "no_prior_ratings_share": 0.03531317494600432
+    },
+    {
+      "cohort_month": "2019-11-01 00:00:00+00:00",
+      "users": 503,
+      "prior_top1_share": 0.707455268389662,
+      "no_prior_ratings_share": 0.04493041749502982
+    },
+    {
+      "cohort_month": "2019-12-01 00:00:00+00:00",
+      "users": 436,
+      "prior_top1_share": 0.6997706422018348,
+      "no_prior_ratings_share": 0.04724770642201835
+    },
+    {
+      "cohort_month": "2020-01-01 00:00:00+00:00",
+      "users": 580,
+      "prior_top1_share": 0.7221551724137931,
+      "no_prior_ratings_share": 0.005603448275862069
+    },
+    {
+      "cohort_month": "2020-02-01 00:00:00+00:00",
+      "users": 503,
+      "prior_top1_share": 0.7305168986083499,
+      "no_prior_ratings_share": 0.006163021868787276
+    },
+    {
+      "cohort_month": "2020-03-01 00:00:00+00:00",
+      "users": 788,
+      "prior_top1_share": 0.6902284263959391,
+      "no_prior_ratings_share": 0.006535532994923858
+    },
+    {
+      "cohort_month": "2020-04-01 00:00:00+00:00",
+      "users": 1015,
+      "prior_top1_share": 0.7069458128078818,
+      "no_prior_ratings_share": 0.010098522167487686
+    },
+    {
+      "cohort_month": "2020-05-01 00:00:00+00:00",
+      "users": 931,
+      "prior_top1_share": 0.6907626208378088,
+      "no_prior_ratings_share": 0.012567132116004296
+    },
+    {
+      "cohort_month": "2020-06-01 00:00:00+00:00",
+      "users": 671,
+      "prior_top1_share": 0.7090163934426229,
+      "no_prior_ratings_share": 0.010357675111773473
+    },
+    {
+      "cohort_month": "2020-07-01 00:00:00+00:00",
+      "users": 652,
+      "prior_top1_share": 0.7033742331288344,
+      "no_prior_ratings_share": 0.01664110429447853
+    },
+    {
+      "cohort_month": "2020-08-01 00:00:00+00:00",
+      "users": 692,
+      "prior_top1_share": 0.6971098265895954,
+      "no_prior_ratings_share": 0.019797687861271677
+    },
+    {
+      "cohort_month": "2020-09-01 00:00:00+00:00",
+      "users": 643,
+      "prior_top1_share": 0.6915241057542768,
+      "no_prior_ratings_share": 0.018506998444790045
+    },
+    {
+      "cohort_month": "2020-10-01 00:00:00+00:00",
+      "users": 710,
+      "prior_top1_share": 0.708943661971831,
+      "no_prior_ratings_share": 0.020492957746478874
+    },
+    {
+      "cohort_month": "2020-11-01 00:00:00+00:00",
+      "users": 648,
+      "prior_top1_share": 0.7190586419753087,
+      "no_prior_ratings_share": 0.029861111111111113
+    },
+    {
+      "cohort_month": "2020-12-01 00:00:00+00:00",
+      "users": 698,
+      "prior_top1_share": 0.7134670487106017,
+      "no_prior_ratings_share": 0.03681948424068768
+    },
+    {
+      "cohort_month": "2021-01-01 00:00:00+00:00",
+      "users": 729,
+      "prior_top1_share": 0.7665980795610425,
+      "no_prior_ratings_share": 0.004526748971193415
+    },
+    {
+      "cohort_month": "2021-02-01 00:00:00+00:00",
+      "users": 586,
+      "prior_top1_share": 0.7488907849829352,
+      "no_prior_ratings_share": 0.0063993174061433445
+    },
+    {
+      "cohort_month": "2021-03-01 00:00:00+00:00",
+      "users": 567,
+      "prior_top1_share": 0.7398589065255732,
+      "no_prior_ratings_share": 0.009435626102292769
+    },
+    {
+      "cohort_month": "2021-04-01 00:00:00+00:00",
+      "users": 561,
+      "prior_top1_share": 0.7464349376114082,
+      "no_prior_ratings_share": 0.006862745098039216
+    },
+    {
+      "cohort_month": "2021-05-01 00:00:00+00:00",
+      "users": 486,
+      "prior_top1_share": 0.7366255144032922,
+      "no_prior_ratings_share": 0.012037037037037037
+    },
+    {
+      "cohort_month": "2021-06-01 00:00:00+00:00",
+      "users": 450,
+      "prior_top1_share": 0.753,
+      "no_prior_ratings_share": 0.0077777777777777776
+    },
+    {
+      "cohort_month": "2021-07-01 00:00:00+00:00",
+      "users": 454,
+      "prior_top1_share": 0.7211453744493392,
+      "no_prior_ratings_share": 0.014757709251101321
+    },
+    {
+      "cohort_month": "2021-08-01 00:00:00+00:00",
+      "users": 457,
+      "prior_top1_share": 0.7180525164113786,
+      "no_prior_ratings_share": 0.019584245076586432
+    },
+    {
+      "cohort_month": "2021-09-01 00:00:00+00:00",
+      "users": 391,
+      "prior_top1_share": 0.7355498721227621,
+      "no_prior_ratings_share": 0.02276214833759591
+    },
+    {
+      "cohort_month": "2021-10-01 00:00:00+00:00",
+      "users": 295,
+      "prior_top1_share": 0.727457627118644,
+      "no_prior_ratings_share": 0.023389830508474575
+    },
+    {
+      "cohort_month": "2021-11-01 00:00:00+00:00",
+      "users": 344,
+      "prior_top1_share": 0.7421511627906977,
+      "no_prior_ratings_share": 0.030232558139534883
+    },
+    {
+      "cohort_month": "2021-12-01 00:00:00+00:00",
+      "users": 348,
+      "prior_top1_share": 0.7255747126436781,
+      "no_prior_ratings_share": 0.04109195402298851
+    },
+    {
+      "cohort_month": "2022-01-01 00:00:00+00:00",
+      "users": 432,
+      "prior_top1_share": 0.7892361111111111,
+      "no_prior_ratings_share": 0.005787037037037037
+    },
+    {
+      "cohort_month": "2022-02-01 00:00:00+00:00",
+      "users": 347,
+      "prior_top1_share": 0.7537463976945245,
+      "no_prior_ratings_share": 0.008357348703170028
+    },
+    {
+      "cohort_month": "2022-03-01 00:00:00+00:00",
+      "users": 308,
+      "prior_top1_share": 0.751461038961039,
+      "no_prior_ratings_share": 0.010714285714285714
+    },
+    {
+      "cohort_month": "2022-04-01 00:00:00+00:00",
+      "users": 375,
+      "prior_top1_share": 0.7432,
+      "no_prior_ratings_share": 0.015866666666666668
+    },
+    {
+      "cohort_month": "2022-05-01 00:00:00+00:00",
+      "users": 284,
+      "prior_top1_share": 0.7411971830985915,
+      "no_prior_ratings_share": 0.020598591549295775
+    },
+    {
+      "cohort_month": "2022-06-01 00:00:00+00:00",
+      "users": 306,
+      "prior_top1_share": 0.746078431372549,
+      "no_prior_ratings_share": 0.025
+    },
+    {
+      "cohort_month": "2022-07-01 00:00:00+00:00",
+      "users": 303,
+      "prior_top1_share": 0.7453795379537954,
+      "no_prior_ratings_share": 0.02392739273927393
+    },
+    {
+      "cohort_month": "2022-08-01 00:00:00+00:00",
+      "users": 335,
+      "prior_top1_share": 0.7237313432835821,
+      "no_prior_ratings_share": 0.03955223880597015
+    },
+    {
+      "cohort_month": "2022-09-01 00:00:00+00:00",
+      "users": 278,
+      "prior_top1_share": 0.7640287769784173,
+      "no_prior_ratings_share": 0.03866906474820144
+    },
+    {
+      "cohort_month": "2022-10-01 00:00:00+00:00",
+      "users": 262,
+      "prior_top1_share": 0.7272900763358778,
+      "no_prior_ratings_share": 0.04580152671755725
+    },
+    {
+      "cohort_month": "2022-11-01 00:00:00+00:00",
+      "users": 335,
+      "prior_top1_share": 0.7332835820895522,
+      "no_prior_ratings_share": 0.05865671641791045
+    },
+    {
+      "cohort_month": "2022-12-01 00:00:00+00:00",
+      "users": 346,
+      "prior_top1_share": 0.7310693641618498,
+      "no_prior_ratings_share": 0.05476878612716763
+    },
+    {
+      "cohort_month": "2023-01-01 00:00:00+00:00",
+      "users": 466,
+      "prior_top1_share": 0.790343347639485,
+      "no_prior_ratings_share": 0.0043991416309012875
+    },
+    {
+      "cohort_month": "2023-02-01 00:00:00+00:00",
+      "users": 355,
+      "prior_top1_share": 0.7656338028169014,
+      "no_prior_ratings_share": 0.006619718309859155
+    },
+    {
+      "cohort_month": "2023-03-01 00:00:00+00:00",
+      "users": 329,
+      "prior_top1_share": 0.7711246200607903,
+      "no_prior_ratings_share": 0.00729483282674772
+    },
+    {
+      "cohort_month": "2023-04-01 00:00:00+00:00",
+      "users": 305,
+      "prior_top1_share": 0.780327868852459,
+      "no_prior_ratings_share": 0.006721311475409836
+    },
+    {
+      "cohort_month": "2023-05-01 00:00:00+00:00",
+      "users": 337,
+      "prior_top1_share": 0.7765578635014837,
+      "no_prior_ratings_share": 0.011572700296735905
+    },
+    {
+      "cohort_month": "2023-06-01 00:00:00+00:00",
+      "users": 305,
+      "prior_top1_share": 0.7381967213114754,
+      "no_prior_ratings_share": 0.026885245901639345
+    },
+    {
+      "cohort_month": "2023-07-01 00:00:00+00:00",
+      "users": 370,
+      "prior_top1_share": 0.7864864864864864,
+      "no_prior_ratings_share": 0.026351351351351353
+    },
+    {
+      "cohort_month": "2023-08-01 00:00:00+00:00",
+      "users": 413,
+      "prior_top1_share": 0.7799031476997579,
+      "no_prior_ratings_share": 0.036682808716707024
+    },
+    {
+      "cohort_month": "2023-09-01 00:00:00+00:00",
+      "users": 421,
+      "prior_top1_share": 0.7783847980997625,
+      "no_prior_ratings_share": 0.04786223277909739
+    },
+    {
+      "cohort_month": "2023-10-01 00:00:00+00:00",
+      "users": 118,
+      "prior_top1_share": 0.7817796610169492,
+      "no_prior_ratings_share": 0.038135593220338986
+    }
+  ],
+  "mainstream": {
+    "users": 166037,
+    "min": 0.0055603079555175405,
+    "median": 0.963137176407793,
+    "max": 0.999823088333356,
+    "p10": 0.8274636510500808,
+    "p90": 0.9950729142554811,
+    "activity_corr": -0.07355468983196436
+  },
+  "mainstream_by_era": [
+    {
+      "era": "pre-v3",
+      "users": 35215,
+      "median_mainstream": 0.8436187399030695
+    },
+    {
+      "era": "v3",
+      "users": 62900,
+      "median_mainstream": 0.9552247800409787
+    },
+    {
+      "era": "v4+",
+      "users": 67922,
+      "median_mainstream": 0.9887702795539819
+    }
+  ],
+  "extreme_users": [
+    {
+      "userId": 106047,
+      "mainstream": 0.0055603079555175405,
+      "n": 13,
+      "low_rank": 1,
+      "high_rank": 166037
+    },
+    {
+      "userId": 94061,
+      "mainstream": 0.05854241338112309,
+      "n": 27,
+      "low_rank": 2,
+      "high_rank": 166036
+    },
+    {
+      "userId": 136490,
+      "mainstream": 0.06989247311827962,
+      "n": 23,
+      "low_rank": 3,
+      "high_rank": 166035
+    },
+    {
+      "userId": 142873,
+      "mainstream": 0.9997615581547111,
+      "n": 21,
+      "low_rank": 166035,
+      "high_rank": 3
+    },
+    {
+      "userId": 97963,
+      "mainstream": 0.9997678329401134,
+      "n": 24,
+      "low_rank": 166036,
+      "high_rank": 2
+    },
+    {
+      "userId": 42927,
+      "mainstream": 0.999823088333356,
+      "n": 19,
+      "low_rank": 166037,
+      "high_rank": 1
+    }
+  ],
+  "extreme_user_titles": [
+    {
+      "userId": 42927,
+      "title": "Shawshank Redemption, The (1994)",
+      "genres": "Crime|Drama"
+    },
+    {
+      "userId": 42927,
+      "title": "Forrest Gump (1994)",
+      "genres": "Comedy|Drama|Romance|War"
+    },
+    {
+      "userId": 42927,
+      "title": "Pulp Fiction (1994)",
+      "genres": "Comedy|Crime|Drama|Thriller"
+    },
+    {
+      "userId": 42927,
+      "title": "Matrix, The (1999)",
+      "genres": "Action|Sci-Fi|Thriller"
+    },
+    {
+      "userId": 42927,
+      "title": "Star Wars: Episode IV - A New Hope (1977)",
+      "genres": "Action|Adventure|Sci-Fi"
+    },
+    {
+      "userId": 94061,
+      "title": "Titanic (1997)",
+      "genres": "Drama|Romance"
+    },
+    {
+      "userId": 94061,
+      "title": "Truman Show, The (1998)",
+      "genres": "Comedy|Drama|Sci-Fi"
+    },
+    {
+      "userId": 94061,
+      "title": "Scream (1996)",
+      "genres": "Comedy|Horror|Mystery|Thriller"
+    },
+    {
+      "userId": 94061,
+      "title": "Full Monty, The (1997)",
+      "genres": "Comedy|Drama"
+    },
+    {
+      "userId": 94061,
+      "title": "English Patient, The (1996)",
+      "genres": "Drama|Romance|War"
+    },
+    {
+      "userId": 97963,
+      "title": "Shawshank Redemption, The (1994)",
+      "genres": "Crime|Drama"
+    },
+    {
+      "userId": 97963,
+      "title": "Forrest Gump (1994)",
+      "genres": "Comedy|Drama|Romance|War"
+    },
+    {
+      "userId": 97963,
+      "title": "Matrix, The (1999)",
+      "genres": "Action|Sci-Fi|Thriller"
+    },
+    {
+      "userId": 97963,
+      "title": "Star Wars: Episode IV - A New Hope (1977)",
+      "genres": "Action|Adventure|Sci-Fi"
+    },
+    {
+      "userId": 97963,
+      "title": "Schindler's List (1993)",
+      "genres": "Drama|War"
+    },
+    {
+      "userId": 106047,
+      "title": "Matrix, The (1999)",
+      "genres": "Action|Sci-Fi|Thriller"
+    },
+    {
+      "userId": 106047,
+      "title": "Office Space (1999)",
+      "genres": "Comedy|Crime"
+    },
+    {
+      "userId": 106047,
+      "title": "Lock, Stock & Two Smoking Barrels (1998)",
+      "genres": "Comedy|Crime|Thriller"
+    },
+    {
+      "userId": 106047,
+      "title": "10 Things I Hate About You (1999)",
+      "genres": "Comedy|Romance"
+    },
+    {
+      "userId": 106047,
+      "title": "You've Got Mail (1998)",
+      "genres": "Comedy|Romance"
+    },
+    {
+      "userId": 136490,
+      "title": "Good Will Hunting (1997)",
+      "genres": "Drama|Romance"
+    },
+    {
+      "userId": 136490,
+      "title": "Titanic (1997)",
+      "genres": "Drama|Romance"
+    },
+    {
+      "userId": 136490,
+      "title": "L.A. Confidential (1997)",
+      "genres": "Crime|Film-Noir|Mystery|Thriller"
+    },
+    {
+      "userId": 136490,
+      "title": "Full Monty, The (1997)",
+      "genres": "Comedy|Drama"
+    },
+    {
+      "userId": 136490,
+      "title": "English Patient, The (1996)",
+      "genres": "Drama|Romance|War"
+    },
+    {
+      "userId": 142873,
+      "title": "Shawshank Redemption, The (1994)",
+      "genres": "Crime|Drama"
+    },
+    {
+      "userId": 142873,
+      "title": "Matrix, The (1999)",
+      "genres": "Action|Sci-Fi|Thriller"
+    },
+    {
+      "userId": 142873,
+      "title": "Star Wars: Episode IV - A New Hope (1977)",
+      "genres": "Action|Adventure|Sci-Fi"
+    },
+    {
+      "userId": 142873,
+      "title": "Schindler's List (1993)",
+      "genres": "Drama|War"
+    },
+    {
+      "userId": 142873,
+      "title": "Lord of the Rings: The Fellowship of the Ring, The (2001)",
+      "genres": "Adventure|Fantasy"
+    }
+  ],
+  "extreme_user_genres": [
+    {
+      "userId": 42927,
+      "genre": "Action",
+      "n": 13
+    },
+    {
+      "userId": 42927,
+      "genre": "Drama",
+      "n": 13
+    },
+    {
+      "userId": 42927,
+      "genre": "Sci-Fi",
+      "n": 11
+    },
+    {
+      "userId": 94061,
+      "genre": "Drama",
+      "n": 21
+    },
+    {
+      "userId": 94061,
+      "genre": "Romance",
+      "n": 8
+    },
+    {
+      "userId": 94061,
+      "genre": "Comedy",
+      "n": 6
+    },
+    {
+      "userId": 97963,
+      "genre": "Action",
+      "n": 16
+    },
+    {
+      "userId": 97963,
+      "genre": "Adventure",
+      "n": 12
+    },
+    {
+      "userId": 97963,
+      "genre": "Sci-Fi",
+      "n": 11
+    },
+    {
+      "userId": 106047,
+      "genre": "Drama",
+      "n": 27
+    },
+    {
+      "userId": 106047,
+      "genre": "Comedy",
+      "n": 19
+    },
+    {
+      "userId": 106047,
+      "genre": "Romance",
+      "n": 12
+    },
+    {
+      "userId": 136490,
+      "genre": "Drama",
+      "n": 15
+    },
+    {
+      "userId": 136490,
+      "genre": "Romance",
+      "n": 9
+    },
+    {
+      "userId": 136490,
+      "genre": "Comedy",
+      "n": 5
+    },
+    {
+      "userId": 142873,
+      "genre": "Adventure",
+      "n": 12
+    },
+    {
+      "userId": 142873,
+      "genre": "Action",
+      "n": 11
+    },
+    {
+      "userId": 142873,
+      "genre": "Sci-Fi",
+      "n": 8
+    }
+  ],
+  "catalog": [
+    {
+      "entry_year": 1995,
+      "entered": 4,
+      "median_lag": 2.0,
+      "negative_lag": 0
+    },
+    {
+      "entry_year": 1996,
+      "entered": 1382,
+      "median_lag": 2.0,
+      "negative_lag": 10
+    },
+    {
+      "entry_year": 1997,
+      "entered": 288,
+      "median_lag": 0.0,
+      "negative_lag": 12
+    },
+    {
+      "entry_year": 1998,
+      "entered": 664,
+      "median_lag": 6.0,
+      "negative_lag": 3
+    },
+    {
+      "entry_year": 1999,
+      "entered": 757,
+      "median_lag": 9.0,
+      "negative_lag": 1
+    },
+    {
+      "entry_year": 2000,
+      "entered": 836,
+      "median_lag": 12.0,
+      "negative_lag": 0
+    },
+    {
+      "entry_year": 2001,
+      "entered": 974,
+      "median_lag": 12.0,
+      "negative_lag": 2
+    },
+    {
+      "entry_year": 2002,
+      "entered": 946,
+      "median_lag": 12.0,
+      "negative_lag": 1
+    },
+    {
+      "entry_year": 2003,
+      "entered": 1142,
+      "median_lag": 12.0,
+      "negative_lag": 0
+    },
+    {
+      "entry_year": 2004,
+      "entered": 1304,
+      "median_lag": 19.0,
+      "negative_lag": 0
+    },
+    {
+      "entry_year": 2005,
+      "entered": 582,
+      "median_lag": 1.0,
+      "negative_lag": 1
+    },
+    {
+      "entry_year": 2006,
+      "entered": 370,
+      "median_lag": 0.0,
+      "negative_lag": 0
+    },
+    {
+      "entry_year": 2007,
+      "entered": 426,
+      "median_lag": 1.0,
+      "negative_lag": 0
+    },
+    {
+      "entry_year": 2008,
+      "entered": 928,
+      "median_lag": 2.0,
+      "negative_lag": 1
+    },
+    {
+      "entry_year": 2009,
+      "entered": 1912,
+      "median_lag": 12.0,
+      "negative_lag": 1
+    },
+    {
+      "entry_year": 2010,
+      "entered": 2169,
+      "median_lag": 11.0,
+      "negative_lag": 0
+    },
+    {
+      "entry_year": 2011,
+      "entered": 2017,
+      "median_lag": 8.0,
+      "negative_lag": 4
+    },
+    {
+      "entry_year": 2012,
+      "entered": 1689,
+      "median_lag": 5.0,
+      "negative_lag": 2
+    },
+    {
+      "entry_year": 2013,
+      "entered": 1808,
+      "median_lag": 4.0,
+      "negative_lag": 0
+    },
+    {
+      "entry_year": 2014,
+      "entered": 2248,
+      "median_lag": 5.0,
+      "negative_lag": 5
+    },
+    {
+      "entry_year": 2015,
+      "entered": 7795,
+      "median_lag": 7.0,
+      "negative_lag": 36
+    },
+    {
+      "entry_year": 2016,
+      "entered": 7605,
+      "median_lag": 10.0,
+      "negative_lag": 2
+    },
+    {
+      "entry_year": 2017,
+      "entered": 7702,
+      "median_lag": 10.0,
+      "negative_lag": 3
+    },
+    {
+      "entry_year": 2018,
+      "entered": 7040,
+      "median_lag": 8.0,
+      "negative_lag": 7
+    },
+    {
+      "entry_year": 2019,
+      "entered": 7364,
+      "median_lag": 8.0,
+      "negative_lag": 5
+    },
+    {
+      "entry_year": 2020,
+      "entered": 6798,
+      "median_lag": 6.0,
+      "negative_lag": 2
+    },
+    {
+      "entry_year": 2021,
+      "entered": 6733,
+      "median_lag": 5.0,
+      "negative_lag": 1
+    },
+    {
+      "entry_year": 2022,
+      "entered": 6201,
+      "median_lag": 5.0,
+      "negative_lag": 1
+    },
+    {
+      "entry_year": 2023,
+      "entered": 4748,
+      "median_lag": 5.0,
+      "negative_lag": 0
+    }
+  ],
+  "tags": {
+    "users": 15848,
+    "movies": 51323,
+    "max_tags_user": 723473
+  },
+  "tag_concentration": {
+    "top1_users_tag_share": 0.6560378826362251
+  },
+  "links": {
+    "links": 87585,
+    "linked_movies": 87585
+  },
+  "gaps": {
+    "median_seconds": 10.0,
+    "within_5_seconds": 11898883,
+    "within_30_seconds": 23282412,
+    "total_gaps": 31799256
+  },
+  "sessions_30": {
+    "sessions": 2316504,
+    "median_size": 1.0,
+    "max_size": 6456,
+    "ratings_in_50plus": 21347597,
+    "sessions_50plus": 164054
+  },
+  "first_session_30": {
+    "median_size": 47.0,
+    "mean_size": 80.4500567310946,
+    "first_session_20plus": 177140
+  },
+  "first_session_composition_30": {
+    "ratings": 16166278,
+    "global_top1_share": 0.6462406498267567,
+    "prior_top1_share": 0.2389428785030172
+  },
+  "sessions_60": {
+    "sessions": 2248604,
+    "median_size": 1.0,
+    "max_size": 6456,
+    "ratings_in_50plus": 21668200,
+    "sessions_50plus": 163639
+  },
+  "first_session_60": {
+    "median_size": 48.0,
+    "mean_size": 83.4302754941577,
+    "first_session_20plus": 179836
+  },
+  "first_session_composition_60": {
+    "ratings": 16765147,
+    "global_top1_share": 0.64340801783605,
+    "prior_top1_share": 0.2381226362047407
+  },
+  "checksums": {
+    "links.csv": "8f033867bcb4e6be8792b21468b4fa6e",
+    "movies.csv": "0df90835c19151f9d819d0822e190797",
+    "ratings.csv": "cf12b74f9ad4b94a011f079e26d4270a",
+    "tags.csv": "963bf4fa4de6b8901868fddd3eb54567"
+  }
+}
