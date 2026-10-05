@@ -31,16 +31,16 @@ def main():
       try_cast(b.startYear AS INTEGER) startYear
       FROM read_csv('data/raw/title.basics.tsv.gz',delim='\t',header=true,all_varchar=true,nullstr='\\N',quote='') b
       SEMI JOIN imdb_links l USING(tconst))
-      TO 'data/processed/imdb_basics_matched.parquet' (FORMAT PARQUET,COMPRESSION ZSTD)""")
+      TO 'data/processed/imdb_basics_matched.parquet' (FORMAT PARQUET,COMPRESSION ZSTD,OVERWRITE_OR_IGNORE TRUE)""")
     con.execute("""COPY (SELECT r.tconst,try_cast(r.numVotes AS INTEGER) numVotes,
       try_cast(r.averageRating AS FLOAT) averageRating
       FROM read_csv('data/raw/title.ratings.tsv.gz',delim='\t',header=true,all_varchar=true,nullstr='\\N',quote='') r
       SEMI JOIN imdb_links l USING(tconst))
-      TO 'data/processed/imdb_ratings_matched.parquet' (FORMAT PARQUET,COMPRESSION ZSTD)""")
+      TO 'data/processed/imdb_ratings_matched.parquet' (FORMAT PARQUET,COMPRESSION ZSTD,OVERWRITE_OR_IGNORE TRUE)""")
     con.execute("""COPY (SELECT a.titleId,a.region,a.language,a.isOriginalTitle
       FROM read_csv('data/raw/title.akas.tsv.gz',delim='\t',header=true,all_varchar=true,nullstr='\\N',quote='') a
       SEMI JOIN imdb_links l ON a.titleId=l.tconst)
-      TO 'data/processed/imdb_akas_matched.parquet' (FORMAT PARQUET,COMPRESSION ZSTD)""")
+      TO 'data/processed/imdb_akas_matched.parquet' (FORMAT PARQUET,COMPRESSION ZSTD,OVERWRITE_OR_IGNORE TRUE)""")
     con.execute("CREATE OR REPLACE TEMP VIEW imdb_b AS SELECT * FROM read_parquet('data/processed/imdb_basics_matched.parquet')")
     con.execute("CREATE OR REPLACE TEMP VIEW imdb_r AS SELECT * FROM read_parquet('data/processed/imdb_ratings_matched.parquet')")
     con.execute("CREATE OR REPLACE TEMP VIEW imdb_a AS SELECT * FROM read_parquet('data/processed/imdb_akas_matched.parquet')")

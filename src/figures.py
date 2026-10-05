@@ -62,15 +62,14 @@ plt.ylabel('Ratings with half star value (%)');plt.xlabel('Calendar month (UTC)'
 plt.title('Half star use does not change uniformly after v3')
 save('03_half_star_timeline','No half stars appear before the documented v3 change, but the share varies sharply after 2003.')
 
-yearly=[v for v in core['first20_yearly'] if v['cohort_year']>=1998]
+monthly_cohorts=[v for v in core['first20_monthly'] if '2012-'<=v['cohort_month'][:5]<='2016-']
 plt.figure()
-plt.plot([v['cohort_year'] for v in yearly],[100*v['prior_top1_share'] for v in yearly],marker='o',markersize=3,color='#235789')
-for year,label in [(2003,'v3'),(2014,'v4')]:
-    plt.axvline(year,color='#c05a2d',alpha=.7,lw=.9)
-    plt.text(year,plt.ylim()[1]*.92,label,rotation=90,va='top',fontsize=8)
-plt.ylabel('First 20 in prior year top 1% (%)');plt.xlabel('Year of user first rating (UTC)')
-plt.title('First 20 ratings and prior-year popularity')
-save('04_first20_prior','The share of first 20 ratings directed at films already in the prior-year top 1% rises markedly in later cohorts; early years have little prior history.')
+plt.plot([yearmonth(v['cohort_month']) for v in monthly_cohorts],[100*v['prior_top1_share'] for v in monthly_cohorts],marker='o',markersize=2.5,color='#235789')
+plt.axvline(datetime(2014,11,1),color='#c05a2d',alpha=.8,lw=1,label='v4 documented month')
+plt.ylabel('First 20 in prior year top 1% (%)');plt.xlabel('Month of user first rating (UTC)')
+plt.title('A sharp cohort shift in November 2014')
+plt.legend(frameon=False)
+save('04_first20_prior','The prior-year top-1% share rises from 15.9% for October 2014 starters to 57.1% for November starters, coinciding with the documented v4 month.')
 
 eras=['pre-v3','v3','v4+'];prior={v['era']:v for v in core['first20_prior_stable']};glob={v['era']:v for v in core['first20_global_stable']}
 fig,ax=plt.subplots()

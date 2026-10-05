@@ -3,6 +3,7 @@ from __future__ import annotations
 
 import json
 import os
+import hashlib
 from pathlib import Path
 import sys
 
@@ -14,6 +15,27 @@ RAW = ROOT / "data/raw/ml-32m"
 PROCESSED = ROOT / "data/processed"
 REPORTS = ROOT / "reports"
 FIGURES = ROOT / "figures"
+EXPECTED_MD5 = {
+    'links.csv':'8f033867bcb4e6be8792b21468b4fa6e',
+    'movies.csv':'0df90835c19151f9d819d0822e190797',
+    'ratings.csv':'cf12b74f9ad4b94a011f079e26d4270a',
+    'tags.csv':'963bf4fa4de6b8901868fddd3eb54567',
+}
+
+
+def verify_checksums():
+    """Fail before analysis when a MovieLens CSV differs from the published README."""
+    results={}
+    for name, expected in EXPECTED_MD5.items():
+        digest=hashlib.md5()
+        with (RAW/name).open('rb') as handle:
+            for chunk in iter(lambda:handle.read(8*1024*1024),b''):
+                digest.update(chunk)
+        actual=digest.hexdigest()
+        if actual!=expected:
+            raise ValueError(f'{name}: MD5 {actual} differs from published {expected}')
+        results[name]=actual
+    return results
 
 
 def connect():
@@ -184,6 +206,13 @@ def analyze(con):
       FROM first20 f JOIN user_start s USING(userId)
       JOIN prior_rank p ON p.movieId=f.movieId AND p.year=year(to_timestamp(f.timestamp))
       GROUP BY 1 ORDER BY 1""")
+    out["first20_monthly"] = rows(con, """SELECT date_trunc('month',to_timestamp(s.first_ts)) cohort_month,
+      count(DISTINCT f.userId) users,
+      avg(CASE WHEN p.prior_n>0 AND p.rank<=ceil(p.active_movies*.01) THEN 1 ELSE 0 END) prior_top1_share,
+      avg(CASE WHEN p.prior_n=0 THEN 1 ELSE 0 END) no_prior_ratings_share
+      FROM first20 f JOIN user_start s USING(userId)
+      JOIN prior_rank p ON p.movieId=f.movieId AND p.year=year(to_timestamp(f.timestamp))
+      GROUP BY 1 ORDER BY 1""")
     con.execute("""CREATE OR REPLACE TEMP TABLE user_mainstream AS SELECT r.userId,
       median(1.0-p.rank*1.0/p.active_movies) mainstream,
       count(*) n FROM ratings r JOIN prior_rank p ON p.movieId=r.movieId
@@ -203,6 +232,15 @@ def analyze(con):
        ORDER BY g.n DESC,r.movieId) rn FROM ratings r JOIN chosen c USING(userId)
        JOIN movies m USING(movieId) JOIN global_pop g USING(movieId))
       SELECT userId,title,genres FROM rated WHERE rn<=5 ORDER BY userId,rn""")
+    out["extreme_user_genres"] = rows(con,"""WITH ranked AS (SELECT userId,
+      row_number() OVER (ORDER BY mainstream,userId) low_rank,
+      row_number() OVER (ORDER BY mainstream DESC,userId) high_rank FROM user_mainstream),
+      chosen AS (SELECT userId FROM ranked WHERE low_rank<=3 OR high_rank<=3),
+      x AS (SELECT r.userId,unnest(string_split(m.genres,'|')) genre
+        FROM ratings r JOIN chosen c USING(userId) JOIN movies m USING(movieId))
+      SELECT userId,genre,count(*) n FROM x GROUP BY 1,2
+      QUALIFY row_number() OVER (PARTITION BY userId ORDER BY n DESC,genre)<=3
+      ORDER BY userId,n DESC""")
     out["catalog"] = rows(con, """WITH entry AS (SELECT m.movieId,m.release_year,
       year(to_timestamp(min(r.timestamp))) entry_year FROM ratings r JOIN movies m USING(movieId) GROUP BY 1,2)
       SELECT entry_year,count(*) entered,median(entry_year-release_year) median_lag,
@@ -240,6 +278,14 @@ def sessions(con):
           (PARTITION BY userId ORDER BY start_ts,sid) rn FROM session_sizes)
           SELECT median(n) median_size,avg(n) mean_size,
           count(*) FILTER (WHERE n>=20) first_session_20plus FROM x WHERE rn=1""")
+        out[f"first_session_composition_{gap_minutes}"] = one(con, """WITH first_sid AS
+          (SELECT userId,min(sid) sid FROM session_rows GROUP BY 1)
+          SELECT count(*) ratings,
+          avg(CASE WHEN g.rank<=ceil((SELECT count(*) FROM movie_counts)*.01) THEN 1 ELSE 0 END) global_top1_share,
+          avg(CASE WHEN p.prior_n>0 AND p.rank<=ceil(p.active_movies*.01) THEN 1 ELSE 0 END) prior_top1_share
+          FROM session_rows s JOIN first_sid f ON s.userId=f.userId AND s.sid=f.sid
+          JOIN global_pop g USING(movieId)
+          JOIN prior_rank p ON p.movieId=s.movieId AND p.year=year(to_timestamp(s.timestamp))""")
     return out
 
 
@@ -247,10 +293,12 @@ def main():
     os.chdir(ROOT)
     REPORTS.mkdir(exist_ok=True)
     FIGURES.mkdir(exist_ok=True)
+    checksums=verify_checksums()
     con = connect()
     prepare(con)
     out = analyze(con)
     out.update(sessions(con))
+    out['checksums']=checksums
     (REPORTS / "eda_metrics.json").write_text(json.dumps(out,indent=2,default=str))
     con.close()
     return out
