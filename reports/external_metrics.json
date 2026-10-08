@@ -1,0 +1,316 @@
+{
+  "match": {
+    "movies": 87585,
+    "with_id": 87585,
+    "basics_matched": 87355,
+    "votes_matched": 87226,
+    "non_movie_types": 10058,
+    "dual_popularity": 84108
+  },
+  "correlation": {
+    "pearson_log": 0.8500989164085134,
+    "pearson_raw": 0.8162908259251703
+  },
+  "unmatched_examples": [
+    {
+      "movieId": 720,
+      "title": "Wallace & Gromit: The Best of Aardman Animation (1996)",
+      "tconst": "tt0118114",
+      "titleType": null,
+      "numVotes": null,
+      "ml_ratings": 8612
+    },
+    {
+      "movieId": 6003,
+      "title": "Confessions of a Dangerous Mind (2002)",
+      "tconst": "tt0290538",
+      "titleType": null,
+      "numVotes": null,
+      "ml_ratings": 3636
+    },
+    {
+      "movieId": 6776,
+      "title": "Lagaan: Once Upon a Time in India (2001)",
+      "tconst": "tt0282674",
+      "titleType": null,
+      "numVotes": null,
+      "ml_ratings": 949
+    },
+    {
+      "movieId": 5264,
+      "title": "Clockstoppers (2002)",
+      "tconst": "tt0250305",
+      "titleType": null,
+      "numVotes": null,
+      "ml_ratings": 848
+    },
+    {
+      "movieId": 4241,
+      "title": "Pok\u00e9mon 3: The Movie (2001)",
+      "tconst": "tt0266860",
+      "titleType": null,
+      "numVotes": null,
+      "ml_ratings": 759
+    },
+    {
+      "movieId": 114342,
+      "title": "Force Majeure (Turist) (2014)",
+      "tconst": "tt3630276",
+      "titleType": null,
+      "numVotes": null,
+      "ml_ratings": 689
+    },
+    {
+      "movieId": 2851,
+      "title": "Saturn 3 (1980)",
+      "tconst": "tt0081454",
+      "titleType": null,
+      "numVotes": null,
+      "ml_ratings": 632
+    },
+    {
+      "movieId": 5672,
+      "title": "Pokemon 4 Ever (a.k.a. Pok\u00e9mon 4: The Movie) (2002)",
+      "tconst": "tt0313487",
+      "titleType": null,
+      "numVotes": null,
+      "ml_ratings": 581
+    },
+    {
+      "movieId": 203218,
+      "title": "Good Boys (2019)",
+      "tconst": "tt7343762",
+      "titleType": null,
+      "numVotes": null,
+      "ml_ratings": 571
+    },
+    {
+      "movieId": 182637,
+      "title": "The Second Renaissance Part I (2003)",
+      "tconst": "tt0366179",
+      "titleType": null,
+      "numVotes": null,
+      "ml_ratings": 317
+    },
+    {
+      "movieId": 282649,
+      "title": "Knock at the Cabin (2023)",
+      "tconst": "tt15679400",
+      "titleType": null,
+      "numVotes": null,
+      "ml_ratings": 297
+    },
+    {
+      "movieId": 27033,
+      "title": "Kingdom II, The (Riget II) (1997)",
+      "tconst": "tt0127392",
+      "titleType": null,
+      "numVotes": null,
+      "ml_ratings": 283
+    },
+    {
+      "movieId": 183197,
+      "title": "Dave Chappelle: Equanimity (2017)",
+      "tconst": "tt7807952",
+      "titleType": null,
+      "numVotes": null,
+      "ml_ratings": 268
+    },
+    {
+      "movieId": 183227,
+      "title": "Dave Chappelle: The Bird Revelation (2017)",
+      "tconst": "tt7808620",
+      "titleType": null,
+      "numVotes": null,
+      "ml_ratings": 232
+    },
+    {
+      "movieId": 204294,
+      "title": "The Great Hack (2019)",
+      "tconst": "tt9358204",
+      "titleType": null,
+      "numVotes": null,
+      "ml_ratings": 176
+    }
+  ],
+  "imdb_type_counts": [
+    {
+      "titleType": "movie",
+      "movies": 71242
+    },
+    {
+      "titleType": "tvMovie",
+      "movies": 6055
+    },
+    {
+      "titleType": "short",
+      "movies": 5251
+    },
+    {
+      "titleType": "video",
+      "movies": 2302
+    },
+    {
+      "titleType": "tvSpecial",
+      "movies": 899
+    },
+    {
+      "titleType": "tvEpisode",
+      "movies": 762
+    },
+    {
+      "titleType": "tvMiniSeries",
+      "movies": 536
+    },
+    {
+      "titleType": "unmatched",
+      "movies": 230
+    },
+    {
+      "titleType": "tvShort",
+      "movies": 171
+    },
+    {
+      "titleType": "tvSeries",
+      "movies": 135
+    },
+    {
+      "titleType": "videoGame",
+      "movies": 2
+    }
+  ],
+  "akas_coverage": {
+    "titles_with_akas": 87355,
+    "titles_with_aka_language": 76207,
+    "titles_with_aka_region": 87207,
+    "originals_with_language": 0
+  },
+  "quadrants": [
+    {
+      "ml_group": "ML popular",
+      "imdb_group": "IMDb popular",
+      "movies": 6410,
+      "median_ml": 1591.5,
+      "median_imdb": 73243.0
+    },
+    {
+      "ml_group": "ML popular",
+      "imdb_group": "IMDb tail",
+      "movies": 2003,
+      "median_ml": 466.0,
+      "median_imdb": 9847.0
+    },
+    {
+      "ml_group": "ML tail",
+      "imdb_group": "IMDb popular",
+      "movies": 2002,
+      "median_ml": 110.5,
+      "median_imdb": 27417.0
+    },
+    {
+      "ml_group": "ML tail",
+      "imdb_group": "IMDb tail",
+      "movies": 73693,
+      "median_ml": 4.0,
+      "median_imdb": 882.0
+    }
+  ],
+  "quadrant_examples": [
+    {
+      "ml_group": "ML popular",
+      "imdb_group": "IMDb popular",
+      "movieId": 318,
+      "title": "Shawshank Redemption, The (1994)",
+      "ml_ratings": 102929,
+      "numVotes": 3247765
+    },
+    {
+      "ml_group": "ML popular",
+      "imdb_group": "IMDb popular",
+      "movieId": 356,
+      "title": "Forrest Gump (1994)",
+      "ml_ratings": 100296,
+      "numVotes": 2541202
+    },
+    {
+      "ml_group": "ML popular",
+      "imdb_group": "IMDb popular",
+      "movieId": 296,
+      "title": "Pulp Fiction (1994)",
+      "ml_ratings": 98409,
+      "numVotes": 2472899
+    },
+    {
+      "ml_group": "ML popular",
+      "imdb_group": "IMDb tail",
+      "movieId": 237,
+      "title": "Forget Paris (1995)",
+      "ml_ratings": 6442,
+      "numVotes": 13982
+    },
+    {
+      "ml_group": "ML popular",
+      "imdb_group": "IMDb tail",
+      "movieId": 140,
+      "title": "Up Close and Personal (1996)",
+      "ml_ratings": 5049,
+      "numVotes": 16540
+    },
+    {
+      "ml_group": "ML popular",
+      "imdb_group": "IMDb tail",
+      "movieId": 41,
+      "title": "Richard III (1995)",
+      "ml_ratings": 4760,
+      "numVotes": 16509
+    },
+    {
+      "ml_group": "ML tail",
+      "imdb_group": "IMDb popular",
+      "movieId": 288269,
+      "title": "No Hard Feelings (2023)",
+      "ml_ratings": 191,
+      "numVotes": 222941
+    },
+    {
+      "ml_group": "ML tail",
+      "imdb_group": "IMDb popular",
+      "movieId": 286357,
+      "title": "Evil Dead Rise (2023)",
+      "ml_ratings": 233,
+      "numVotes": 178530
+    },
+    {
+      "ml_group": "ML tail",
+      "imdb_group": "IMDb popular",
+      "movieId": 280202,
+      "title": "Talk to Me (2022)",
+      "ml_ratings": 166,
+      "numVotes": 226136
+    },
+    {
+      "ml_group": "ML tail",
+      "imdb_group": "IMDb tail",
+      "movieId": 96020,
+      "title": "Sidewalls (Medianeras) (2011)",
+      "ml_ratings": 248,
+      "numVotes": 17682
+    },
+    {
+      "ml_group": "ML tail",
+      "imdb_group": "IMDb tail",
+      "movieId": 27373,
+      "title": "61* (2001)",
+      "ml_ratings": 249,
+      "numVotes": 17600
+    },
+    {
+      "ml_group": "ML tail",
+      "imdb_group": "IMDb tail",
+      "movieId": 67801,
+      "title": "Revanche (2008)",
+      "ml_ratings": 245,
+      "numVotes": 17429
+    }
+  ]
+}
