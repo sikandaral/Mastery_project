@@ -20,6 +20,8 @@ python src/figures.py
 
 The source files are in `src/`, computed values in `reports/eda_metrics.json` and `reports/external_metrics.json`, captions in `figures/captions.md`, and the narrative interpretation in [EDA findings](reports/eda_findings.md). The [key-number table](reports/key_numbers.md) maps proposal statistics to code. IMDb's files are updated daily; current vote counts will change if downloaded again. The project uses them as a later cross-platform snapshot, not as historical movie popularity.
 
+**Checkpoint 1:** after the steps above, `python src/checkpoint1.py` writes `reports/checkpoint1_metrics.json` and `figures/cp1_*.png`; the write-up is [checkpoint1.pdf](reports/checkpoint1.pdf), printed from `reports/checkpoint1.html` with headless Chrome.
+
 The notebook performs EDA only. It does not train a recommender.
 
 ## Data attribution
