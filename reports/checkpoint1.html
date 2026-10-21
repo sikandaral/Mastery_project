@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>SI 699 Checkpoint 1</title>
+<style>
+  @page { size: letter; margin: 0.6in 0.7in; }
+  body { font-family: Charter, "Bitstream Charter", Georgia, serif; font-size: 9.6pt; line-height: 1.32; color: #1d1d1b; background: #fff; margin: 0; }
+  h1 { font-size: 14pt; margin: 0 0 2pt; }
+  h2 { font-size: 11.5pt; margin: 8pt 0 3pt; border-bottom: 1px solid #c3c2b7; padding-bottom: 1pt; }
+  h3 { font-size: 10pt; margin: 7pt 0 2pt; break-after: avoid; }
+  p { margin: 0 0 4pt; }
+  ul, ol { margin: 0 0 4pt; padding-left: 16pt; }
+  li { margin-bottom: 1.5pt; }
+  table { border-collapse: collapse; width: 100%; margin: 3pt 0 5pt; font-size: 8.4pt; }
+  th, td { border-bottom: 1px solid #dedcd5; padding: 2pt 4pt; text-align: left; vertical-align: top; }
+  th { background: #f3f2ee; }
+  td.n, th.n { text-align: right; white-space: nowrap; }
+  figure { margin: 4pt 0 5pt; break-inside: avoid; }
+  figure img { width: 100%; display: block; }
+  figure.narrow img { width: 72%; margin: 0 auto; }
+  figcaption { font-size: 8.2pt; color: #52514e; margin-top: 2pt; }
+  .meta { font-size: 8.8pt; color: #3d3d3a; margin-bottom: 4pt; }
+  .page { break-after: page; }
+  .fill { background: #fff3c4; padding: 0 2pt; }
+  .box { border-left: 3px solid #1baf7a; padding: 2pt 6pt; background: #f5faf7; margin: 4pt 0; }
+  .small { font-size: 8.4pt; }
+  .refs li { font-size: 8.4pt; }
+</style>
+</head>
+<body>
+
+<!-- ======================= PAGE 1: OVERVIEW ======================= -->
+<section class="page">
+<h1>Who Joins MovieLens, and Why Did Their First Ratings Change?</h1>
+<div class="meta"><b>SI 699 Checkpoint 1</b> · Team: Mohit Kumar, Sikandar Ali, Min-Yi Chen · Team name: <span class="fill">[optional]</span><br>
+<b>Acknowledgements.</b> Data: MovieLens 32M, GroupLens Research, University of Minnesota (Harper &amp; Konstan 2015). Platform history and onboarding details: Harper &amp; Konstan (2015), Rashid et al. (2002), Chang et al. (2015). Methodological inspiration: Danescu-Niculescu-Mizil et al. (2013) for life-stage normalization, Hamilton et al. (2017) for early behavior and loyalty, and Abdollahpouri et al. (2019). Libraries: DuckDB, pandas, NumPy, matplotlib. We used Claude (Anthropic) as a coding and drafting assistant; every number comes from our code (<code>src/checkpoint1.py</code>). <span class="fill">[add instructor and peer feedback]</span></div>
+
+<h2>1. Project direction and data</h2>
+<p><b>Direction (refined after proposal feedback).</b> Our proposal found that users who joined around MovieLens v4 (Nov 2014) put far more of their first ratings on already-popular movies. Feedback asked us to explain this through <i>users</i>: who they are, where they come from, and how they change. Our question is now: <b>What behavioral types of users join MovieLens, how does their taste evolve the longer they stay, and did the v4 redesign change which users joined or how similar users behaved?</b></p>
+
+<p><b>Where users come from.</b> MovieLens was built in 1997 by GroupLens after DEC closed its EachMovie recommender. DEC's anonymized data seeded the algorithm, but user accounts were not transferred. Growth was <i>organic</i>, with a "nearly total absence of marketing efforts". The site averaged 20–30 sign-ups a day, "largely the result of word-of-mouth or unsolicited press", and media coverage in late 1999 (the <i>New Yorker</i>, ABC's <i>Nightline</i>, Roger Ebert) produced a spike (Harper &amp; Konstan 2015, §2.1). Users were not recruited as study participants, although GroupLens ran experiments on the live site, such as sign-up strategies (Rashid et al. 2002) and tag-display A/B tests. We therefore see <b>two selection stages</b>: (1) self-selected film enthusiasts chose to join a public recommender, and (2) the 32M release is a random sample of users with <b>≥20 ratings</b>. Visitors who left before 20 ratings are invisible to us, which matters because v4 removed the sign-up rating barrier.</p>
+
+<p><b>Data.</b> MovieLens 32M has 32,000,204 ratings (0.5–5 stars) and 2,000,072 tags from 200,948 anonymized users on 87,585 movies, January 1995 to October 2023. All four files match the published MD5 checksums. Each rating is <i>(user, movie, stars, timestamp)</i>. Example: user 1 rated <i>Being John Malkovich</i> (1999; Comedy|Drama|Fantasy) 4.0 stars and <i>The Straight Story</i> 1.0 star at the <i>same second</i>, 1999-11-21 23:27:26 UTC. That is typical batch entry. There are no demographics, no logs of what the site displayed, and no viewing dates. The median user has 73 ratings and the median first session (ratings less than 30 minutes apart) has 47. <b>55% of users (91,251 of 166,550) entered every rating within a single day</b>. The top 1% of movies receive 54.9% of all ratings. Our analysis sample is the <b>166,550 users whose first rating is from 1998 or later</b> (35,717 pre-v3, 62,900 v3, 67,933 v4+); earlier timestamps conflict with the documented launch date.</p>
+
+<p><b>Platform versions as testable hypotheses</b> (history from Harper &amp; Konstan 2015, §2.2). "Top-100 share" is the share of a user's ratings on the 100 movies rated most often in the previous 12 months (Finding 1).</p>
+<table>
+<tr><th>Era (users)</th><th>Documented onboarding and display</th><th>Hypothesis</th><th>What we observe (first 10 ratings, top-100 share)</th></tr>
+<tr><td>v0–v2<br>Aug 1997–Feb 2003<br>(35,717)</td><td>Rate 5 movies to enter; movies shown 10 at a time, 9 random plus 1 hand-picked well-known title. Lists ordered by personal predicted rating.</td><td>Early ratings are broad, with a moderate popular share.</td><td>32%: moderately popular; <i>Return of the Jedi</i> is in 19% of newcomers' first 10.</td></tr>
+<tr><td>v3<br>Feb 2003–Nov 2014<br>(62,900)</td><td>Rate 15 movies to enter; movies "selected for their popularity, excluding the most popular 50–150". Half-star scale; item-item recommender. Member movie-adding from Sept 2008.</td><td>Sign-up ratings <i>avoid</i> the very top movies, then rise once users browse freely.</td><td>13%, rising to 39% at ratings 21–50. The most common first-10 title (<i>Shrek</i>) reaches only 4.3% of newcomers.</td></tr>
+<tr><td>v4<br>Nov 2014–<br>(67,933)</td><td>No 15-rating barrier; group-based new-user process (Chang et al. 2015); a "popularity factor" blended into list ordering; TMDB metadata.</td><td>Early ratings concentrate on popular movies.</td><td>66%. <i>Shawshank Redemption</i> is in 47% of newcomers' first 10, <i>The Matrix</i> in 41%.</td></tr>
+</table>
+<p><b>Since the proposal.</b> The proposal reported that users starting in Oct 2014 placed 15.9% of their first 20 ratings on prior-year top-1% movies, compared with 57.1% for Nov 2014 starters. We reproduced this exactly. We then tested whether it depends on the popularity definition (Finding 1), justified and stress-tested the "first 20" window (Finding 2), built behavioral user profiles to separate <i>who joined</i> from <i>how they behaved</i> (Finding 3), and tracked taste over each user's full history (Finding 4).</p>
+</section>
+
+<!-- ======================= PAGE 2: TEAM PROGRESS ======================= -->
+<section class="page">
+<h2>2. Team progress since the proposal (Oct 8) and plans to Checkpoint 2 (Nov 5)</h2>
+<table>
+<tr><th style="width:15%">Member</th><th>Week of Oct 8–14</th><th>Week of Oct 15–21</th></tr>
+<tr><td>Mohit Kumar</td><td><span class="fill">[FILL IN]</span></td><td><span class="fill">[FILL IN, e.g., popularity grid with no look-ahead; observation-window and lifecycle analyses]</span></td></tr>
+<tr><td>Sikandar Ali</td><td><span class="fill">[FILL IN]</span></td><td><span class="fill">[FILL IN]</span></td></tr>
+<tr><td>Min-Yi Chen</td><td><span class="fill">[FILL IN]</span></td><td><span class="fill">[FILL IN]</span></td></tr>
+</table>
+<p class="small">Shared work this period: reproduced the proposal pipeline from a fresh download and fixed a bug that stopped it running from a clean clone; added <code>src/checkpoint1.py</code> (all numbers and figures in this document); reviewed Harper &amp; Konstan (2015) and the two suggested papers.</p>
+
+<h3>What stood out</h3>
+<ul>
+<li><b><span class="fill">[Mohit, edit]</span></b> The documented v3 sign-up rule (exclude the 50–150 most popular movies) shows up directly in the data. v3 newcomers' first 10 ratings sit far <i>below</i> their later ratings in popularity. "First 20 ratings" measures the sign-up screen at least as much as it measures taste.</li>
+<li><b><span class="fill">[Sikandar, edit]</span></b> More than half of the users in every era rate everything in a single day and never return. "Typical user" mostly means a one-time importer of a viewing history.</li>
+<li><b><span class="fill">[Min-Yi, edit]</span></b> The decomposition was the most surprising result: the v4 jump is not explained by different kinds of users joining. Every profile jumped by roughly 40–50 percentage points.</li>
+</ul>
+
+<h3>Next steps (SMART; draft, edit to match each member's plan)</h3>
+<ul>
+<li><b>Mohit, by Nov 2:</b> <span class="fill">[edit]</span> Build the retention analysis suggested by Hamilton et al. (2017). Predict whether a user becomes long-term (active 1+ year) from first-20 features (popularity share, session size, genre spread, rating level). Fit separate logistic regressions for late-v3 and early-v4 cohorts and report AUC and coefficients in one table.</li>
+<li><b>Sikandar, by Nov 2:</b> <span class="fill">[edit]</span> Correct the lifecycle curves for depletion. Recompute each bin's popular share using only top-100 movies the user has <i>not yet rated</i>, and test 30- versus 60-minute session rules. Deliver one figure comparing raw and corrected curves.</li>
+<li><b>Min-Yi, by Nov 2:</b> <span class="fill">[edit]</span> Stress-test the profiles. Compare the rule-based types with k-means clusters on the same 8 features (agreement table), and read 10 example users per profile to write one-line qualitative descriptions.</li>
+</ul>
+
+<h3>Questions for the instructor</h3>
+<ol>
+<li>The v4 jump happens within every user profile (Finding 3). Is a descriptive decomposition enough, or should we try a quasi-causal design, such as comparing users who joined within ±1 month of the launch?</li>
+<li>Our profiles are rule-based (tenure × later taste) so they stay interpretable. Would you rather see them validated against a clustering model, or is a qualitative read of example users more useful?</li>
+<li>Following your feedback, we are shifting toward user taste over the lifecycle (Finding 4), with the platform change as context. Does this framing work as the main direction for the final report?</li>
+<li>The decline in popular-movie share over a user's history may be partly mechanical: a user cannot rate <i>Shawshank</i> twice. Is our planned depletion correction a reasonable way to handle this?</li>
+</ol>
+</section>
+
+<!-- ======================= FINDINGS ======================= -->
+<section>
+<h2>3. In-progress findings</h2>
+
+<h3>Finding 1. The v4 shift is real: it survives three definitions of "popular" and is a one-month step, not a trend</h3>
+<p><b>Goal.</b> Before explaining the jump, rule out the possibility that it comes from how we measured popularity. <b>Method.</b> For every month we computed each movie's popularity using only ratings entered <i>before</i> that month (no look-ahead), then classified every rating with three definitions: <b>(M1)</b> the proposal's measure, top 1% by cumulative count at the end of the previous year; <b>(M2)</b> top 100 by cumulative count; and <b>(M3)</b> top 100 by ratings in the previous 12 months ("currently popular"). M2 and M3 fix the number of movies, so they do not grow with the catalog. For each user we averaged the indicator over their first 20 ratings, then averaged across users with 95% confidence intervals.</p>
+<figure><img src="../figures/cp1_01_event_study.png" alt="First-20 popular share by cohort, yearly and monthly, three definitions">
+<figcaption><b>Figure 1.</b> Share of a user's first 20 ratings on already-popular movies, by when the user first rated. (a) Yearly cohorts, 1998–2023. (b) Monthly cohorts with 95% CIs (shaded); the bars show new users per month.</figcaption></figure>
+<table>
+<tr><th>First-20 share on popular movies</th><th class="n">pre-v3</th><th class="n">v3</th><th class="n">v4+</th><th class="n">Oct 2014 (n=267)</th><th class="n">Nov 2014 (n=435)</th></tr>
+<tr><td>M1: prior-year top 1% (proposal)</td><td class="n">8.6%</td><td class="n">8.6%</td><td class="n">66.1%</td><td class="n">15.9%</td><td class="n">57.1%</td></tr>
+<tr><td>M2: top 100, cumulative</td><td class="n">19.1%</td><td class="n">8.9%</td><td class="n">44.9%</td><td class="n">12.6%</td><td class="n">38.4%</td></tr>
+<tr><td>M3: top 100, previous 12 months (primary from here on)</td><td class="n">33.0%</td><td class="n">18.1%</td><td class="n">58.2%</td><td class="n">18.1%</td><td class="n">57.1%</td></tr>
+</table>
+<p><b>Output and interpretation.</b> All three definitions jump within a single month at the documented v4 launch (Fig. 1b), and the era-level confidence intervals are ±0.2 percentage points. The shift is therefore not a measurement artifact. <b>Stress tests.</b> (i) <i>Pre-trend:</i> the share rose slowly from about 12% to 18% during 2012–2014, far smaller than the step. (ii) <i>Catalog growth:</i> after 2015, M1 keeps climbing (56% to 78%) while M2 and M3 stay flat or decline (Fig. 1a). The proposal measure's "top 1%" set grows with the catalog, so its post-2015 rise is partly an artifact; this is why we switch to M3. (iii) <i>Matching identical values:</i> the proposal's identical 8.58% for pre-v3 and v3 was a coincidence (8.583% vs. 8.581%). The fixed-size measures show pre-v3 users were <i>more</i> mainstream than v3 users. (iv) <i>Open puzzle:</i> within v3, M3 falls from 31% (2006) to 10% (2009). The history documents no onboarding change then, so we treat it as a question to resolve.</p>
+
+<h3>Finding 2. Why "first 20 ratings", and why it measures sign-up rather than taste</h3>
+<p><b>Goal.</b> Explain the window. Every user in the release has at least 20 ratings, so the first 20 is the largest window <i>observable for all users</i>. It also stops heavy raters from dominating comparisons. It is <i>not</i> a control group, and it is <i>not</i> taste measured before exposure to MovieLens, because those ratings are entered on the sign-up screens. To test what the window captures, we compared windows across each user's rating sequence: ratings 1–10, 1–20, 21–50, 51–100 and 101–200, plus the first session. <b>Method.</b> To keep the comparison fair (following Danescu-Niculescu-Mizil et al. 2013), we used the <i>same users</i> in every window: those with ≥200 ratings (9,342 pre-v3, 15,464 v3, 15,962 v4+).</p>
+<figure class="narrow"><img src="../figures/cp1_02_windows.png" alt="Popular share by position in rating sequence and era">
+<figcaption><b>Figure 2.</b> M3 popular share by position in the user's own rating sequence (users with ≥200 ratings; error bars are 95% CIs, mostly smaller than the markers).</figcaption></figure>
+<p><b>Output.</b> v4 users start at 66% (ratings 1–10) and fall to 34% at ratings 21–50, then to 13% at 101–200, <i>below</i> v3 users (18%). v3 users show the reverse at the start: 13% in ratings 1–10, rising to 39% at 21–50. The first session gives 23% for pre-v3, 23% for v3 and 29% for v4 in this fixed sample, and 41% for v4 across all users, because v4 first sessions contain the sign-up ratings. <b>Interpretation.</b> The early window mirrors the documented sign-up design: v3 showed popular movies <i>excluding the 50–150 most popular</i>, and v4 pushed popularity up. Once users leave the sign-up screens, the era gap closes and even reverses. The first-20 window is therefore a good measure of the <i>sign-up interface</i>, but a poor measure of taste. For taste we will use ratings after the first 20. <b>Stress test.</b> The same pattern holds when each window uses all users who have that many ratings (v4: 66%, 58%, 35%, 22%, 15%).</p>
+
+<h3>Finding 3. User types: v4 changed how users behaved, not who joined</h3>
+<p><b>Goal.</b> Feedback asked whether different <i>types</i> of users explain the shift. <b>Method.</b> We defined two interpretable behavioral axes. These are behavioral profiles, not demographic or psychological types.
+<b>Engagement</b> is the time between a user's first and last rating: <i>one sitting</i> (&lt;1 day), <i>short-lived</i> (1–30 days), <i>returning</i> (1–12 months) or <i>long-term</i> (1+ year).
+<b>Later taste</b> is the M3 share among ratings after the 20th, split at the pooled tertiles (16.4% and 28.5%) into <i>mainstream</i>, <i>mixed</i> and <i>niche</i>. Users with fewer than 40 ratings form a fourth group.
+We then compared late-v3 joiners (Nov 2012–Oct 2014, n=7,911) with early-v4 joiners (Nov 2014–Oct 2016, n=22,010). The change in first-20 share was split into a <b>composition</b> part (a different mix of the 16 profile cells) and a <b>within-profile</b> part (the same cells behaving differently), using a shift-share with average weights. The two parts sum exactly to the total.</p>
+<figure><img src="../figures/cp1_03_profiles.png" alt="Profile prevalence by era">
+<figcaption><b>Figure 3.</b> Share of each era's users in each profile.</figcaption></figure>
+<p><b>Who the users are.</b> The dominant type in every era is the <b>one-sitting user</b> (57% pre-v3, 56% v3, 52% v4+): a median of 52 ratings, almost all in one session, then no return. Long-term users are only 15–18% but much more active (median 278 ratings). Taste is tied to activity: niche users have a median of 265 ratings and the lowest mean rating (3.56 stars), while mainstream users have 77 ratings and rate more generously (3.85). The engagement mix is nearly stable across eras. Later taste shifts more: v3 has the most mainstream later raters (31%), and pre-v3 and v4 have more niche raters (30% and 28%).</p>
+<figure><img src="../figures/cp1_04_decomposition.png" alt="Shift-share decomposition and per-profile change">
+<figcaption><b>Figure 4.</b> Left: change in mean first-20 M3 share from late v3 to early v4, split into composition and within-profile terms. Right: first-20 share by profile in each period.</figcaption></figure>
+<p><b>Output and interpretation.</b> The total change of <b>+45.9 percentage points</b> splits into <b>−0.7 composition</b> and <b>+46.6 within-profile</b>. Every profile, from one-sitting to long-term and from mainstream to niche, jumped from about 15–19% to 57–67% (Fig. 4, right). Even users who later become niche raters started v4 with 57% popular movies. The v4 shift is a change in <i>how comparable users behaved at sign-up</i>, consistent with the new interface, not an influx of different users. <b>Stress tests and caveats.</b> The split is the same under the proposal measure M1 (+43.5 = −0.1 + 43.6). Profiles are measured <i>after</i> joining, so v4 could in principle change who stays; the engagement mix moved little (one-sitting 56% to 52%), which limits that concern. Unobserved composition, such as referral source or demographics, cannot be ruled out. The number of sampled new users nearly tripled after v4, plausibly because v4 removed the 15-rating barrier and changed who reaches the 20-rating inclusion floor.</p>
+
+<h3>Finding 4. Over their lifecycle, users drift toward less popular movies, and v4's early head start fades</h3>
+<p><b>Goal.</b> Ask how users change the longer they stay, using the lifecycle framework of Danescu-Niculescu-Mizil et al. (2013). <b>Method.</b> Following that paper, a user's <i>life-stage</i> is the fraction of their eventual ratings already entered. We split each user's sequence into 10 equal-count stages. Popularity (M3) is measured relative to <i>that month's</i> site, like the paper's month-by-month language model. To avoid mixing short and long careers (survivorship), we plot users with 100–299, 300–999 and 1,000+ ratings separately.</p>
+<figure><img src="../figures/cp1_05_lifecycle.png" alt="Lifecycle curves by era and lifespan band">
+<figcaption><b>Figure 5.</b> Share of ratings on the then-current top-100 movies, by tenth of each user's rating history (n = users).</figcaption></figure>
+<p><b>Output and interpretation.</b> In every era and band, users move toward less popular movies as they continue. For users with 100–299 ratings, v4 starts at 62% and ends at 15%. v3 starts at 16% (the sign-up exclusion rule), peaks at 40% in the second tenth and ends at 17%. v4 users fall below v3 users by the third tenth and stay below. Heavy users (1,000+) converge to 3–5% regardless of era. The result is a two-stage pattern similar to the earlier paper: an early stage shaped by the interface, then a long drift toward the long tail that looks similar across eras. The platform change moved the <i>starting point</i> far more than the <i>destination</i>. <b>Caveats.</b> (i) <i>Depletion:</i> a user cannot rate the same movie twice, so some decline is mechanical once the top 100 have been rated; correcting for this is a next step. (ii) Early stages include retrospective batch entry of past viewing, not newly watched films. (iii) Later stages fall in years with larger catalogs.</p>
+
+<h3>How the caveats affect our design</h3>
+<table>
+<tr><th>Data caveat</th><th>What it would bias</th><th>What we did or will do</th></tr>
+<tr><td>≥20-rating inclusion floor; v4 dropped the sign-up barrier</td><td>Cohort sizes and who "survives" sign-up are not comparable across eras</td><td>Compare rates within cohorts, not counts; profile mix shown explicitly (Fig. 3)</td></tr>
+<tr><td>No logs of what was displayed</td><td>Cannot separate free choice from what the interface showed</td><td>Use documented onboarding rules as hypotheses (page 1 table); phrase results as associations</td></tr>
+<tr><td>Timestamps record rating entry, not viewing</td><td>Time-based windows mix batch imports with new activity</td><td>Windows defined by rating order; first session reported separately</td></tr>
+<tr><td>Catalog grows about 50× (1,674 rated movies in 1998 to 84,172 in 2023)</td><td>Percentile and "top 1%" measures drift upward</td><td>Fixed-size top-100 measures (M2, M3) as primary</td></tr>
+<tr><td>Each movie rated at most once</td><td>Lifecycle decline partly mechanical</td><td>Depletion-corrected share (next step)</td></tr>
+<tr><td>No demographics; recruitment through word of mouth or press</td><td>Unobserved composition shifts</td><td>Behavioral profiles only; "who joined" is limited to observed behavior</td></tr>
+</table>
+<p><b>Next analytical decision.</b> We will make user taste over the lifecycle the core of the project, with v4 as a natural before/after contrast. Next we will (1) correct the lifecycle curves for depletion and (2) test whether early behavior predicts who stays, following Hamilton et al. (2017), separately for v3 and v4.</p>
+</section>
+
+<section>
+<h2>References</h2>
+<ol class="refs">
+<li>Harper, F. M., &amp; Konstan, J. A. (2015). The MovieLens datasets: History and context. <i>ACM Transactions on Interactive Intelligent Systems</i>, 5(4), 19. https://doi.org/10.1145/2827872</li>
+<li>GroupLens Research. MovieLens 32M dataset and README. https://files.grouplens.org/datasets/movielens/ml-32m-README.html</li>
+<li>Danescu-Niculescu-Mizil, C., West, R., Jurafsky, D., Leskovec, J., &amp; Potts, C. (2013). No country for old members: User lifecycle and linguistic change in online communities. <i>Proceedings of WWW 2013</i>, 307–318. https://nlp.stanford.edu/pubs/linguistic_change_lifecycle.pdf</li>
+<li>Hamilton, W. L., Zhang, J., Danescu-Niculescu-Mizil, C., Jurafsky, D., &amp; Leskovec, J. (2017). Loyalty in online communities. <i>Proceedings of ICWSM 2017</i>. https://arxiv.org/abs/1703.03386</li>
+<li>Rashid, A. M., Albert, I., Cosley, D., Lam, S. K., McNee, S. M., Konstan, J. A., &amp; Riedl, J. (2002). Getting to know you: Learning new user preferences in recommender systems. <i>Proceedings of IUI 2002</i>, 127–134.</li>
+<li>Chang, S., Harper, F. M., &amp; Terveen, L. (2015). Using groups of items for preference elicitation in recommender systems. <i>Proceedings of CSCW 2015</i>, 1258–1269.</li>
+<li>Abdollahpouri, H., Mansoury, M., Burke, R., &amp; Mobasher, B. (2019). The unfairness of popularity bias in recommendation. <i>RMSE Workshop, RecSys 2019</i>. https://arxiv.org/abs/1907.13286</li>
+</ol>
+</section>
+</body>
+</html>
