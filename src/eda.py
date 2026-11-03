@@ -39,6 +39,7 @@ def verify_checksums():
 
 
 def connect():
+    (PROCESSED / "tmp").mkdir(parents=True, exist_ok=True)
     con = duckdb.connect(str(PROCESSED / "eda.duckdb"))
     con.execute("SET threads=4")
     con.execute("SET memory_limit='6GB'")
