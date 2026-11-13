@@ -1,0 +1,281 @@
+{
+  "thresholds": [
+    40,
+    60,
+    100
+  ],
+  "cohort_gaps": [
+    {
+      "n_min": 40,
+      "genre": "Comedy",
+      "tenth": 1,
+      "gap_pp": -7.819720628606793,
+      "ci95": 0.2576737304750355,
+      "users_late_v3": 5049,
+      "users_early_v4": 16041
+    },
+    {
+      "n_min": 40,
+      "genre": "Comedy",
+      "tenth": 10,
+      "gap_pp": 0.24630356498114736,
+      "ci95": 0.2871385915222816,
+      "users_late_v3": 5049,
+      "users_early_v4": 16041
+    },
+    {
+      "n_min": 40,
+      "genre": "Action",
+      "tenth": 1,
+      "gap_pp": 3.814590998920245,
+      "ci95": 0.21577382681298327,
+      "users_late_v3": 5049,
+      "users_early_v4": 16041
+    },
+    {
+      "n_min": 40,
+      "genre": "Action",
+      "tenth": 10,
+      "gap_pp": 0.4314134638837306,
+      "ci95": 0.23070300255253934,
+      "users_late_v3": 5049,
+      "users_early_v4": 16041
+    },
+    {
+      "n_min": 40,
+      "genre": "Crime",
+      "tenth": 1,
+      "gap_pp": 3.2539449941246463,
+      "ci95": 0.17424083856068118,
+      "users_late_v3": 5049,
+      "users_early_v4": 16041
+    },
+    {
+      "n_min": 40,
+      "genre": "Crime",
+      "tenth": 10,
+      "gap_pp": -0.3670966166241971,
+      "ci95": 0.18432037294697814,
+      "users_late_v3": 5049,
+      "users_early_v4": 16041
+    },
+    {
+      "n_min": 60,
+      "genre": "Comedy",
+      "tenth": 1,
+      "gap_pp": -7.09233266198341,
+      "ci95": 0.2664262279523919,
+      "users_late_v3": 3800,
+      "users_early_v4": 12747
+    },
+    {
+      "n_min": 60,
+      "genre": "Comedy",
+      "tenth": 10,
+      "gap_pp": 0.3177133920769961,
+      "ci95": 0.29730836037430886,
+      "users_late_v3": 3800,
+      "users_early_v4": 12747
+    },
+    {
+      "n_min": 60,
+      "genre": "Action",
+      "tenth": 1,
+      "gap_pp": 3.573803776425434,
+      "ci95": 0.225664059866028,
+      "users_late_v3": 3800,
+      "users_early_v4": 12747
+    },
+    {
+      "n_min": 60,
+      "genre": "Action",
+      "tenth": 10,
+      "gap_pp": 0.3107036787000208,
+      "ci95": 0.2405389928733488,
+      "users_late_v3": 3800,
+      "users_early_v4": 12747
+    },
+    {
+      "n_min": 60,
+      "genre": "Crime",
+      "tenth": 1,
+      "gap_pp": 2.580937566349328,
+      "ci95": 0.17898118312734726,
+      "users_late_v3": 3800,
+      "users_early_v4": 12747
+    },
+    {
+      "n_min": 60,
+      "genre": "Crime",
+      "tenth": 10,
+      "gap_pp": -0.316188572186876,
+      "ci95": 0.18513391087875322,
+      "users_late_v3": 3800,
+      "users_early_v4": 12747
+    },
+    {
+      "n_min": 100,
+      "genre": "Comedy",
+      "tenth": 1,
+      "gap_pp": -5.631440147335823,
+      "ci95": 0.28062399409009414,
+      "users_late_v3": 2491,
+      "users_early_v4": 8912
+    },
+    {
+      "n_min": 100,
+      "genre": "Comedy",
+      "tenth": 10,
+      "gap_pp": 0.32074668793120864,
+      "ci95": 0.3255602544015056,
+      "users_late_v3": 2491,
+      "users_early_v4": 8912
+    },
+    {
+      "n_min": 100,
+      "genre": "Action",
+      "tenth": 1,
+      "gap_pp": 3.178785313870506,
+      "ci95": 0.24174790399233337,
+      "users_late_v3": 2491,
+      "users_early_v4": 8912
+    },
+    {
+      "n_min": 100,
+      "genre": "Action",
+      "tenth": 10,
+      "gap_pp": 0.24279576520334345,
+      "ci95": 0.26716153394287695,
+      "users_late_v3": 2491,
+      "users_early_v4": 8912
+    },
+    {
+      "n_min": 100,
+      "genre": "Crime",
+      "tenth": 1,
+      "gap_pp": 1.4812524072682614,
+      "ci95": 0.1945794571472409,
+      "users_late_v3": 2491,
+      "users_early_v4": 8912
+    },
+    {
+      "n_min": 100,
+      "genre": "Crime",
+      "tenth": 10,
+      "gap_pp": -0.34674406489018583,
+      "ci95": 0.19032031951666123,
+      "users_late_v3": 2491,
+      "users_early_v4": 8912
+    }
+  ],
+  "band_gaps": [
+    {
+      "band": "40-99",
+      "genre": "Comedy",
+      "tenth": 1,
+      "gap_pp": -10.474080218765941,
+      "ci95": 0.17240013966357873,
+      "users_v3": 17738,
+      "users_v4plus": 21796
+    },
+    {
+      "band": "40-99",
+      "genre": "Comedy",
+      "tenth": 10,
+      "gap_pp": -1.2601874137006241,
+      "ci95": 0.21612968798763801,
+      "users_v3": 17738,
+      "users_v4plus": 21796
+    },
+    {
+      "band": "40-99",
+      "genre": "Action",
+      "tenth": 1,
+      "gap_pp": 4.297409399049668,
+      "ci95": 0.15824411413818248,
+      "users_v3": 17738,
+      "users_v4plus": 21796
+    },
+    {
+      "band": "40-99",
+      "genre": "Action",
+      "tenth": 10,
+      "gap_pp": 0.8931872050215102,
+      "ci95": 0.16590186557968545,
+      "users_v3": 17738,
+      "users_v4plus": 21796
+    },
+    {
+      "band": "40-99",
+      "genre": "Crime",
+      "tenth": 1,
+      "gap_pp": 5.848785891008559,
+      "ci95": 0.14136410546412617,
+      "users_v3": 17738,
+      "users_v4plus": 21796
+    },
+    {
+      "band": "40-99",
+      "genre": "Crime",
+      "tenth": 10,
+      "gap_pp": -0.5163046291880731,
+      "ci95": 0.13957952859614292,
+      "users_v3": 17738,
+      "users_v4plus": 21796
+    },
+    {
+      "band": "100-299",
+      "genre": "Comedy",
+      "tenth": 1,
+      "gap_pp": -8.12070933570736,
+      "ci95": 0.12375902432071179,
+      "users_v3": 17963,
+      "users_v4plus": 19853
+    },
+    {
+      "band": "100-299",
+      "genre": "Comedy",
+      "tenth": 10,
+      "gap_pp": -1.279445105632215,
+      "ci95": 0.16347037047824928,
+      "users_v3": 17963,
+      "users_v4plus": 19853
+    },
+    {
+      "band": "100-299",
+      "genre": "Action",
+      "tenth": 1,
+      "gap_pp": 3.689601909514259,
+      "ci95": 0.12074414783982797,
+      "users_v3": 17963,
+      "users_v4plus": 19853
+    },
+    {
+      "band": "100-299",
+      "genre": "Action",
+      "tenth": 10,
+      "gap_pp": 0.7943160679193557,
+      "ci95": 0.1280972406185737,
+      "users_v3": 17963,
+      "users_v4plus": 19853
+    },
+    {
+      "band": "100-299",
+      "genre": "Crime",
+      "tenth": 1,
+      "gap_pp": 3.5644832824414374,
+      "ci95": 0.10010975277164628,
+      "users_v3": 17963,
+      "users_v4plus": 19853
+    },
+    {
+      "band": "100-299",
+      "genre": "Crime",
+      "tenth": 10,
+      "gap_pp": -0.6008916205522778,
+      "ci95": 0.09302564685611645,
+      "users_v3": 17963,
+      "users_v4plus": 19853
+    }
+  ]
+}
