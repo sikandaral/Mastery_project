@@ -23,8 +23,8 @@ import pandas as pd
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "src"))
-import checkpoint2_taste as taste  # noqa: E402
-import checkpoint3_depletion as depletion  # noqa: E402
+import checkpoint2_taste as taste
+import checkpoint3_depletion as depletion
 
 MIN_RATINGS = 100  # must match depletion.MIN_RATINGS so both scripts use the same users
 MIN_UNRATED = 50  # depletion check: keep user-tenths with at least this many top-100 movies not yet rated

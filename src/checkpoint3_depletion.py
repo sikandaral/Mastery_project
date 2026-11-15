@@ -18,7 +18,7 @@ import pandas as pd
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "src"))
-import checkpoint2_taste as taste  # noqa: E402
+import checkpoint2_taste as taste
 
 MIN_RATINGS = 100
 COLORS = {"late v3": taste.ERA_COLORS["v3"], "early v4": taste.ERA_COLORS["v4+"]}

@@ -45,7 +45,7 @@ from sklearn.preprocessing import StandardScaler, normalize
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "src"))
-import checkpoint2_profiles as p  # noqa: E402
+import checkpoint2_profiles as p
 
 MAIN_DIMS, CHECK_DIMS = 50, 20  # SVD dimensions: the main run and the sensitivity check
 warnings.simplefilter("ignore", RuntimeWarning)  # spurious matmul warnings seen in CP2; labels are checked below
@@ -105,7 +105,7 @@ def group_table(u, col, low, high):
 
 def report_table(t):
     """Display-ready table for the report (strings formatted from the numbers above)."""
-    pair = lambda a, b: t[a].map("{:.1f}".format) + " / " + t[b].map("{:.1f}".format)  # noqa: E731
+    pair = lambda a, b: t[a].map("{:.1f}".format) + " / " + t[b].map("{:.1f}".format)
     return pd.DataFrame({
         "Group": t.index,
         "Description": t["description"].to_numpy(),
@@ -191,8 +191,8 @@ def ari_table(ari):
 
 def stress_table(dec, seeds, dec20):
     """Table A3: main run, range over 5 seeds, lowest ARI, and the 20-dimension result (matrix groups only)."""
-    fmt = lambda x: f"{round(float(x), 2) + 0.0:.2f}"  # noqa: E731  (+ 0.0 avoids "-0.00")
-    rng = lambda lo, hi: fmt(lo) if fmt(lo) == fmt(hi) else f"{fmt(lo)} to {fmt(hi)}"  # noqa: E731
+    fmt = lambda x: f"{round(float(x), 2) + 0.0:.2f}"  # (+ 0.0 avoids "-0.00")
+    rng = lambda lo, hi: fmt(lo) if fmt(lo) == fmt(hi) else f"{fmt(lo)} to {fmt(hi)}"
     rows = []
     for name, key in [("Behavior", "k-means, k = {}"), ("Matrix", "matrix, k = {}")]:
         for k in p.KS:
@@ -307,8 +307,8 @@ def main():
     print("\n=== Table A3 (stress tests), as written to the report ===")
     print(tables["checkpoint3_table_a3.csv"].to_string(index=False))
 
-    records = lambda tables_: pd.concat(tables_, names=["k", "group"]).reset_index().to_dict("records")  # noqa: E731
-    frame = lambda t: t.rename_axis("grouping").reset_index().to_dict("records")  # noqa: E731
+    records = lambda tables_: pd.concat(tables_, names=["k", "group"]).reset_index().to_dict("records")
+    frame = lambda t: t.rename_axis("grouping").reset_index().to_dict("records")
     out = {"dimensions": {"main": MAIN_DIMS, "check": CHECK_DIMS},
            "variance_kept": {"main": variance, "check": variance20},
            "behavior_groups": records(behavior), "matrix_groups": records(matrix),

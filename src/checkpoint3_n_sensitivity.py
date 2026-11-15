@@ -15,7 +15,7 @@ import pandas as pd
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "src"))
-import checkpoint2_taste as taste  # noqa: E402
+import checkpoint2_taste as taste
 
 THRESHOLDS = (40, 60, 100)
 FOCUS_GENRES = ["Comedy", "Action", "Crime"]  # the three genres in Figure 1 of CP2
