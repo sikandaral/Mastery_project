@@ -1,0 +1,9 @@
+Grouping,"Mix, main run","Mix, 5 seeds","Within, main run","Within, 5 seeds",Lowest ARI vs main run,"20 dimensions, mix / within"
+"Behavior, k = 3",-0.05,-0.45 to -0.04,45.98,45.97 to 46.38,0.27,n/a
+"Behavior, k = 4",-0.53,-0.53 to -0.51,46.46,46.44 to 46.46,0.98,n/a
+"Behavior, k = 5",-0.54,-0.55 to -0.54,46.47,46.47 to 46.48,0.98,n/a
+"Behavior, k = 12",-0.67,-0.67 to -0.66,46.60,46.59 to 46.60,0.96,n/a
+"Matrix, k = 3",1.79,1.79 to 1.81,44.14,44.12 to 44.14,0.99,1.81 / 44.12
+"Matrix, k = 4",1.36,1.36,44.57,44.57,1.00,1.37 / 44.56
+"Matrix, k = 5",0.65,0.61 to 0.65,45.28,45.28 to 45.32,0.96,0.63 / 45.30
+"Matrix, k = 12",1.08,1.08 to 1.61,44.85,44.32 to 44.85,0.60,1.12 / 44.81

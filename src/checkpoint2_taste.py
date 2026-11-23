@@ -25,12 +25,15 @@ TENTHS = list(range(1, 11))
 ERA_COLORS = {"pre-v3": "#2a78d6", "v3": "#eb6834", "v4+": "#1baf7a"}  # same colors as checkpoint1.py
 
 # Both analyses use the same users as checkpoint1.py's lifecycle(): >= 100 ratings, first rating in 1998 or later.
-USERS_SQL = """
+MIN_RATINGS = 100  # CP2 setting; CP3 sensitivity runs lower it
+
+def users_sql(min_ratings=MIN_RATINGS):
+    return f"""
 with u as (
     select userId, count(*) as n, min(ts) as first_ts
     from seqp
     group by userId
-    having count(*) >= 100 and min(ts) >= epoch(timestamp '1998-01-01')
+    having count(*) >= {min_ratings} and min(ts) >= epoch(timestamp '1998-01-01')
 )
 """
 
@@ -45,19 +48,20 @@ def run_sql(q):
 # ---------------------------------------------------------------------------
 # A. All eras x three rating-volume bands (comparable to Figure 5 of Checkpoint 1)
 # ---------------------------------------------------------------------------
-def load_lifecycle_stats():
+def load_lifecycle_stats(min_ratings=MIN_RATINGS):
     """Mean share (%) of each genre in a user's own ratings, by era x volume band x tenth, with 95% CI.
 
     Computed in SQL so only a small table comes back: for each group we keep the sum and the sum of squares
     of the per-user shares (a user who never rated a genre in a tenth counts as 0).
     """
-    q = USERS_SQL + f""",
+    q = users_sql(min_ratings) + f""",
 ug as (
     select *,
         case when first_ts < epoch(timestamp '{V3}') then 'pre-v3'
              when first_ts < epoch(timestamp '{V4}') then 'v3'
              else 'v4+' end as era,
-        case when n < 300 then '100-299' when n < 1000 then '300-999' else '1000+' end as band
+        case when n < 100 then '{min_ratings}-99' when n < 300 then '100-299'
+       when n < 1000 then '300-999' else '1000+' end as band
     from u
 ),
 picked as (
@@ -137,14 +141,15 @@ def make_lifecycle_figure(stats, genres, path):
 # ---------------------------------------------------------------------------
 # B. Stress test: users who joined 2 years before vs after v4 (same window as Finding 3)
 # ---------------------------------------------------------------------------
-def load_cohort_counts():
+def load_cohort_counts(min_ratings=MIN_RATINGS):
     """One row per (user, tenth, popular flag, genre): number of ratings in that genre.
 
     popular = 1 if the movie was in the top 100 of the previous 12 months (checkpoint1's top100_trail).
+    n = the user's total number of ratings, so callers can filter by a minimum-ratings threshold.
     """
-    q = USERS_SQL + f""",
+    q = users_sql(min_ratings) + f""",
 picked as (
-    select s.userId, s.movieId, s.top100_trail as popular,
+    select s.userId, s.movieId, s.top100_trail as popular, u.n,
            floor((s.ord - 1) * 10.0 / u.n)::int + 1 as tenth,
            case when u.first_ts < epoch(timestamp '{V4}') then 'late v3' else 'early v4' end as cohort
     from seqp s
@@ -153,11 +158,11 @@ picked as (
       and u.first_ts <  epoch(timestamp '{COHORT_END}')
 ),
 tagged as (
-    select p.userId, p.cohort, p.tenth, p.popular, unnest(string_split(m.genres, '|')) as genre
+    select p.userId, p.cohort, p.tenth, p.popular, p.n, unnest(string_split(m.genres, '|')) as genre
     from picked p
     join '{MOVIES}' m using (movieId)
 )
-select userId, cohort, tenth, popular, genre, count(*) as c
+select userId, cohort, tenth, popular, genre, n, count(*) as c
 from tagged
 where genre not in ('(no genres listed)', 'IMAX')
 group by all
